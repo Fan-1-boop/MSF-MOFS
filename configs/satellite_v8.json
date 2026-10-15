@@ -1,0 +1,11 @@
+{
+  "stage": "V8_independent_confirmation",
+  "scenarios": 411,
+  "windows": 9042,
+  "candidateFeatures": 582,
+  "dataset": "data/satellite/v8_confirmation/telemetry-msf-confirmation-v8.csv.gz",
+  "manifest": "data/satellite/v8_confirmation/telemetry-msf-confirmation-v8.csv.manifest.json",
+  "frozenModel": "src/satellite/health-v2-service/core/models/subsystem-health-model-v6.json",
+  "selectionFromConfirmationProhibited": true,
+  "sourceScriptHashCaution": "历史V8确认脚本2个SHA-256与冻结清单不符；运行适配版需单独声明"
+}

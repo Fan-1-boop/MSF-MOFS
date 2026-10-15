@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "original-V6-independent-raw-timing-1",
+  "sourceScript": "benchmark_v6_runtime.js (original procedure; raw-time instrumentation added)",
+  "environment": {
+    "node": "v22.16.0",
+    "platform": "linux",
+    "release": "6.18.44",
+    "arch": "x64",
+    "cpus": [
+      "INTEL(R) XEON(R) PLATINUM 8573C"
+    ],
+    "cpuCount": 5,
+    "hostname": "[omitted]"
+  },
+  "modelSelectedCount": 140,
+  "full": {
+    "n": 2000,
+    "warmup": 100,
+    "meanUs": 1085.7844209999994,
+    "medianUs": 939.3309999999246,
+    "p95Us": 1990.0260000000003,
+    "p99Us": 3122.6560000000063,
+    "minUs": 628.7340000000086,
+    "maxUs": 6864.917000000049
+  },
+  "selected": {
+    "n": 2000,
+    "warmup": 100,
+    "meanUs": 449.17760299999605,
+    "medianUs": 355.7810000002064,
+    "p95Us": 931.0120000000097,
+    "p99Us": 1567.6739999998972,
+    "minUs": 264.4169999998667,
+    "maxUs": 5023.392000000058
+  },
+  "medianReduction": 0.621240010177206,
+  "medianSpeedup": 2.6401943892433257,
+  "rawEntries": 4000
+}

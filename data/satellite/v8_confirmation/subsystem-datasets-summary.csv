@@ -1,0 +1,7 @@
+subsystem,rows,D,positive,negative,file
+power,4818,267,1784,3034,telemetry-msf-v6-power.csv
+thermal,4167,135,1133,3034,telemetry-msf-v6-thermal.csv
+attitude,4154,135,1120,3034,telemetry-msf-v6-attitude.csv
+communication,3679,69,645,3034,telemetry-msf-v6-communication.csv
+data,3278,204,244,3034,telemetry-msf-v6-data.csv
+propulsion,3277,24,243,3034,telemetry-msf-v6-propulsion.csv

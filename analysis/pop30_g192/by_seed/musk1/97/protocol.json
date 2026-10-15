@@ -1,0 +1,25 @@
+{
+  "experiment": "generation-convergence-test-HV",
+  "datasets": [
+    "musk1"
+  ],
+  "seeds": [
+    97
+  ],
+  "methods": [
+    "MSF-MOFS",
+    "HFMOEA-CP",
+    "MBLPE-CP"
+  ],
+  "generations": 192,
+  "population": 30,
+  "mblpe_generation_convention": "初始状态记为0；MBLPE 原函数 generations=统一演化轮次+1",
+  "x_axis": "generation",
+  "y_axis": "held-out pareto-front hypervolume",
+  "python": "3.13.13 | packaged by Anaconda, Inc. | (main, Apr 14 2026, 06:12:50) [MSC v.1942 64 bit (AMD64)]",
+  "numpy": "2.4.6",
+  "pandas": "3.0.3",
+  "sklearn": "1.9.0",
+  "os": "Windows-11-10.0.26200-SP0",
+  "cpu_count": 20
+}

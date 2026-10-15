@@ -1,0 +1,52 @@
+{
+  "stage": "V6_development",
+  "totalCandidateFeatures": 582,
+  "univariate": 288,
+  "crossChannel": 294,
+  "channels": 12,
+  "causalWindowMaximum": 64,
+  "scales": [
+    8,
+    24,
+    64
+  ],
+  "scenarios": 354,
+  "windows": 7080,
+  "dataset": "data/satellite/v6_development/v6_development_regenerated.csv",
+  "status": "regenerated_from_historical_generator",
+  "frozenModel": "src/satellite/health-v2-service/core/models/subsystem-health-model-v6.json",
+  "frozenUniqueFeatures": 140,
+  "subsystems": {
+    "power": {
+      "candidates": 267,
+      "selected": 18,
+      "seed": 101
+    },
+    "thermal": {
+      "candidates": 135,
+      "selected": 11,
+      "seed": 95
+    },
+    "attitude": {
+      "candidates": 135,
+      "selected": 15,
+      "seed": 98
+    },
+    "data": {
+      "candidates": 204,
+      "selected": 10,
+      "seed": 100
+    },
+    "communication": {
+      "candidates": 69,
+      "selected": 69,
+      "mode": "all"
+    },
+    "propulsion": {
+      "candidates": 24,
+      "selected": 24,
+      "mode": "all"
+    }
+  },
+  "researchBoundary": "开发数据可用于训练和验证选模，不允许依据V8确认集重新选择特征"
+}

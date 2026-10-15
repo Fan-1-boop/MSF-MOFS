@@ -1,0 +1,22 @@
+{
+  "D": 204,
+  "guidedCardinalities": [
+    10,
+    20,
+    41
+  ],
+  "seeds": [
+    192,
+    201
+  ],
+  "MSF_HV_mean": 0.9511100786776725,
+  "MSF_HV_std": 0.0019084654258748031,
+  "Random_HV_mean": 0.8245016396674842,
+  "Random_HV_std": 0.018844696676110172,
+  "delta_HV": 0.12660843901018826,
+  "wins": 10,
+  "ties": 0,
+  "losses": 0,
+  "wilcoxon_p_raw": 0.001953125,
+  "rank_biserial": 1.0
+}

@@ -1,0 +1,59 @@
+{
+  "__init__.py": {
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "annotated_sha256": "a4fa8f1c2e04896b515ab10ba4fe26dce0f0eb204b94fc0c7fa62e4db0ed61fa",
+    "same_python_ast": true
+  },
+  "datasets.py": {
+    "original_sha256": "dc11996f6467df6b9264b421a6098a0e500824b4a0239f5d2e996469944f311c",
+    "annotated_sha256": "5eef73f4c7f0732e6b5b38abc2805a512e3e394a969592139be4f00dab819a7f",
+    "same_python_ast": true
+  },
+  "environments.py": {
+    "original_sha256": "ce1c81030f1a0f563883915e4b5ca60f681a428f86c1be9a2bb6821622a68b22",
+    "annotated_sha256": "0178df8f05053942e13af77bbd69605059ce6531584c678433cd862203036378",
+    "same_python_ast": true
+  },
+  "evaluator.py": {
+    "original_sha256": "8ae77282cc9cc27613e57418202ffd060dfde06e3bef4d3471f2ac8a1a124e58",
+    "annotated_sha256": "c9b5709a7fee5ad560ba9d89430a87253c1e39ad588e2ab6cab287b1629ced6a",
+    "same_python_ast": true
+  },
+  "external_baselines.py": {
+    "original_sha256": "739e7aa168e39cff4e5e063de39ffdaafc734cdaf3a9b6097eac585c722ed966",
+    "annotated_sha256": "8220f4a4f237888234d1438bc9da01c71aabe479117781d68fd6fd18dffe60ad",
+    "same_python_ast": false,
+    "v1_2_annotated_sha256": "2b1f6777c1b3eedca790cfd510340ae139b66a9ca00b31356dfdfdd80ebbf3b6",
+    "notes_zh": "v1.2.1 仅修改 HFMOEA-CP 并行计算后端以支持 Windows；不同于原始 AST，互信息数值回归测试通过。"
+  },
+  "highdim_datasets.py": {
+    "original_sha256": "af0a546e7705201ef6c57ad0a7c23163f44a1a3a1a19108e93aeb0ea8d7dfc0c",
+    "annotated_sha256": "993ba3acce629c65f4d5198587a8754e3604bc9b606fc348cfdec6061b9b72df",
+    "same_python_ast": true
+  },
+  "highdim_formal.py": {
+    "original_sha256": "595b8a66612adf4029a1ce60c52060dc6e21768f2159da7dd572120631475106",
+    "annotated_sha256": "d5bfea6e33806050bcb129df6c8b076224aaa10e762342959eeb56d6dffed654",
+    "same_python_ast": true
+  },
+  "nsga2.py": {
+    "original_sha256": "b72c83e894202e54b219e4d85208b5eea960eebed594d83c154614c2dd1c4ecc",
+    "annotated_sha256": "78f779b2a0a3fb8e28434a82934eca27002f626b92af94bbdc3779e613c9e677",
+    "same_python_ast": true
+  },
+  "selection.py": {
+    "original_sha256": "71816a664a2585be0bb6ac21aa114855df4d748b6677670884e05b259f6d58a6",
+    "annotated_sha256": "9a761bebd18f53cbe8c8620fb450ecfe8527bbea100f524415f9011e9092f31b",
+    "same_python_ast": true
+  },
+  "spea2.py": {
+    "original_sha256": "6fc34787974a00e5416906c488c25b487db653cf77cca89d9eb068db8ab41987",
+    "annotated_sha256": "3f03b7ea58bc37f9df0545bde0fa6898e7cedfb0e0c1441157ce463fee7e73cf",
+    "same_python_ast": true
+  },
+  "stable_guidance.py": {
+    "original_sha256": "99ae2cbbf7a21d3538c9f887bee765d3251b6e94d331f3495ab0c5cbbbbbb4d0",
+    "annotated_sha256": "564a4b0414c2f9d237cbaac7ec11f019e6ba18f6759b3f617d416d71eb729f21",
+    "same_python_ast": true
+  }
+}

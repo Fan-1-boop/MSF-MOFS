@@ -1,0 +1,12 @@
+{
+  "version": "v1.2.1",
+  "scope": "HFMOEA-CP mutual information parallel backend only",
+  "file": "src/irmofs/external_baselines.py",
+  "sha256_v1_2": "2b1f6777c1b3eedca790cfd510340ae139b66a9ca00b31356dfdfdd80ebbf3b6",
+  "sha256_v1_2_1": "8220f4a4f237888234d1438bc9da01c71aabe479117781d68fd6fd18dffe60ad",
+  "unchanged_experiment_protocol": true,
+  "algorithm_mathematics_unchanged": true,
+  "tests": "32 Python unit tests; real Hill-Valley 848x100 ranking equality on two backend branches",
+  "windows_native_tested": false,
+  "all_120_searches_rerun": false
+}

@@ -1,0 +1,1144 @@
+{
+  "schemaVersion": "msf-satellite-health-deployment-2.0",
+  "createdAt": "2026-08-26T01:48:31.734191+00:00",
+  "method": {
+    "name": "MSF-MOFS",
+    "population": 12,
+    "generations": 6,
+    "fisherRanking": "single full-training ranking",
+    "scaleCandidates": [
+      10,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "guidedCardinalities": [
+      10,
+      14,
+      29
+    ],
+    "wrapper": "StandardScaler + 5-NN, stratified 3-fold CV",
+    "objectives": [
+      "1-Gmean",
+      "selectedFeatureRatio"
+    ]
+  },
+  "deploymentSelection": {
+    "candidateSeeds": [
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101
+    ],
+    "selectionUsesTest": false,
+    "rule": "among full-12-channel MSF candidates within validationTolerance of best validation 5-NN G-mean, choose minimum feature count",
+    "validationTolerance": 0.01,
+    "bestValidationGmean": 0.9727612493171206,
+    "selectedSeed": 100,
+    "selectedValidationGmean": 0.9639628327073422,
+    "selectedFeatureCount": 55,
+    "candidateTable": [
+      {
+        "seed": 92,
+        "featureCount": 66,
+        "coverageCount": 12,
+        "validationGmean": 0.9727612493171206
+      },
+      {
+        "seed": 93,
+        "featureCount": 38,
+        "coverageCount": 12,
+        "validationGmean": 0.9378998028939213
+      },
+      {
+        "seed": 94,
+        "featureCount": 31,
+        "coverageCount": 12,
+        "validationGmean": 0.9621410590962257
+      },
+      {
+        "seed": 95,
+        "featureCount": 44,
+        "coverageCount": 12,
+        "validationGmean": 0.9543971908745811
+      },
+      {
+        "seed": 96,
+        "featureCount": 48,
+        "coverageCount": 12,
+        "validationGmean": 0.9482680747215774
+      },
+      {
+        "seed": 97,
+        "featureCount": 42,
+        "coverageCount": 12,
+        "validationGmean": 0.9273433796862275
+      },
+      {
+        "seed": 98,
+        "featureCount": 56,
+        "coverageCount": 12,
+        "validationGmean": 0.9629091467949389
+      },
+      {
+        "seed": 99,
+        "featureCount": 61,
+        "coverageCount": 12,
+        "validationGmean": 0.9679449428447994
+      },
+      {
+        "seed": 100,
+        "featureCount": 55,
+        "coverageCount": 12,
+        "validationGmean": 0.9639628327073422
+      },
+      {
+        "seed": 101,
+        "featureCount": 55,
+        "coverageCount": 12,
+        "validationGmean": 0.9454691741980209
+      }
+    ]
+  },
+  "featureSpace": {
+    "candidateCount": 288,
+    "selectedCount": 55,
+    "selectedRatio": 0.1909722222222222,
+    "scales": [
+      8,
+      24,
+      64
+    ],
+    "descriptorsPerChannel": 8,
+    "channels": 12
+  },
+  "selectedFeatures": [
+    {
+      "name": "param_1__stdRatio__w8",
+      "parameterKey": "param_1",
+      "descriptor": "stdRatio",
+      "scale": 8,
+      "fisherScore": 0.03344659624476365,
+      "imputeMedian": 0.001574316718
+    },
+    {
+      "name": "param_1__slopeRatio__w8",
+      "parameterKey": "param_1",
+      "descriptor": "slopeRatio",
+      "scale": 8,
+      "fisherScore": 5.240295224985426e-06,
+      "imputeMedian": 1.994708995e-05
+    },
+    {
+      "name": "param_1__madRatio__w24",
+      "parameterKey": "param_1",
+      "descriptor": "madRatio",
+      "scale": 24,
+      "fisherScore": 0.02609537509468724,
+      "imputeMedian": 0.002998146667
+    },
+    {
+      "name": "param_2__rangeRatio__w8",
+      "parameterKey": "param_2",
+      "descriptor": "rangeRatio",
+      "scale": 8,
+      "fisherScore": 0.03429060028949204,
+      "imputeMedian": 0.005110705882
+    },
+    {
+      "name": "param_2__thresholdMargin__w8",
+      "parameterKey": "param_2",
+      "descriptor": "thresholdMargin",
+      "scale": 8,
+      "fisherScore": 0.027180902713242774,
+      "imputeMedian": 0.4938698824
+    },
+    {
+      "name": "param_2__madRatio__w24",
+      "parameterKey": "param_2",
+      "descriptor": "madRatio",
+      "scale": 24,
+      "fisherScore": 0.0246474894527623,
+      "imputeMedian": 0.003112762306
+    },
+    {
+      "name": "param_2__madRatio__w64",
+      "parameterKey": "param_2",
+      "descriptor": "madRatio",
+      "scale": 64,
+      "fisherScore": 0.027563532076598347,
+      "imputeMedian": 0.006560068941
+    },
+    {
+      "name": "param_2__thresholdMargin__w64",
+      "parameterKey": "param_2",
+      "descriptor": "thresholdMargin",
+      "scale": 64,
+      "fisherScore": 0.02105520199365014,
+      "imputeMedian": 0.4940957868
+    },
+    {
+      "name": "param_3__meanPosition__w8",
+      "parameterKey": "param_3",
+      "descriptor": "meanPosition",
+      "scale": 8,
+      "fisherScore": 0.02892711759102791,
+      "imputeMedian": 0.1099542652
+    },
+    {
+      "name": "param_3__stdRatio__w8",
+      "parameterKey": "param_3",
+      "descriptor": "stdRatio",
+      "scale": 8,
+      "fisherScore": 0.03298397149970021,
+      "imputeMedian": 0.001639884588
+    },
+    {
+      "name": "param_3__violationRatio__w24",
+      "parameterKey": "param_3",
+      "descriptor": "violationRatio",
+      "scale": 24,
+      "fisherScore": 0.007643990022799425,
+      "imputeMedian": 0.0
+    },
+    {
+      "name": "param_3__madRatio__w64",
+      "parameterKey": "param_3",
+      "descriptor": "madRatio",
+      "scale": 64,
+      "fisherScore": 0.027322010909865593,
+      "imputeMedian": 0.006355219141
+    },
+    {
+      "name": "param_3__violationRatio__w64",
+      "parameterKey": "param_3",
+      "descriptor": "violationRatio",
+      "scale": 64,
+      "fisherScore": 0.006628029331972211,
+      "imputeMedian": 0.0
+    },
+    {
+      "name": "param_4__rangeRatio__w8",
+      "parameterKey": "param_4",
+      "descriptor": "rangeRatio",
+      "scale": 8,
+      "fisherScore": 0.03556729285856974,
+      "imputeMedian": 0.003875436364
+    },
+    {
+      "name": "param_4__meanPosition__w24",
+      "parameterKey": "param_4",
+      "descriptor": "meanPosition",
+      "scale": 24,
+      "fisherScore": 0.027189329965342502,
+      "imputeMedian": 0.1929053371
+    },
+    {
+      "name": "param_4__diffMaxRatio__w24",
+      "parameterKey": "param_4",
+      "descriptor": "diffMaxRatio",
+      "scale": 24,
+      "fisherScore": 0.0016847220179410964,
+      "imputeMedian": 0.001873254545
+    },
+    {
+      "name": "param_4__thresholdMargin__w64",
+      "parameterKey": "param_4",
+      "descriptor": "thresholdMargin",
+      "scale": 64,
+      "fisherScore": 0.026778399411967906,
+      "imputeMedian": 0.3072334807
+    },
+    {
+      "name": "param_5__stdRatio__w8",
+      "parameterKey": "param_5",
+      "descriptor": "stdRatio",
+      "scale": 8,
+      "fisherScore": 0.033937528285310645,
+      "imputeMedian": 0.002439423856
+    },
+    {
+      "name": "param_5__rangeRatio__w8",
+      "parameterKey": "param_5",
+      "descriptor": "rangeRatio",
+      "scale": 8,
+      "fisherScore": 0.03503077636831665,
+      "imputeMedian": 0.007224
+    },
+    {
+      "name": "param_5__diffMaxRatio__w8",
+      "parameterKey": "param_5",
+      "descriptor": "diffMaxRatio",
+      "scale": 8,
+      "fisherScore": 0.029982207025035828,
+      "imputeMedian": 0.002592
+    },
+    {
+      "name": "param_5__diffMaxRatio__w24",
+      "parameterKey": "param_5",
+      "descriptor": "diffMaxRatio",
+      "scale": 24,
+      "fisherScore": 0.0006961239811231542,
+      "imputeMedian": 0.003354
+    },
+    {
+      "name": "param_5__stdRatio__w64",
+      "parameterKey": "param_5",
+      "descriptor": "stdRatio",
+      "scale": 64,
+      "fisherScore": 0.012031605172894531,
+      "imputeMedian": 0.007838524742
+    },
+    {
+      "name": "param_6__meanPosition__w8",
+      "parameterKey": "param_6",
+      "descriptor": "meanPosition",
+      "scale": 8,
+      "fisherScore": 0.02842034190669569,
+      "imputeMedian": 0.2695639024
+    },
+    {
+      "name": "param_6__stdRatio__w8",
+      "parameterKey": "param_6",
+      "descriptor": "stdRatio",
+      "scale": 8,
+      "fisherScore": 0.03200544782602279,
+      "imputeMedian": 0.001506838332
+    },
+    {
+      "name": "param_6__rangeRatio__w8",
+      "parameterKey": "param_6",
+      "descriptor": "rangeRatio",
+      "scale": 8,
+      "fisherScore": 0.03438915682098815,
+      "imputeMedian": 0.004490793077
+    },
+    {
+      "name": "param_6__madRatio__w64",
+      "parameterKey": "param_6",
+      "descriptor": "madRatio",
+      "scale": 64,
+      "fisherScore": 0.028488302727325904,
+      "imputeMedian": 0.005722278172
+    },
+    {
+      "name": "param_7__stdRatio__w8",
+      "parameterKey": "param_7",
+      "descriptor": "stdRatio",
+      "scale": 8,
+      "fisherScore": 0.034865373667067184,
+      "imputeMedian": 0.001498761696
+    },
+    {
+      "name": "param_7__rangeRatio__w8",
+      "parameterKey": "param_7",
+      "descriptor": "rangeRatio",
+      "scale": 8,
+      "fisherScore": 0.035692090051681995,
+      "imputeMedian": 0.0045
+    },
+    {
+      "name": "param_7__diffMaxRatio__w8",
+      "parameterKey": "param_7",
+      "descriptor": "diffMaxRatio",
+      "scale": 8,
+      "fisherScore": 0.02925348351135739,
+      "imputeMedian": 0.0018125
+    },
+    {
+      "name": "param_7__thresholdMargin__w24",
+      "parameterKey": "param_7",
+      "descriptor": "thresholdMargin",
+      "scale": 24,
+      "fisherScore": 0.022914983890570485,
+      "imputeMedian": 0.2503234375
+    },
+    {
+      "name": "param_7__madRatio__w64",
+      "parameterKey": "param_7",
+      "descriptor": "madRatio",
+      "scale": 64,
+      "fisherScore": 0.027947771663047984,
+      "imputeMedian": 0.0058006725
+    },
+    {
+      "name": "param_7__slopeRatio__w64",
+      "parameterKey": "param_7",
+      "descriptor": "slopeRatio",
+      "scale": 64,
+      "fisherScore": 0.01962956752257588,
+      "imputeMedian": 2.463656136e-06
+    },
+    {
+      "name": "param_8__rangeRatio__w8",
+      "parameterKey": "param_8",
+      "descriptor": "rangeRatio",
+      "scale": 8,
+      "fisherScore": 0.0351563820362226,
+      "imputeMedian": 0.003351795455
+    },
+    {
+      "name": "param_8__diffMaxRatio__w8",
+      "parameterKey": "param_8",
+      "descriptor": "diffMaxRatio",
+      "scale": 8,
+      "fisherScore": 0.028678509074234238,
+      "imputeMedian": 0.00129275
+    },
+    {
+      "name": "param_8__violationRatio__w8",
+      "parameterKey": "param_8",
+      "descriptor": "violationRatio",
+      "scale": 8,
+      "fisherScore": 0.008934504908167405,
+      "imputeMedian": 0.0
+    },
+    {
+      "name": "param_8__thresholdMargin__w64",
+      "parameterKey": "param_8",
+      "descriptor": "thresholdMargin",
+      "scale": 64,
+      "fisherScore": 0.023055084185774875,
+      "imputeMedian": 0.488611617
+    },
+    {
+      "name": "param_9__meanPosition__w8",
+      "parameterKey": "param_9",
+      "descriptor": "meanPosition",
+      "scale": 8,
+      "fisherScore": 0.027630673252023143,
+      "imputeMedian": 0.1836254521
+    },
+    {
+      "name": "param_9__stdRatio__w8",
+      "parameterKey": "param_9",
+      "descriptor": "stdRatio",
+      "scale": 8,
+      "fisherScore": 0.03539981700763352,
+      "imputeMedian": 0.001366922589
+    },
+    {
+      "name": "param_9__rangeRatio__w8",
+      "parameterKey": "param_9",
+      "descriptor": "rangeRatio",
+      "scale": 8,
+      "fisherScore": 0.03536336467369227,
+      "imputeMedian": 0.004065883333
+    },
+    {
+      "name": "param_9__violationRatio__w64",
+      "parameterKey": "param_9",
+      "descriptor": "violationRatio",
+      "scale": 64,
+      "fisherScore": 0.0055073170990900325,
+      "imputeMedian": 0.0
+    },
+    {
+      "name": "param_10__stdRatio__w8",
+      "parameterKey": "param_10",
+      "descriptor": "stdRatio",
+      "scale": 8,
+      "fisherScore": 0.03431856571143111,
+      "imputeMedian": 0.002009368269
+    },
+    {
+      "name": "param_10__rangeRatio__w8",
+      "parameterKey": "param_10",
+      "descriptor": "rangeRatio",
+      "scale": 8,
+      "fisherScore": 0.035687492987154616,
+      "imputeMedian": 0.006070094118
+    },
+    {
+      "name": "param_10__diffMaxRatio__w8",
+      "parameterKey": "param_10",
+      "descriptor": "diffMaxRatio",
+      "scale": 8,
+      "fisherScore": 0.030262932679748698,
+      "imputeMedian": 0.002277988235
+    },
+    {
+      "name": "param_10__meanPosition__w24",
+      "parameterKey": "param_10",
+      "descriptor": "meanPosition",
+      "scale": 24,
+      "fisherScore": 0.023923943607042048,
+      "imputeMedian": 0.1124069152
+    },
+    {
+      "name": "param_10__diffMaxRatio__w24",
+      "parameterKey": "param_10",
+      "descriptor": "diffMaxRatio",
+      "scale": 24,
+      "fisherScore": 0.0005729667830035103,
+      "imputeMedian": 0.002943094118
+    },
+    {
+      "name": "param_10__violationRatio__w64",
+      "parameterKey": "param_10",
+      "descriptor": "violationRatio",
+      "scale": 64,
+      "fisherScore": 0.0060772595155756766,
+      "imputeMedian": 0.0
+    },
+    {
+      "name": "param_11__rangeRatio__w8",
+      "parameterKey": "param_11",
+      "descriptor": "rangeRatio",
+      "scale": 8,
+      "fisherScore": 0.03502228263324938,
+      "imputeMedian": 0.00408715
+    },
+    {
+      "name": "param_11__madRatio__w24",
+      "parameterKey": "param_11",
+      "descriptor": "madRatio",
+      "scale": 24,
+      "fisherScore": 0.025329635755893247,
+      "imputeMedian": 0.002462209418
+    },
+    {
+      "name": "param_11__rangeRatio__w24",
+      "parameterKey": "param_11",
+      "descriptor": "rangeRatio",
+      "scale": 24,
+      "fisherScore": 0.001197755274673061,
+      "imputeMedian": 0.0101256875
+    },
+    {
+      "name": "param_11__stdRatio__w64",
+      "parameterKey": "param_11",
+      "descriptor": "stdRatio",
+      "scale": 64,
+      "fisherScore": 0.009410814268598544,
+      "imputeMedian": 0.004394496082
+    },
+    {
+      "name": "param_12__stdRatio__w8",
+      "parameterKey": "param_12",
+      "descriptor": "stdRatio",
+      "scale": 8,
+      "fisherScore": 0.034901475027903806,
+      "imputeMedian": 0.0009847133783
+    },
+    {
+      "name": "param_12__rangeRatio__w8",
+      "parameterKey": "param_12",
+      "descriptor": "rangeRatio",
+      "scale": 8,
+      "fisherScore": 0.036588907192829034,
+      "imputeMedian": 0.00296
+    },
+    {
+      "name": "param_12__diffMaxRatio__w8",
+      "parameterKey": "param_12",
+      "descriptor": "diffMaxRatio",
+      "scale": 8,
+      "fisherScore": 0.03034430055269799,
+      "imputeMedian": 0.001174
+    },
+    {
+      "name": "param_12__thresholdMargin__w8",
+      "parameterKey": "param_12",
+      "descriptor": "thresholdMargin",
+      "scale": 8,
+      "fisherScore": 0.03318829359792408,
+      "imputeMedian": 0.200119
+    },
+    {
+      "name": "param_12__thresholdMargin__w64",
+      "parameterKey": "param_12",
+      "descriptor": "thresholdMargin",
+      "scale": 64,
+      "fisherScore": 0.03160590198796773,
+      "imputeMedian": 0.2000118125
+    }
+  ],
+  "parameterEvidence": {
+    "param_1": {
+      "features": [
+        "param_1__stdRatio__w8",
+        "param_1__slopeRatio__w8",
+        "param_1__madRatio__w24"
+      ],
+      "scalerMean": [
+        0.0047201010138858595,
+        -1.0407633680869226e-05,
+        0.005100108774986169
+      ],
+      "scalerScale": [
+        0.020476169893529225,
+        0.0032768549276089884,
+        0.013716814279717392
+      ],
+      "coefficients": [
+        5.685373094096237,
+        0.13173368715101394,
+        4.278856664063906
+      ],
+      "intercept": -0.3362861857875358,
+      "normalReferenceProbability": 0.3738648977226817,
+      "testLocal": {
+        "gmean": 0.9018499505645788,
+        "accuracy": 0.9898107714701602,
+        "specificity": 1.0,
+        "recall": 0.8133333333333334,
+        "confusion": {
+          "tn": 2598,
+          "fp": 0,
+          "fn": 28,
+          "tp": 122
+        }
+      }
+    },
+    "param_2": {
+      "features": [
+        "param_2__rangeRatio__w8",
+        "param_2__thresholdMargin__w8",
+        "param_2__madRatio__w24",
+        "param_2__madRatio__w64",
+        "param_2__thresholdMargin__w64"
+      ],
+      "scalerMean": [
+        0.013345266606076654,
+        0.4880562178475742,
+        0.005287519150984714,
+        0.008505738811553594,
+        0.4902655825556188
+      ],
+      "scalerScale": [
+        0.05265506310147573,
+        0.04197768726366631,
+        0.013576473129723604,
+        0.014750988799060913,
+        0.03040380736780989
+      ],
+      "coefficients": [
+        4.771311588811276,
+        -3.957917646363702,
+        5.918555036719943,
+        4.202758378928252,
+        -2.0049834579498085
+      ],
+      "intercept": -3.037132912587867,
+      "normalReferenceProbability": 0.03770515310406538,
+      "testLocal": {
+        "gmean": 0.999231655668348,
+        "accuracy": 0.9985443959243085,
+        "specificity": 0.9984639016897081,
+        "recall": 1.0,
+        "confusion": {
+          "tn": 2600,
+          "fp": 4,
+          "fn": 0,
+          "tp": 144
+        }
+      }
+    },
+    "param_3": {
+      "features": [
+        "param_3__meanPosition__w8",
+        "param_3__stdRatio__w8",
+        "param_3__violationRatio__w24",
+        "param_3__madRatio__w64",
+        "param_3__violationRatio__w64"
+      ],
+      "scalerMean": [
+        0.11618042493589627,
+        0.005065021757326824,
+        0.004799818016383985,
+        0.008408787738836397,
+        0.0035970200181983623
+      ],
+      "scalerScale": [
+        0.046702642748935076,
+        0.022210481081025937,
+        0.05763556734305441,
+        0.015286425695570796,
+        0.04461828947631383
+      ],
+      "coefficients": [
+        5.02988300889952,
+        10.837706593022782,
+        -0.26529095913691386,
+        6.499916617755442,
+        -0.27327667725049193
+      ],
+      "intercept": -1.4444009524115684,
+      "normalReferenceProbability": 0.06511537596693794,
+      "testLocal": {
+        "gmean": 0.9966386459514938,
+        "accuracy": 0.9996360989810772,
+        "specificity": 1.0,
+        "recall": 0.9932885906040269,
+        "confusion": {
+          "tn": 2599,
+          "fp": 0,
+          "fn": 1,
+          "tp": 148
+        }
+      }
+    },
+    "param_4": {
+      "features": [
+        "param_4__rangeRatio__w8",
+        "param_4__meanPosition__w24",
+        "param_4__diffMaxRatio__w24",
+        "param_4__thresholdMargin__w64"
+      ],
+      "scalerMean": [
+        0.012712319794836998,
+        0.19863020148196542,
+        0.012116952902662056,
+        0.3024538989503276
+      ],
+      "scalerScale": [
+        0.05536880305782319,
+        0.042162394771364506,
+        0.06332564871940037,
+        0.03405960313792903
+      ],
+      "coefficients": [
+        13.610657812927712,
+        2.5648845370289544,
+        0.02766734621750728,
+        -2.2352443114160683
+      ],
+      "intercept": -1.8336601833993211,
+      "normalReferenceProbability": 0.06424648348002471,
+      "testLocal": {
+        "gmean": 0.9980787686384827,
+        "accuracy": 0.9963609898107715,
+        "specificity": 0.9961612284069098,
+        "recall": 1.0,
+        "confusion": {
+          "tn": 2595,
+          "fp": 10,
+          "fn": 0,
+          "tp": 143
+        }
+      }
+    },
+    "param_5": {
+      "features": [
+        "param_5__stdRatio__w8",
+        "param_5__rangeRatio__w8",
+        "param_5__diffMaxRatio__w8",
+        "param_5__diffMaxRatio__w24",
+        "param_5__stdRatio__w64"
+      ],
+      "scalerMean": [
+        0.00559946828886,
+        0.015629139217470424,
+        0.00949714176524113,
+        0.013695319745222931,
+        0.011645601876687353
+      ],
+      "scalerScale": [
+        0.02060286706613955,
+        0.05366337626667353,
+        0.05144749326173442,
+        0.06393494859117918,
+        0.02057049072042588
+      ],
+      "coefficients": [
+        1.263262317117973,
+        2.2278467315471713,
+        7.84898630894549,
+        -2.8126408828940725,
+        2.8137962933447276
+      ],
+      "intercept": -0.26913758700053475,
+      "normalReferenceProbability": 0.2821060483912734,
+      "testLocal": {
+        "gmean": 0.927913605545159,
+        "accuracy": 0.9905385735080058,
+        "specificity": 0.9976940814757879,
+        "recall": 0.863013698630137,
+        "confusion": {
+          "tn": 2596,
+          "fp": 6,
+          "fn": 20,
+          "tp": 126
+        }
+      }
+    },
+    "param_6": {
+      "features": [
+        "param_6__meanPosition__w8",
+        "param_6__stdRatio__w8",
+        "param_6__rangeRatio__w8",
+        "param_6__madRatio__w64"
+      ],
+      "scalerMean": [
+        0.2750778693746861,
+        0.004688487638566806,
+        0.012834843148873575,
+        0.007781340368962875
+      ],
+      "scalerScale": [
+        0.043802652006709165,
+        0.020853622097355258,
+        0.05327220256671326,
+        0.01537801494348906
+      ],
+      "coefficients": [
+        4.906401298466266,
+        5.60945465886676,
+        6.7932337151764415,
+        6.87665291452943
+      ],
+      "intercept": -1.6551006652533926,
+      "normalReferenceProbability": 0.04076539770098894,
+      "testLocal": {
+        "gmean": 1.0,
+        "accuracy": 1.0,
+        "specificity": 1.0,
+        "recall": 1.0,
+        "confusion": {
+          "tn": 2595,
+          "fp": 0,
+          "fn": 0,
+          "tp": 153
+        }
+      }
+    },
+    "param_7": {
+      "features": [
+        "param_7__stdRatio__w8",
+        "param_7__rangeRatio__w8",
+        "param_7__diffMaxRatio__w8",
+        "param_7__thresholdMargin__w24",
+        "param_7__madRatio__w64",
+        "param_7__slopeRatio__w64"
+      ],
+      "scalerMean": [
+        0.00474912338711485,
+        0.013092495450409464,
+        0.00890073930846224,
+        0.2533878677584173,
+        0.007825364144786169,
+        5.036266803699484e-05
+      ],
+      "scalerScale": [
+        0.02088703705858433,
+        0.05426222484743432,
+        0.051911522492914405,
+        0.023995775753304242,
+        0.015189903136114898,
+        0.0004976973367913474
+      ],
+      "coefficients": [
+        3.9901020354608883,
+        5.252072610293863,
+        5.787964312450684,
+        2.91904733855478,
+        5.269796250701989,
+        0.892378106840652
+      ],
+      "intercept": -1.993740740964888,
+      "normalReferenceProbability": 0.07437827539265239,
+      "testLocal": {
+        "gmean": 0.9982670632978211,
+        "accuracy": 0.9967248908296943,
+        "specificity": 0.9965371296652559,
+        "recall": 1.0,
+        "confusion": {
+          "tn": 2590,
+          "fp": 9,
+          "fn": 0,
+          "tp": 149
+        }
+      }
+    },
+    "param_8": {
+      "features": [
+        "param_8__rangeRatio__w8",
+        "param_8__diffMaxRatio__w8",
+        "param_8__violationRatio__w8",
+        "param_8__thresholdMargin__w64"
+      ],
+      "scalerMean": [
+        0.011769227090739144,
+        0.008402609173589535,
+        0.004344858962693357,
+        0.4840258624088705
+      ],
+      "scalerScale": [
+        0.054317837778927514,
+        0.052029064836556393,
+        0.055681551814072486,
+        0.03369321376364789
+      ],
+      "coefficients": [
+        9.129813182149388,
+        7.876498288218892,
+        -0.01579112796891763,
+        -4.575491267928342
+      ],
+      "intercept": -1.3343310402866302,
+      "normalReferenceProbability": 0.10147388961898497,
+      "testLocal": {
+        "gmean": 0.9986519011685039,
+        "accuracy": 0.99745269286754,
+        "specificity": 0.9973056197074672,
+        "recall": 1.0,
+        "confusion": {
+          "tn": 2591,
+          "fp": 7,
+          "fn": 0,
+          "tp": 150
+        }
+      }
+    },
+    "param_9": {
+      "features": [
+        "param_9__meanPosition__w8",
+        "param_9__stdRatio__w8",
+        "param_9__rangeRatio__w8",
+        "param_9__violationRatio__w64"
+      ],
+      "scalerMean": [
+        0.18910839074436758,
+        0.004516582750026097,
+        0.012495540806725934,
+        0.003670950864422202
+      ],
+      "scalerScale": [
+        0.04409393224406971,
+        0.020262287252992138,
+        0.053967071498268904,
+        0.04747618882121413
+      ],
+      "coefficients": [
+        4.977106868988733,
+        7.792395332364963,
+        9.52475131747025,
+        -0.15145931014116096
+      ],
+      "intercept": -1.508184776845452,
+      "normalReferenceProbability": 0.04843292050800825,
+      "testLocal": {
+        "gmean": 1.0,
+        "accuracy": 1.0,
+        "specificity": 1.0,
+        "recall": 1.0,
+        "confusion": {
+          "tn": 2602,
+          "fp": 0,
+          "fn": 0,
+          "tp": 146
+        }
+      }
+    },
+    "param_10": {
+      "features": [
+        "param_10__stdRatio__w8",
+        "param_10__rangeRatio__w8",
+        "param_10__diffMaxRatio__w8",
+        "param_10__meanPosition__w24",
+        "param_10__diffMaxRatio__w24",
+        "param_10__violationRatio__w64"
+      ],
+      "scalerMean": [
+        0.005408435409001129,
+        0.01488511839421789,
+        0.009711694089844897,
+        0.117433916640313,
+        0.0135285966150717,
+        0.0032984531392174703
+      ],
+      "scalerScale": [
+        0.021600024826116164,
+        0.055359067210924325,
+        0.05319193010509098,
+        0.040605219357174614,
+        0.06461574649736274,
+        0.04106603947765906
+      ],
+      "coefficients": [
+        4.764491845925466,
+        6.073025725258126,
+        7.579418402053738,
+        4.812273023160731,
+        -0.01363717503928322,
+        -2.12032782684732
+      ],
+      "intercept": -1.792585374681225,
+      "normalReferenceProbability": 0.05821763028439006,
+      "testLocal": {
+        "gmean": 0.999807599805819,
+        "accuracy": 0.9996360989810772,
+        "specificity": 0.9996152366294728,
+        "recall": 1.0,
+        "confusion": {
+          "tn": 2598,
+          "fp": 1,
+          "fn": 0,
+          "tp": 149
+        }
+      }
+    },
+    "param_11": {
+      "features": [
+        "param_11__rangeRatio__w8",
+        "param_11__madRatio__w24",
+        "param_11__rangeRatio__w24",
+        "param_11__stdRatio__w64"
+      ],
+      "scalerMean": [
+        0.012518389356251138,
+        0.004671378279777234,
+        0.022629056209080983,
+        0.008647194087036942
+      ],
+      "scalerScale": [
+        0.05408769553865753,
+        0.014078435749018943,
+        0.06767067086075744,
+        0.02174831947551683
+      ],
+      "coefficients": [
+        5.963768797475254,
+        3.3949015942864227,
+        -2.8768449023239184,
+        2.463546496128755
+      ],
+      "intercept": -0.7074642702337974,
+      "normalReferenceProbability": 0.25844832882649427,
+      "testLocal": {
+        "gmean": 0.9252717755491402,
+        "accuracy": 0.990174672489083,
+        "specificity": 0.9976923076923077,
+        "recall": 0.8581081081081081,
+        "confusion": {
+          "tn": 2594,
+          "fp": 6,
+          "fn": 21,
+          "tp": 127
+        }
+      }
+    },
+    "param_12": {
+      "features": [
+        "param_12__stdRatio__w8",
+        "param_12__rangeRatio__w8",
+        "param_12__diffMaxRatio__w8",
+        "param_12__thresholdMargin__w8",
+        "param_12__thresholdMargin__w64"
+      ],
+      "scalerMean": [
+        0.0043590376062208,
+        0.01162442220200182,
+        0.008515517015468608,
+        0.2040394380345769,
+        0.203724932546606
+      ],
+      "scalerScale": [
+        0.022066736428157364,
+        0.05533491292258482,
+        0.05306514653859137,
+        0.027406395408947588,
+        0.022967826176541434
+      ],
+      "coefficients": [
+        6.818904175586959,
+        8.367673260363407,
+        3.4108339033255364,
+        -0.5623279837312051,
+        3.560845848817688
+      ],
+      "intercept": -1.480283817254848,
+      "normalReferenceProbability": 0.07599256464073312,
+      "testLocal": {
+        "gmean": 0.9990379988153218,
+        "accuracy": 0.9981804949053857,
+        "specificity": 0.9980769230769231,
+        "recall": 1.0,
+        "confusion": {
+          "tn": 2595,
+          "fp": 5,
+          "fn": 0,
+          "tp": 148
+        }
+      }
+    }
+  },
+  "evidenceAggregation": {
+    "model": "parameter-local standardized logistic evidence + normal-reference ratio",
+    "normalReferenceQuantile": 0.99,
+    "globalRatioThreshold": 2.2800000000000002,
+    "riskSlope": 2.300342952473781,
+    "globalTopWeights": [
+      0.65,
+      0.35
+    ],
+    "validationMetrics": {
+      "normalQuantile": 0.99,
+      "ratioThreshold": 2.2800000000000002,
+      "gmean": 0.9615511098806717,
+      "accuracy": 0.960334788937409,
+      "specificity": 0.965625,
+      "recall": 0.9574944071588367,
+      "confusion": {
+        "tn": 927,
+        "fp": 33,
+        "fn": 76,
+        "tp": 1712
+      }
+    },
+    "modelRiskCap": 0.75
+  },
+  "metrics": {
+    "trainRows": 2747,
+    "valRows": 2748,
+    "testRows": 2748,
+    "selected5nnTestGmean": 0.9696433134958771,
+    "allFeatures5nnTestGmean": 0.9852432315687901,
+    "parameterEvidenceTest": {
+      "gmean": 0.9556029003438048,
+      "accuracy": 0.9570596797671034,
+      "specificity": 0.9506680369989723,
+      "recall": 0.9605633802816902,
+      "confusion": {
+        "tn": 925,
+        "fp": 48,
+        "fn": 70,
+        "tp": 1705
+      },
+      "localizationTop1Accuracy": 0.9723943661971831,
+      "byMode": {
+        "drift": {
+          "rows": 325,
+          "recall": 1.0
+        },
+        "intermittent": {
+          "rows": 342,
+          "recall": 1.0
+        },
+        "noise": {
+          "rows": 329,
+          "recall": 0.993920972644377
+        },
+        "oscillation": {
+          "rows": 331,
+          "recall": 1.0
+        },
+        "spike": {
+          "rows": 120,
+          "recall": 1.0
+        },
+        "step": {
+          "rows": 328,
+          "recall": 0.7926829268292683
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+# Python 虚拟环境与缓存
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+# 本机独立重跑输出，可删除后再生成
+results/reproduced/*
+!results/reproduced/README.md

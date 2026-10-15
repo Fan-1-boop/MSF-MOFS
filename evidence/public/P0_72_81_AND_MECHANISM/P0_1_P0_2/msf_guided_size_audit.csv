@@ -1,0 +1,5 @@
+dataset,guided_sizes,all_seeds_same
+madelon,10/25/50,True
+hill_valley,5/10/20,True
+musk1,8/10/17,True
+arcene,10/500/1000,True

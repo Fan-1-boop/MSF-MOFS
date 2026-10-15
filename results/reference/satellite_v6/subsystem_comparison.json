@@ -1,0 +1,235 @@
+{
+  "schemaVersion": "msf-v6-subsystem-comparison-1.0",
+  "subsystems": {
+    "power": {
+      "D": 267,
+      "guidedCardinalities": [
+        10,
+        13,
+        27
+      ],
+      "allFeaturesTestGmean": 0.817583025970629,
+      "msfVsRandomHV": {
+        "aMean": 0.8137093430788183,
+        "bMean": 0.7222019040807435,
+        "diff": 0.09150743899807466,
+        "wins": 10,
+        "ties": 0,
+        "losses": 0,
+        "p": 0.001953125
+      },
+      "msfVsSparseHV": {
+        "aMean": 0.8137093430788183,
+        "bMean": 0.801229851062829,
+        "diff": 0.01247949201598909,
+        "wins": 7,
+        "ties": 0,
+        "losses": 3,
+        "p": 0.02734375
+      },
+      "sparseVsRandomHV": {
+        "aMean": 0.801229851062829,
+        "bMean": 0.7222019040807435,
+        "diff": 0.07902794698208557,
+        "wins": 10,
+        "ties": 0,
+        "losses": 0,
+        "p": 0.001953125
+      },
+      "msfVsFisherSameKTestGmean": {
+        "aMean": 0.8434527393808808,
+        "bMean": 0.8117485497579346,
+        "diff": 0.0317041896229462,
+        "wins": 10,
+        "ties": 0,
+        "losses": 0,
+        "p": 0.001953125
+      },
+      "meanMsfK": 19.7
+    },
+    "thermal": {
+      "D": 135,
+      "guidedCardinalities": [
+        7,
+        10,
+        14
+      ],
+      "allFeaturesTestGmean": 0.9143961949493188,
+      "msfVsRandomHV": {
+        "aMean": 0.8747627219467337,
+        "bMean": 0.8239533862070255,
+        "diff": 0.050809335739708104,
+        "wins": 10,
+        "ties": 0,
+        "losses": 0,
+        "p": 0.001953125
+      },
+      "msfVsSparseHV": {
+        "aMean": 0.8747627219467337,
+        "bMean": 0.8732343741164346,
+        "diff": 0.0015283478302988817,
+        "wins": 5,
+        "ties": 0,
+        "losses": 5,
+        "p": 0.76953125
+      },
+      "sparseVsRandomHV": {
+        "aMean": 0.8732343741164346,
+        "bMean": 0.8239533862070255,
+        "diff": 0.04928098790940923,
+        "wins": 10,
+        "ties": 0,
+        "losses": 0,
+        "p": 0.001953125
+      },
+      "msfVsFisherSameKTestGmean": {
+        "aMean": 0.9184965282326655,
+        "bMean": 0.8990354098791309,
+        "diff": 0.01946111835353439,
+        "wins": 10,
+        "ties": 0,
+        "losses": 0,
+        "p": 0.001953125
+      },
+      "meanMsfK": 16.4
+    },
+    "attitude": {
+      "D": 135,
+      "guidedCardinalities": [
+        7,
+        10,
+        14
+      ],
+      "allFeaturesTestGmean": 0.991796415963959,
+      "msfVsRandomHV": {
+        "aMean": 0.9414327123353374,
+        "bMean": 0.8721747737274749,
+        "diff": 0.06925793860786253,
+        "wins": 10,
+        "ties": 0,
+        "losses": 0,
+        "p": 0.001953125
+      },
+      "msfVsSparseHV": {
+        "aMean": 0.9414327123353374,
+        "bMean": 0.9385115819497578,
+        "diff": 0.0029211303855795844,
+        "wins": 6,
+        "ties": 0,
+        "losses": 4,
+        "p": 0.375
+      },
+      "sparseVsRandomHV": {
+        "aMean": 0.9385115819497578,
+        "bMean": 0.8721747737274749,
+        "diff": 0.06633680822228295,
+        "wins": 10,
+        "ties": 0,
+        "losses": 0,
+        "p": 0.001953125
+      },
+      "msfVsFisherSameKTestGmean": {
+        "aMean": 0.9892683283572806,
+        "bMean": 0.8967587272506286,
+        "diff": 0.09250960110665221,
+        "wins": 10,
+        "ties": 0,
+        "losses": 0,
+        "p": 0.001953125
+      },
+      "meanMsfK": 16.0
+    },
+    "data": {
+      "D": 204,
+      "guidedCardinalities": [
+        10,
+        20,
+        41
+      ],
+      "allFeaturesTestGmean": 0.9198662110077999,
+      "msfVsRandomHV": {
+        "aMean": 0.9514935737893419,
+        "bMean": 0.8323476619354546,
+        "diff": 0.11914591185388759,
+        "wins": 10,
+        "ties": 0,
+        "losses": 0,
+        "p": 0.001953125
+      },
+      "msfVsSparseHV": {
+        "aMean": 0.9514935737893419,
+        "bMean": 0.8932093843727452,
+        "diff": 0.05828418941659676,
+        "wins": 10,
+        "ties": 0,
+        "losses": 0,
+        "p": 0.001953125
+      },
+      "sparseVsRandomHV": {
+        "aMean": 0.8932093843727452,
+        "bMean": 0.8323476619354546,
+        "diff": 0.06086172243729082,
+        "wins": 10,
+        "ties": 0,
+        "losses": 0,
+        "p": 0.001953125
+      },
+      "msfVsFisherSameKTestGmean": {
+        "aMean": 0.9987138130256159,
+        "bMean": 0.9405399431259603,
+        "diff": 0.058173869899655804,
+        "wins": 10,
+        "ties": 0,
+        "losses": 0,
+        "p": 0.001953125
+      },
+      "meanMsfK": 12.5
+    },
+    "communication": {
+      "D": 69,
+      "guidedCardinalities": [
+        3,
+        7,
+        10
+      ],
+      "allFeaturesTestGmean": 0.7057061060947535,
+      "msfVsRandomHV": {
+        "aMean": 0.700729070185735,
+        "bMean": 0.6846819397664641,
+        "diff": 0.016047130419271072,
+        "wins": 6,
+        "ties": 0,
+        "losses": 4,
+        "p": 0.16015625
+      },
+      "msfVsSparseHV": {
+        "aMean": 0.700729070185735,
+        "bMean": 0.6995647641191646,
+        "diff": 0.0011643060665705307,
+        "wins": 5,
+        "ties": 0,
+        "losses": 5,
+        "p": 0.6953125
+      },
+      "sparseVsRandomHV": {
+        "aMean": 0.6995647641191646,
+        "bMean": 0.6846819397664641,
+        "diff": 0.014882824352700542,
+        "wins": 8,
+        "ties": 0,
+        "losses": 2,
+        "p": 0.083984375
+      },
+      "msfVsFisherSameKTestGmean": {
+        "aMean": 0.7202793206715905,
+        "bMean": 0.5958718958230309,
+        "diff": 0.12440742484855956,
+        "wins": 10,
+        "ties": 0,
+        "losses": 0,
+        "p": 0.001953125
+      },
+      "meanMsfK": 6.0
+    }
+  }
+}

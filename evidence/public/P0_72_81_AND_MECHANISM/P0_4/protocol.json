@@ -1,0 +1,32 @@
+{
+  "completed_dataset": [
+    "madelon"
+  ],
+  "seeds": [
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81
+  ],
+  "population": 50,
+  "guided_chromosomes": 3,
+  "guided_fraction": 0.06,
+  "guided_sizes_madelon": [
+    10,
+    25,
+    50
+  ],
+  "standard_generations_reported": [
+    0,
+    1
+  ],
+  "budget_rationale": "With N=50, standard NSGA-II requires ~50 unique wrapper evaluations at initialization and ~100 after one complete generation. The original N=12, G=6 confirmation used roughly 70-83 evaluations, so the original budget lies between these standard-generation brackets. A partial generation was deliberately not used because it would alter standard NSGA-II.",
+  "arcene_status": "Not included in the formal P0-4 table: pop=50 ARCENE held-out Pareto-set evaluation at D=10000 exceeded the single-job execution window before a complete 10-seed paired table could be produced; no partial ARCENE rows are reported.",
+  "no_algorithm_tuning": true
+}

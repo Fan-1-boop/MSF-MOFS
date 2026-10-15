@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "msf-telemetry-dataset-v6-2.0",
+  "generatedAt": "2026-10-13T11:35:09.241Z",
+  "file": "v6_development_reconstructed.csv",
+  "scenarios": 354,
+  "rows": 7080,
+  "featureCount": 582,
+  "featureBreakdown": {
+    "univariate": 288,
+    "crossChannel": 294
+  },
+  "relationPairs": 14,
+  "coupledScenarioPairs": [
+    "p01_p02",
+    "p03_p04",
+    "p06_p12",
+    "p10_p11",
+    "p01_p08"
+  ],
+  "coupledFaultModes": [
+    "invert",
+    "lag",
+    "decouple"
+  ],
+  "scales": [
+    8,
+    24,
+    64
+  ],
+  "labelCounts": {
+    "0": 2277,
+    "1": 3891,
+    "-1": 912
+  },
+  "scenarioScopeCounts": {
+    "normal": 48,
+    "univariate": 216,
+    "coupled": 90
+  },
+  "labelDefinition": {
+    "normal": "0 = no continuous/coupled fault in 64-point window and no transient univariate event in last 8 points",
+    "abnormal": "1 = continuous/coupled fault active in >=50% of the 64-point window OR transient event in last 8 points",
+    "transition": "-1 = continuous/coupled fault active in >0 and <50% of the 64-point window; excluded from MSF training"
+  },
+  "splitRule": "scenario-level split; no window from one scenario crosses train/val/test",
+  "benchmarkBoundary": "synthetic coupling benchmark; relation groups are controlled engineering-inspired abstractions, not flight-validated equations"
+}

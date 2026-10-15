@@ -1,0 +1,13 @@
+dataset,method,rank
+arcene,MSF-MOFS,1.0
+arcene,HFMOEA-CP,2.0
+arcene,MBLPE-CP,3.0
+hill_valley,MSF-MOFS,1.0
+hill_valley,HFMOEA-CP,3.0
+hill_valley,MBLPE-CP,2.0
+madelon,MSF-MOFS,1.0
+madelon,HFMOEA-CP,2.0
+madelon,MBLPE-CP,3.0
+musk1,MSF-MOFS,1.0
+musk1,HFMOEA-CP,2.0
+musk1,MBLPE-CP,3.0

@@ -1,0 +1,3 @@
+dataset,candidate,baseline,stage,n,mean_difference,median_difference,wins,ties,losses,rank_biserial,wilcoxon_stat,p_raw
+madelon,MSF-MOFS,Random,gen0,10,0.42744023940625375,0.4292088238795103,10,0,0,1.0,0.0,0.001953125
+madelon,MSF-MOFS,Random,gen1,10,0.4164810184178648,0.41561842426013756,10,0,0,1.0,0.0,0.001953125

@@ -1,0 +1,482 @@
+{
+  "schemaVersion": "msf-v6-trajectory-1.0",
+  "generatedAt": "2026-08-26T03:52:17.772Z",
+  "scenarios": 12,
+  "warnings": 12,
+  "limitCrossings": 12,
+  "earlyWarnings": 12,
+  "meanWarningLatency": 53.083333333333336,
+  "meanLeadToLimit": 80.25,
+  "stageMean": {
+    "normal": {
+      "meanOverall": 100,
+      "meanSubsystem": 100,
+      "meanEvidence": 0.0011423385416666667
+    },
+    "transition": {
+      "meanOverall": 99.82894736842104,
+      "meanSubsystem": 99.72587719298245,
+      "meanEvidence": 0.010901581140350877
+    },
+    "degraded": {
+      "meanOverall": 72.17893031326115,
+      "meanSubsystem": 27.042446333545612,
+      "meanEvidence": 0.6633641311925437
+    },
+    "fault": {
+      "meanOverall": 60.580062271082575,
+      "meanSubsystem": 1.0478142076502732,
+      "meanEvidence": 1
+    }
+  },
+  "runs": [
+    {
+      "parameter": "param_1",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "firstWarning": 122,
+      "firstLimit": 219,
+      "warningLatency": 42,
+      "leadToLimit": 97,
+      "early": true,
+      "stages": {
+        "normal": {
+          "points": 16,
+          "meanOverall": 100,
+          "meanSubsystem": 100,
+          "meanEvidence": 0.0013889999999999998
+        },
+        "transition": {
+          "points": 38,
+          "meanOverall": 100,
+          "meanSubsystem": 100,
+          "meanEvidence": 0.0003988684210526316
+        },
+        "degraded": {
+          "points": 101,
+          "meanOverall": 63.67326732673267,
+          "meanSubsystem": 12.277227722772277,
+          "meanEvidence": 0.7756204851485139
+        },
+        "fault": {
+          "points": 101,
+          "meanOverall": 58.386138613861384,
+          "meanSubsystem": 1,
+          "meanEvidence": 1
+        }
+      }
+    },
+    {
+      "parameter": "param_2",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "firstWarning": 143,
+      "firstLimit": 222,
+      "warningLatency": 63,
+      "leadToLimit": 79,
+      "early": true,
+      "stages": {
+        "normal": {
+          "points": 16,
+          "meanOverall": 100,
+          "meanSubsystem": 100,
+          "meanEvidence": 0.0010153749999999998
+        },
+        "transition": {
+          "points": 38,
+          "meanOverall": 100,
+          "meanSubsystem": 100,
+          "meanEvidence": 0.0005124736842105265
+        },
+        "degraded": {
+          "points": 104,
+          "meanOverall": 71.75961538461539,
+          "meanSubsystem": 31.73076923076923,
+          "meanEvidence": 0.6093411826923079
+        },
+        "fault": {
+          "points": 98,
+          "meanOverall": 57.55102040816327,
+          "meanSubsystem": 1,
+          "meanEvidence": 1
+        }
+      }
+    },
+    {
+      "parameter": "param_3",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "firstWarning": 139,
+      "firstLimit": 206,
+      "warningLatency": 59,
+      "leadToLimit": 67,
+      "early": true,
+      "stages": {
+        "normal": {
+          "points": 16,
+          "meanOverall": 100,
+          "meanSubsystem": 100,
+          "meanEvidence": 0.0061108125
+        },
+        "transition": {
+          "points": 38,
+          "meanOverall": 100,
+          "meanSubsystem": 100,
+          "meanEvidence": 0.0015591842105263157
+        },
+        "degraded": {
+          "points": 88,
+          "meanOverall": 82.5909090909091,
+          "meanSubsystem": 32.57954545454545,
+          "meanEvidence": 0.6209075340909093
+        },
+        "fault": {
+          "points": 114,
+          "meanOverall": 74,
+          "meanSubsystem": 1,
+          "meanEvidence": 1
+        }
+      }
+    },
+    {
+      "parameter": "param_4",
+      "targets": [
+        "thermal"
+      ],
+      "firstWarning": 119,
+      "firstLimit": 190,
+      "warningLatency": 39,
+      "leadToLimit": 71,
+      "early": true,
+      "stages": {
+        "normal": {
+          "points": 16,
+          "meanOverall": 100,
+          "meanSubsystem": 100,
+          "meanEvidence": 0.0011849999999999999
+        },
+        "transition": {
+          "points": 38,
+          "meanOverall": 99.97368421052632,
+          "meanSubsystem": 99.92105263157895,
+          "meanEvidence": 0.015722289473684214
+        },
+        "degraded": {
+          "points": 72,
+          "meanOverall": 78.34722222222223,
+          "meanSubsystem": 15.76388888888889,
+          "meanEvidence": 0.7609718611111114
+        },
+        "fault": {
+          "points": 130,
+          "meanOverall": 72.7,
+          "meanSubsystem": 1,
+          "meanEvidence": 1
+        }
+      }
+    },
+    {
+      "parameter": "param_5",
+      "targets": [
+        "propulsion"
+      ],
+      "firstWarning": 126,
+      "firstLimit": 219,
+      "warningLatency": 46,
+      "leadToLimit": 93,
+      "early": true,
+      "stages": {
+        "normal": {
+          "points": 16,
+          "meanOverall": 100,
+          "meanSubsystem": 100,
+          "meanEvidence": 0.00034949999999999993
+        },
+        "transition": {
+          "points": 38,
+          "meanOverall": 100,
+          "meanSubsystem": 100,
+          "meanEvidence": 0.006529999999999999
+        },
+        "degraded": {
+          "points": 101,
+          "meanOverall": 70.36633663366337,
+          "meanSubsystem": 15.792079207920793,
+          "meanEvidence": 0.7524828712871279
+        },
+        "fault": {
+          "points": 101,
+          "meanOverall": 65,
+          "meanSubsystem": 1,
+          "meanEvidence": 1
+        }
+      }
+    },
+    {
+      "parameter": "param_6",
+      "targets": [
+        "attitude"
+      ],
+      "firstWarning": 139,
+      "firstLimit": 178,
+      "warningLatency": 59,
+      "leadToLimit": 39,
+      "early": true,
+      "stages": {
+        "normal": {
+          "points": 16,
+          "meanOverall": 100,
+          "meanSubsystem": 100,
+          "meanEvidence": 0.00024306250000000003
+        },
+        "transition": {
+          "points": 38,
+          "meanOverall": 100,
+          "meanSubsystem": 100,
+          "meanEvidence": 0.000006210526315789473
+        },
+        "degraded": {
+          "points": 60,
+          "meanOverall": 77.21666666666667,
+          "meanSubsystem": 44.38333333333333,
+          "meanEvidence": 0.5523630833333332
+        },
+        "fault": {
+          "points": 142,
+          "meanOverall": 59,
+          "meanSubsystem": 1,
+          "meanEvidence": 1
+        }
+      }
+    },
+    {
+      "parameter": "param_7",
+      "targets": [
+        "attitude"
+      ],
+      "firstWarning": 139,
+      "firstLimit": 252,
+      "warningLatency": 59,
+      "leadToLimit": 113,
+      "early": true,
+      "stages": {
+        "normal": {
+          "points": 16,
+          "meanOverall": 100,
+          "meanSubsystem": 100,
+          "meanEvidence": 0.00024387500000000006
+        },
+        "transition": {
+          "points": 38,
+          "meanOverall": 100,
+          "meanSubsystem": 100,
+          "meanEvidence": 0.0013021842105263158
+        },
+        "degraded": {
+          "points": 134,
+          "meanOverall": 67.75373134328358,
+          "meanSubsystem": 22.21641791044776,
+          "meanEvidence": 0.6867681194029834
+        },
+        "fault": {
+          "points": 68,
+          "meanOverall": 59,
+          "meanSubsystem": 1,
+          "meanEvidence": 1
+        }
+      }
+    },
+    {
+      "parameter": "param_8",
+      "targets": [
+        "power"
+      ],
+      "firstWarning": 153,
+      "firstLimit": 220,
+      "warningLatency": 73,
+      "leadToLimit": 67,
+      "early": true,
+      "stages": {
+        "normal": {
+          "points": 16,
+          "meanOverall": 100,
+          "meanSubsystem": 100,
+          "meanEvidence": 0.0003040625
+        },
+        "transition": {
+          "points": 38,
+          "meanOverall": 100,
+          "meanSubsystem": 100,
+          "meanEvidence": 0.000052342105263157906
+        },
+        "degraded": {
+          "points": 102,
+          "meanOverall": 75.79411764705883,
+          "meanSubsystem": 41.42156862745098,
+          "meanEvidence": 0.5295145098039217
+        },
+        "fault": {
+          "points": 100,
+          "meanOverall": 59,
+          "meanSubsystem": 1,
+          "meanEvidence": 1
+        }
+      }
+    },
+    {
+      "parameter": "param_9",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "firstWarning": 134,
+      "firstLimit": 191,
+      "warningLatency": 54,
+      "leadToLimit": 57,
+      "early": true,
+      "stages": {
+        "normal": {
+          "points": 16,
+          "meanOverall": 100,
+          "meanSubsystem": 100,
+          "meanEvidence": 0.0007561250000000002
+        },
+        "transition": {
+          "points": 38,
+          "meanOverall": 100,
+          "meanSubsystem": 100,
+          "meanEvidence": 0.017971684210526313
+        },
+        "degraded": {
+          "points": 73,
+          "meanOverall": 70.42465753424658,
+          "meanSubsystem": 30.863013698630137,
+          "meanEvidence": 0.6305972602739727
+        },
+        "fault": {
+          "points": 129,
+          "meanOverall": 47.48062015503876,
+          "meanSubsystem": 1,
+          "meanEvidence": 1
+        }
+      }
+    },
+    {
+      "parameter": "param_10",
+      "targets": [
+        "data"
+      ],
+      "firstWarning": 130,
+      "firstLimit": 206,
+      "warningLatency": 50,
+      "leadToLimit": 76,
+      "early": true,
+      "stages": {
+        "normal": {
+          "points": 16,
+          "meanOverall": 100,
+          "meanSubsystem": 100,
+          "meanEvidence": 0.00025687500000000005
+        },
+        "transition": {
+          "points": 38,
+          "meanOverall": 99.1842105263158,
+          "meanSubsystem": 100,
+          "meanEvidence": 0.00009842105263157894
+        },
+        "degraded": {
+          "points": 88,
+          "meanOverall": 60.73863636363637,
+          "meanSubsystem": 22.09090909090909,
+          "meanEvidence": 0.6962364772727274
+        },
+        "fault": {
+          "points": 114,
+          "meanOverall": 46.10526315789474,
+          "meanSubsystem": 1,
+          "meanEvidence": 1
+        }
+      }
+    },
+    {
+      "parameter": "param_11",
+      "targets": [
+        "communication"
+      ],
+      "firstWarning": 138,
+      "firstLimit": 198,
+      "warningLatency": 58,
+      "leadToLimit": 60,
+      "early": true,
+      "stages": {
+        "normal": {
+          "points": 16,
+          "meanOverall": 100,
+          "meanSubsystem": 100,
+          "meanEvidence": 0.0016125625000000003
+        },
+        "transition": {
+          "points": 38,
+          "meanOverall": 99.89473684210526,
+          "meanSubsystem": 99.8157894736842,
+          "meanEvidence": 0.03583655263157894
+        },
+        "degraded": {
+          "points": 80,
+          "meanOverall": 81.2125,
+          "meanSubsystem": 37.575,
+          "meanEvidence": 0.606852275
+        },
+        "fault": {
+          "points": 122,
+          "meanOverall": 70,
+          "meanSubsystem": 1,
+          "meanEvidence": 1
+        }
+      }
+    },
+    {
+      "parameter": "param_12",
+      "targets": [
+        "attitude"
+      ],
+      "firstWarning": 115,
+      "firstLimit": 259,
+      "warningLatency": 35,
+      "leadToLimit": 144,
+      "early": true,
+      "stages": {
+        "normal": {
+          "points": 16,
+          "meanOverall": 100,
+          "meanSubsystem": 100,
+          "meanEvidence": 0.00024181250000000003
+        },
+        "transition": {
+          "points": 38,
+          "meanOverall": 98.89473684210526,
+          "meanSubsystem": 96.97368421052632,
+          "meanEvidence": 0.05082876315789474
+        },
+        "degraded": {
+          "points": 141,
+          "meanOverall": 66.26950354609929,
+          "meanSubsystem": 17.81560283687943,
+          "meanEvidence": 0.7387139148936149
+        },
+        "fault": {
+          "points": 61,
+          "meanOverall": 58.73770491803279,
+          "meanSubsystem": 1.5737704918032787,
+          "meanEvidence": 1
+        }
+      }
+    }
+  ]
+}

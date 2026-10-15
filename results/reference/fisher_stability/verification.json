@@ -1,0 +1,10 @@
+{
+  "status": "MATCH",
+  "evidence_type": "independent_from_raw_datasets",
+  "n_rows": 450,
+  "n_datasets": 2,
+  "n_outer_seeds_per_dataset": 10,
+  "max_abs_jaccard_or_spearman_error": 5.551115123125783e-17,
+  "keys_equal": true,
+  "source_hash_sha256": "5765e31acc2bd207a50102c086db7c12fb1e18c9d62fa62b396b9ff3055e7c01"
+}

@@ -1,0 +1,10 @@
+Recomputed from the packaged raw per-seed CSVs using:
+  06_SATELLITE_VALIDATION_SOURCE/analyze_msf_vs_random.py
+
+Expected primary results:
+Power    MSF 0.80536790597 vs Random 0.72215328826, delta +0.08321461770, 10/0/0, Holm p=0.0078125
+Thermal  MSF 0.88070865995 vs Random 0.83433614260, delta +0.04637251735, 10/0/0, Holm p=0.0078125
+Attitude MSF 0.91947303915 vs Random 0.88143548418, delta +0.03803755496, 10/0/0, Holm p=0.0078125
+Data     MSF 0.95111007868 vs Random 0.82450163967, delta +0.12660843901, 10/0/0, Holm p=0.0078125
+
+These reproduce the paper's rounded Table 4 values.

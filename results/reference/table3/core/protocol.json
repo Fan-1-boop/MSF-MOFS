@@ -1,0 +1,29 @@
+{
+  "purpose": "cross-MOEA plugin validation of the same MSF initializer",
+  "development_seeds": [
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101
+  ],
+  "datasets": [
+    "musk1"
+  ],
+  "population": 12,
+  "generations": 6,
+  "carrier_algorithms": [
+    "standard project NSGA-II",
+    "standard SPEA2 environmental archive selection"
+  ],
+  "shared_variation": "uniform binary crossover p=0.9; independent bit-flip p=1/D",
+  "matched_initialization": "same deterministic random base population; MSF replaces exactly first 3 chromosomes",
+  "nominal_candidate_budget": "N initial + G*N offspring = 84 candidates before cache duplicates",
+  "wrapper": "same 5-NN / 3-fold / mean G-mean across IR={1,3,5}; feature-ratio second objective",
+  "primary_test": "paired held-out Pareto-set HV, MSF vs Random within each carrier/dataset",
+  "selection_rule": "no v2 method choice is made from this plugin experiment alone"
+}

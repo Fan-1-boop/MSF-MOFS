@@ -1,0 +1,1999 @@
+{
+  "schemaVersion": "msf-v6-final-health-evaluation-1.0",
+  "generatedAt": "2026-08-26T03:51:00.967Z",
+  "criterion": "target subsystem evidence >=0.5 OR target subsystem health <85 OR overall health <85",
+  "normal": {
+    "scenarios": 20,
+    "meanHealth": 99.9875,
+    "minHealth": 97,
+    "falseAlarmScenarios": 0
+  },
+  "univariate": {
+    "scenarios": 72,
+    "detected": 71,
+    "detectionRate": 0.9861111111111112,
+    "meanLatency": 8.985915492957746
+  },
+  "coupled": {
+    "scenarios": 30,
+    "detected": 26,
+    "detectionRate": 0.8666666666666667,
+    "meanLatency": 44.19230769230769
+  },
+  "bySubsystem": {
+    "power": {
+      "scenarios": 42,
+      "detected": 38,
+      "detectionRate": 0.9047619047619048,
+      "meanLatency": 23.07894736842105
+    },
+    "thermal": {
+      "scenarios": 36,
+      "detected": 35,
+      "detectionRate": 0.9722222222222222,
+      "meanLatency": 15.485714285714286
+    },
+    "propulsion": {
+      "scenarios": 6,
+      "detected": 6,
+      "detectionRate": 1,
+      "meanLatency": 5.833333333333333
+    },
+    "attitude": {
+      "scenarios": 24,
+      "detected": 24,
+      "detectionRate": 1,
+      "meanLatency": 9.625
+    },
+    "data": {
+      "scenarios": 6,
+      "detected": 6,
+      "detectionRate": 1,
+      "meanLatency": 4
+    },
+    "communication": {
+      "scenarios": 12,
+      "detected": 12,
+      "detectionRate": 1,
+      "meanLatency": 31.25
+    }
+  },
+  "scenarios": [
+    {
+      "id": "v6-normal-0",
+      "type": "normal",
+      "mode": "normal",
+      "target": "none",
+      "targets": [],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 100,
+      "minOverall": 100,
+      "maxTargetEvidence": 0,
+      "minTargetHealth": 100,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-normal-1",
+      "type": "normal",
+      "mode": "normal",
+      "target": "none",
+      "targets": [],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 100,
+      "minOverall": 100,
+      "maxTargetEvidence": 0,
+      "minTargetHealth": 100,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-normal-2",
+      "type": "normal",
+      "mode": "normal",
+      "target": "none",
+      "targets": [],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 100,
+      "minOverall": 100,
+      "maxTargetEvidence": 0,
+      "minTargetHealth": 100,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-normal-3",
+      "type": "normal",
+      "mode": "normal",
+      "target": "none",
+      "targets": [],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 100,
+      "minOverall": 100,
+      "maxTargetEvidence": 0,
+      "minTargetHealth": 100,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-normal-4",
+      "type": "normal",
+      "mode": "normal",
+      "target": "none",
+      "targets": [],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 100,
+      "minOverall": 100,
+      "maxTargetEvidence": 0,
+      "minTargetHealth": 100,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-normal-5",
+      "type": "normal",
+      "mode": "normal",
+      "target": "none",
+      "targets": [],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 100,
+      "minOverall": 100,
+      "maxTargetEvidence": 0,
+      "minTargetHealth": 100,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-normal-6",
+      "type": "normal",
+      "mode": "normal",
+      "target": "none",
+      "targets": [],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 100,
+      "minOverall": 100,
+      "maxTargetEvidence": 0,
+      "minTargetHealth": 100,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-normal-7",
+      "type": "normal",
+      "mode": "normal",
+      "target": "none",
+      "targets": [],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 99.98611111111111,
+      "minOverall": 99,
+      "maxTargetEvidence": 0,
+      "minTargetHealth": 100,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-normal-8",
+      "type": "normal",
+      "mode": "normal",
+      "target": "none",
+      "targets": [],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 100,
+      "minOverall": 100,
+      "maxTargetEvidence": 0,
+      "minTargetHealth": 100,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-normal-9",
+      "type": "normal",
+      "mode": "normal",
+      "target": "none",
+      "targets": [],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 100,
+      "minOverall": 100,
+      "maxTargetEvidence": 0,
+      "minTargetHealth": 100,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-normal-10",
+      "type": "normal",
+      "mode": "normal",
+      "target": "none",
+      "targets": [],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 100,
+      "minOverall": 100,
+      "maxTargetEvidence": 0,
+      "minTargetHealth": 100,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-normal-11",
+      "type": "normal",
+      "mode": "normal",
+      "target": "none",
+      "targets": [],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 99.88888888888889,
+      "minOverall": 97,
+      "maxTargetEvidence": 0,
+      "minTargetHealth": 100,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-normal-12",
+      "type": "normal",
+      "mode": "normal",
+      "target": "none",
+      "targets": [],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 100,
+      "minOverall": 100,
+      "maxTargetEvidence": 0,
+      "minTargetHealth": 100,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-normal-13",
+      "type": "normal",
+      "mode": "normal",
+      "target": "none",
+      "targets": [],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 100,
+      "minOverall": 100,
+      "maxTargetEvidence": 0,
+      "minTargetHealth": 100,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-normal-14",
+      "type": "normal",
+      "mode": "normal",
+      "target": "none",
+      "targets": [],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 100,
+      "minOverall": 100,
+      "maxTargetEvidence": 0,
+      "minTargetHealth": 100,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-normal-15",
+      "type": "normal",
+      "mode": "normal",
+      "target": "none",
+      "targets": [],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 100,
+      "minOverall": 100,
+      "maxTargetEvidence": 0,
+      "minTargetHealth": 100,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-normal-16",
+      "type": "normal",
+      "mode": "normal",
+      "target": "none",
+      "targets": [],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 100,
+      "minOverall": 100,
+      "maxTargetEvidence": 0,
+      "minTargetHealth": 100,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-normal-17",
+      "type": "normal",
+      "mode": "normal",
+      "target": "none",
+      "targets": [],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 100,
+      "minOverall": 100,
+      "maxTargetEvidence": 0,
+      "minTargetHealth": 100,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-normal-18",
+      "type": "normal",
+      "mode": "normal",
+      "target": "none",
+      "targets": [],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 99.875,
+      "minOverall": 97,
+      "maxTargetEvidence": 0,
+      "minTargetHealth": 100,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-normal-19",
+      "type": "normal",
+      "mode": "normal",
+      "target": "none",
+      "targets": [],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 100,
+      "minOverall": 100,
+      "maxTargetEvidence": 0,
+      "minTargetHealth": 100,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-uni-param_1-drift",
+      "type": "univariate",
+      "mode": "drift",
+      "target": "param_1",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 27,
+      "meanOverall": 69.375,
+      "minOverall": 59,
+      "maxTargetEvidence": 1,
+      "minTargetHealth": 1,
+      "alarmFraction": 0.8125
+    },
+    {
+      "id": "v6-uni-param_1-spike",
+      "type": "univariate",
+      "mode": "spike",
+      "target": "param_1",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 2,
+      "meanOverall": 93.46527777777777,
+      "minOverall": 81,
+      "maxTargetEvidence": 0.708426,
+      "minTargetHealth": 48,
+      "alarmFraction": 0.4166666666666667
+    },
+    {
+      "id": "v6-uni-param_1-step",
+      "type": "univariate",
+      "mode": "step",
+      "target": "param_1",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 2,
+      "meanOverall": 62.020833333333336,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9861111111111112
+    },
+    {
+      "id": "v6-uni-param_1-noise",
+      "type": "univariate",
+      "mode": "noise",
+      "target": "param_1",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 107,
+      "meanOverall": 99.48611111111111,
+      "minOverall": 90,
+      "maxTargetEvidence": 0.32374,
+      "minTargetHealth": 72,
+      "alarmFraction": 0.034722222222222224
+    },
+    {
+      "id": "v6-uni-param_1-oscillation",
+      "type": "univariate",
+      "mode": "oscillation",
+      "target": "param_1",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 4,
+      "meanOverall": 62.65277777777778,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9722222222222222
+    },
+    {
+      "id": "v6-uni-param_1-intermittent",
+      "type": "univariate",
+      "mode": "intermittent",
+      "target": "param_1",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 4,
+      "meanOverall": 68.28472222222223,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.819999,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9722222222222222
+    },
+    {
+      "id": "v6-uni-param_2-drift",
+      "type": "univariate",
+      "mode": "drift",
+      "target": "param_2",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 17,
+      "meanOverall": 66.9375,
+      "minOverall": 55,
+      "maxTargetEvidence": 1,
+      "minTargetHealth": 1,
+      "alarmFraction": 0.8819444444444444
+    },
+    {
+      "id": "v6-uni-param_2-spike",
+      "type": "univariate",
+      "mode": "spike",
+      "target": "param_2",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 2,
+      "meanOverall": 89.30555555555556,
+      "minOverall": 69,
+      "maxTargetEvidence": 0.708508,
+      "minTargetHealth": 48,
+      "alarmFraction": 0.4236111111111111
+    },
+    {
+      "id": "v6-uni-param_2-step",
+      "type": "univariate",
+      "mode": "step",
+      "target": "param_2",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 2,
+      "meanOverall": 61.36805555555556,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9861111111111112
+    },
+    {
+      "id": "v6-uni-param_2-noise",
+      "type": "univariate",
+      "mode": "noise",
+      "target": "param_2",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 22,
+      "meanOverall": 80.50694444444444,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.819764,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.7222222222222222
+    },
+    {
+      "id": "v6-uni-param_2-oscillation",
+      "type": "univariate",
+      "mode": "oscillation",
+      "target": "param_2",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 3,
+      "meanOverall": 49.673611111111114,
+      "minOverall": 47,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9791666666666666
+    },
+    {
+      "id": "v6-uni-param_2-intermittent",
+      "type": "univariate",
+      "mode": "intermittent",
+      "target": "param_2",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 9,
+      "meanOverall": 57.236111111111114,
+      "minOverall": 47,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9305555555555556
+    },
+    {
+      "id": "v6-uni-param_3-drift",
+      "type": "univariate",
+      "mode": "drift",
+      "target": "param_3",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 20,
+      "meanOverall": 81.45833333333333,
+      "minOverall": 74,
+      "maxTargetEvidence": 1,
+      "minTargetHealth": 1,
+      "alarmFraction": 0.8611111111111112
+    },
+    {
+      "id": "v6-uni-param_3-spike",
+      "type": "univariate",
+      "mode": "spike",
+      "target": "param_3",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 0,
+      "meanOverall": 91.5625,
+      "minOverall": 74,
+      "maxTargetEvidence": 1,
+      "minTargetHealth": 2,
+      "alarmFraction": 0.5
+    },
+    {
+      "id": "v6-uni-param_3-step",
+      "type": "univariate",
+      "mode": "step",
+      "target": "param_3",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 2,
+      "meanOverall": 87.01388888888889,
+      "minOverall": 63,
+      "maxTargetEvidence": 0.819977,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.7152777777777778
+    },
+    {
+      "id": "v6-uni-param_3-noise",
+      "type": "univariate",
+      "mode": "noise",
+      "target": "param_3",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 9,
+      "meanOverall": 95.61111111111111,
+      "minOverall": 80,
+      "maxTargetEvidence": 0.772981,
+      "minTargetHealth": 21,
+      "alarmFraction": 0.4166666666666667
+    },
+    {
+      "id": "v6-uni-param_3-oscillation",
+      "type": "univariate",
+      "mode": "oscillation",
+      "target": "param_3",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 3,
+      "meanOverall": 76.40277777777777,
+      "minOverall": 75,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9791666666666666
+    },
+    {
+      "id": "v6-uni-param_3-intermittent",
+      "type": "univariate",
+      "mode": "intermittent",
+      "target": "param_3",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 0,
+      "meanOverall": 78.27777777777777,
+      "minOverall": 74,
+      "maxTargetEvidence": 1,
+      "minTargetHealth": 1,
+      "alarmFraction": 0.9861111111111112
+    },
+    {
+      "id": "v6-uni-param_4-drift",
+      "type": "univariate",
+      "mode": "drift",
+      "target": "param_4",
+      "targets": [
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 19,
+      "meanOverall": 78.71527777777777,
+      "minOverall": 74,
+      "maxTargetEvidence": 1,
+      "minTargetHealth": 1,
+      "alarmFraction": 0.8680555555555556
+    },
+    {
+      "id": "v6-uni-param_4-spike",
+      "type": "univariate",
+      "mode": "spike",
+      "target": "param_4",
+      "targets": [
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 0,
+      "meanOverall": 90.14583333333333,
+      "minOverall": 74,
+      "maxTargetEvidence": 1,
+      "minTargetHealth": 2,
+      "alarmFraction": 0.5347222222222222
+    },
+    {
+      "id": "v6-uni-param_4-step",
+      "type": "univariate",
+      "mode": "step",
+      "target": "param_4",
+      "targets": [
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 2,
+      "meanOverall": 79.31944444444444,
+      "minOverall": 75,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9652777777777778
+    },
+    {
+      "id": "v6-uni-param_4-noise",
+      "type": "univariate",
+      "mode": "noise",
+      "target": "param_4",
+      "targets": [
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 9,
+      "meanOverall": 78.90972222222223,
+      "minOverall": 75,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9375
+    },
+    {
+      "id": "v6-uni-param_4-oscillation",
+      "type": "univariate",
+      "mode": "oscillation",
+      "target": "param_4",
+      "targets": [
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 3,
+      "meanOverall": 76.40972222222223,
+      "minOverall": 75,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9791666666666666
+    },
+    {
+      "id": "v6-uni-param_4-intermittent",
+      "type": "univariate",
+      "mode": "intermittent",
+      "target": "param_4",
+      "targets": [
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 6,
+      "meanOverall": 77.46527777777777,
+      "minOverall": 74,
+      "maxTargetEvidence": 1,
+      "minTargetHealth": 1,
+      "alarmFraction": 0.9236111111111112
+    },
+    {
+      "id": "v6-uni-param_5-drift",
+      "type": "univariate",
+      "mode": "drift",
+      "target": "param_5",
+      "targets": [
+        "propulsion"
+      ],
+      "detected": true,
+      "latency": 14,
+      "meanOverall": 70.55555555555556,
+      "minOverall": 66,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9027777777777778
+    },
+    {
+      "id": "v6-uni-param_5-spike",
+      "type": "univariate",
+      "mode": "spike",
+      "target": "param_5",
+      "targets": [
+        "propulsion"
+      ],
+      "detected": true,
+      "latency": 2,
+      "meanOverall": 93.66666666666667,
+      "minOverall": 84,
+      "maxTargetEvidence": 0.711621,
+      "minTargetHealth": 48,
+      "alarmFraction": 0.4583333333333333
+    },
+    {
+      "id": "v6-uni-param_5-step",
+      "type": "univariate",
+      "mode": "step",
+      "target": "param_5",
+      "targets": [
+        "propulsion"
+      ],
+      "detected": true,
+      "latency": 2,
+      "meanOverall": 67.72222222222223,
+      "minOverall": 66,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9861111111111112
+    },
+    {
+      "id": "v6-uni-param_5-noise",
+      "type": "univariate",
+      "mode": "noise",
+      "target": "param_5",
+      "targets": [
+        "propulsion"
+      ],
+      "detected": true,
+      "latency": 5,
+      "meanOverall": 68.59722222222223,
+      "minOverall": 65,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9652777777777778
+    },
+    {
+      "id": "v6-uni-param_5-oscillation",
+      "type": "univariate",
+      "mode": "oscillation",
+      "target": "param_5",
+      "targets": [
+        "propulsion"
+      ],
+      "detected": true,
+      "latency": 3,
+      "meanOverall": 67.9375,
+      "minOverall": 65,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9791666666666666
+    },
+    {
+      "id": "v6-uni-param_5-intermittent",
+      "type": "univariate",
+      "mode": "intermittent",
+      "target": "param_5",
+      "targets": [
+        "propulsion"
+      ],
+      "detected": true,
+      "latency": 9,
+      "meanOverall": 72.50694444444444,
+      "minOverall": 66,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9166666666666666
+    },
+    {
+      "id": "v6-uni-param_6-drift",
+      "type": "univariate",
+      "mode": "drift",
+      "target": "param_6",
+      "targets": [
+        "attitude"
+      ],
+      "detected": true,
+      "latency": 13,
+      "meanOverall": 64.66666666666667,
+      "minOverall": 59,
+      "maxTargetEvidence": 1,
+      "minTargetHealth": 1,
+      "alarmFraction": 0.9097222222222222
+    },
+    {
+      "id": "v6-uni-param_6-spike",
+      "type": "univariate",
+      "mode": "spike",
+      "target": "param_6",
+      "targets": [
+        "attitude"
+      ],
+      "detected": true,
+      "latency": 0,
+      "meanOverall": 85.13194444444444,
+      "minOverall": 59,
+      "maxTargetEvidence": 1,
+      "minTargetHealth": 2,
+      "alarmFraction": 0.5208333333333334
+    },
+    {
+      "id": "v6-uni-param_6-step",
+      "type": "univariate",
+      "mode": "step",
+      "target": "param_6",
+      "targets": [
+        "attitude"
+      ],
+      "detected": true,
+      "latency": 2,
+      "meanOverall": 80.27777777777777,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.819949,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.7986111111111112
+    },
+    {
+      "id": "v6-uni-param_6-noise",
+      "type": "univariate",
+      "mode": "noise",
+      "target": "param_6",
+      "targets": [
+        "attitude"
+      ],
+      "detected": true,
+      "latency": 15,
+      "meanOverall": 76.875,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.819993,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.7222222222222222
+    },
+    {
+      "id": "v6-uni-param_6-oscillation",
+      "type": "univariate",
+      "mode": "oscillation",
+      "target": "param_6",
+      "targets": [
+        "attitude"
+      ],
+      "detected": true,
+      "latency": 4,
+      "meanOverall": 62.638888888888886,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9722222222222222
+    },
+    {
+      "id": "v6-uni-param_6-intermittent",
+      "type": "univariate",
+      "mode": "intermittent",
+      "target": "param_6",
+      "targets": [
+        "attitude"
+      ],
+      "detected": true,
+      "latency": 1,
+      "meanOverall": 61.666666666666664,
+      "minOverall": 59,
+      "maxTargetEvidence": 1,
+      "minTargetHealth": 1,
+      "alarmFraction": 0.9791666666666666
+    },
+    {
+      "id": "v6-uni-param_7-drift",
+      "type": "univariate",
+      "mode": "drift",
+      "target": "param_7",
+      "targets": [
+        "attitude"
+      ],
+      "detected": true,
+      "latency": 17,
+      "meanOverall": 66.15972222222223,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.8819444444444444
+    },
+    {
+      "id": "v6-uni-param_7-spike",
+      "type": "univariate",
+      "mode": "spike",
+      "target": "param_7",
+      "targets": [
+        "attitude"
+      ],
+      "detected": true,
+      "latency": 2,
+      "meanOverall": 93.47222222222223,
+      "minOverall": 81,
+      "maxTargetEvidence": 0.708068,
+      "minTargetHealth": 48,
+      "alarmFraction": 0.4166666666666667
+    },
+    {
+      "id": "v6-uni-param_7-step",
+      "type": "univariate",
+      "mode": "step",
+      "target": "param_7",
+      "targets": [
+        "attitude"
+      ],
+      "detected": true,
+      "latency": 2,
+      "meanOverall": 64.36111111111111,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9861111111111112
+    },
+    {
+      "id": "v6-uni-param_7-noise",
+      "type": "univariate",
+      "mode": "noise",
+      "target": "param_7",
+      "targets": [
+        "attitude"
+      ],
+      "detected": true,
+      "latency": 3,
+      "meanOverall": 73.66666666666667,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.819861,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9791666666666666
+    },
+    {
+      "id": "v6-uni-param_7-oscillation",
+      "type": "univariate",
+      "mode": "oscillation",
+      "target": "param_7",
+      "targets": [
+        "attitude"
+      ],
+      "detected": true,
+      "latency": 3,
+      "meanOverall": 62.298611111111114,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9791666666666666
+    },
+    {
+      "id": "v6-uni-param_7-intermittent",
+      "type": "univariate",
+      "mode": "intermittent",
+      "target": "param_7",
+      "targets": [
+        "attitude"
+      ],
+      "detected": true,
+      "latency": 6,
+      "meanOverall": 73.90277777777777,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.8611111111111112
+    },
+    {
+      "id": "v6-uni-param_8-drift",
+      "type": "univariate",
+      "mode": "drift",
+      "target": "param_8",
+      "targets": [
+        "power"
+      ],
+      "detected": true,
+      "latency": 34,
+      "meanOverall": 70.91666666666667,
+      "minOverall": 59,
+      "maxTargetEvidence": 1,
+      "minTargetHealth": 1,
+      "alarmFraction": 0.7638888888888888
+    },
+    {
+      "id": "v6-uni-param_8-spike",
+      "type": "univariate",
+      "mode": "spike",
+      "target": "param_8",
+      "targets": [
+        "power"
+      ],
+      "detected": true,
+      "latency": 2,
+      "meanOverall": 93.45833333333333,
+      "minOverall": 81,
+      "maxTargetEvidence": 0.708908,
+      "minTargetHealth": 48,
+      "alarmFraction": 0.4166666666666667
+    },
+    {
+      "id": "v6-uni-param_8-step",
+      "type": "univariate",
+      "mode": "step",
+      "target": "param_8",
+      "targets": [
+        "power"
+      ],
+      "detected": true,
+      "latency": 2,
+      "meanOverall": 68.04166666666667,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9097222222222222
+    },
+    {
+      "id": "v6-uni-param_8-noise",
+      "type": "univariate",
+      "mode": "noise",
+      "target": "param_8",
+      "targets": [
+        "power"
+      ],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 99.82638888888889,
+      "minOverall": 98,
+      "maxTargetEvidence": 0.267494,
+      "minTargetHealth": 94,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-uni-param_8-oscillation",
+      "type": "univariate",
+      "mode": "oscillation",
+      "target": "param_8",
+      "targets": [
+        "power"
+      ],
+      "detected": true,
+      "latency": 4,
+      "meanOverall": 62.52777777777778,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9722222222222222
+    },
+    {
+      "id": "v6-uni-param_8-intermittent",
+      "type": "univariate",
+      "mode": "intermittent",
+      "target": "param_8",
+      "targets": [
+        "power"
+      ],
+      "detected": true,
+      "latency": 19,
+      "meanOverall": 78.36111111111111,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.819935,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.7083333333333334
+    },
+    {
+      "id": "v6-uni-param_9-drift",
+      "type": "univariate",
+      "mode": "drift",
+      "target": "param_9",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 30,
+      "meanOverall": 66.5,
+      "minOverall": 48,
+      "maxTargetEvidence": 1,
+      "minTargetHealth": 1,
+      "alarmFraction": 0.7916666666666666
+    },
+    {
+      "id": "v6-uni-param_9-spike",
+      "type": "univariate",
+      "mode": "spike",
+      "target": "param_9",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 0,
+      "meanOverall": 81.90972222222223,
+      "minOverall": 51,
+      "maxTargetEvidence": 1,
+      "minTargetHealth": 2,
+      "alarmFraction": 0.6388888888888888
+    },
+    {
+      "id": "v6-uni-param_9-step",
+      "type": "univariate",
+      "mode": "step",
+      "target": "param_9",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 0,
+      "meanOverall": 60.02777777777778,
+      "minOverall": 50,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 1
+    },
+    {
+      "id": "v6-uni-param_9-noise",
+      "type": "univariate",
+      "mode": "noise",
+      "target": "param_9",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 26,
+      "meanOverall": 92.90277777777777,
+      "minOverall": 75,
+      "maxTargetEvidence": 0.812886,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.5902777777777778
+    },
+    {
+      "id": "v6-uni-param_9-oscillation",
+      "type": "univariate",
+      "mode": "oscillation",
+      "target": "param_9",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 3,
+      "meanOverall": 76.38888888888889,
+      "minOverall": 74,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9791666666666666
+    },
+    {
+      "id": "v6-uni-param_9-intermittent",
+      "type": "univariate",
+      "mode": "intermittent",
+      "target": "param_9",
+      "targets": [
+        "power",
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 3,
+      "meanOverall": 50.53472222222222,
+      "minOverall": 48,
+      "maxTargetEvidence": 1,
+      "minTargetHealth": 1,
+      "alarmFraction": 0.9791666666666666
+    },
+    {
+      "id": "v6-uni-param_10-drift",
+      "type": "univariate",
+      "mode": "drift",
+      "target": "param_10",
+      "targets": [
+        "data"
+      ],
+      "detected": true,
+      "latency": 11,
+      "meanOverall": 55.104166666666664,
+      "minOverall": 36,
+      "maxTargetEvidence": 1,
+      "minTargetHealth": 1,
+      "alarmFraction": 0.9236111111111112
+    },
+    {
+      "id": "v6-uni-param_10-spike",
+      "type": "univariate",
+      "mode": "spike",
+      "target": "param_10",
+      "targets": [
+        "data"
+      ],
+      "detected": true,
+      "latency": 0,
+      "meanOverall": 83.65277777777777,
+      "minOverall": 57,
+      "maxTargetEvidence": 1,
+      "minTargetHealth": 2,
+      "alarmFraction": 0.5416666666666666
+    },
+    {
+      "id": "v6-uni-param_10-step",
+      "type": "univariate",
+      "mode": "step",
+      "target": "param_10",
+      "targets": [
+        "data"
+      ],
+      "detected": true,
+      "latency": 2,
+      "meanOverall": 66.59722222222223,
+      "minOverall": 53,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9861111111111112
+    },
+    {
+      "id": "v6-uni-param_10-noise",
+      "type": "univariate",
+      "mode": "noise",
+      "target": "param_10",
+      "targets": [
+        "data"
+      ],
+      "detected": true,
+      "latency": 8,
+      "meanOverall": 71.78472222222223,
+      "minOverall": 69,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9444444444444444
+    },
+    {
+      "id": "v6-uni-param_10-oscillation",
+      "type": "univariate",
+      "mode": "oscillation",
+      "target": "param_10",
+      "targets": [
+        "data"
+      ],
+      "detected": true,
+      "latency": 3,
+      "meanOverall": 49.72222222222222,
+      "minOverall": 47,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9791666666666666
+    },
+    {
+      "id": "v6-uni-param_10-intermittent",
+      "type": "univariate",
+      "mode": "intermittent",
+      "target": "param_10",
+      "targets": [
+        "data"
+      ],
+      "detected": true,
+      "latency": 0,
+      "meanOverall": 52.68055555555556,
+      "minOverall": 47,
+      "maxTargetEvidence": 1,
+      "minTargetHealth": 1,
+      "alarmFraction": 1
+    },
+    {
+      "id": "v6-uni-param_11-drift",
+      "type": "univariate",
+      "mode": "drift",
+      "target": "param_11",
+      "targets": [
+        "communication"
+      ],
+      "detected": true,
+      "latency": 17,
+      "meanOverall": 77.99305555555556,
+      "minOverall": 70,
+      "maxTargetEvidence": 1,
+      "minTargetHealth": 1,
+      "alarmFraction": 0.8819444444444444
+    },
+    {
+      "id": "v6-uni-param_11-spike",
+      "type": "univariate",
+      "mode": "spike",
+      "target": "param_11",
+      "targets": [
+        "communication"
+      ],
+      "detected": true,
+      "latency": 4,
+      "meanOverall": 90.80555555555556,
+      "minOverall": 75,
+      "maxTargetEvidence": 0.537006,
+      "minTargetHealth": 54,
+      "alarmFraction": 0.4444444444444444
+    },
+    {
+      "id": "v6-uni-param_11-step",
+      "type": "univariate",
+      "mode": "step",
+      "target": "param_11",
+      "targets": [
+        "communication"
+      ],
+      "detected": true,
+      "latency": 4,
+      "meanOverall": 72.89583333333333,
+      "minOverall": 71,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9722222222222222
+    },
+    {
+      "id": "v6-uni-param_11-noise",
+      "type": "univariate",
+      "mode": "noise",
+      "target": "param_11",
+      "targets": [
+        "communication"
+      ],
+      "detected": true,
+      "latency": 6,
+      "meanOverall": 84.86111111111111,
+      "minOverall": 53,
+      "maxTargetEvidence": 0.814189,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.8472222222222222
+    },
+    {
+      "id": "v6-uni-param_11-oscillation",
+      "type": "univariate",
+      "mode": "oscillation",
+      "target": "param_11",
+      "targets": [
+        "communication"
+      ],
+      "detected": true,
+      "latency": 5,
+      "meanOverall": 56.13194444444444,
+      "minOverall": 53,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9652777777777778
+    },
+    {
+      "id": "v6-uni-param_11-intermittent",
+      "type": "univariate",
+      "mode": "intermittent",
+      "target": "param_11",
+      "targets": [
+        "communication"
+      ],
+      "detected": true,
+      "latency": 6,
+      "meanOverall": 63.49305555555556,
+      "minOverall": 53,
+      "maxTargetEvidence": 0.819876,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9583333333333334
+    },
+    {
+      "id": "v6-uni-param_12-drift",
+      "type": "univariate",
+      "mode": "drift",
+      "target": "param_12",
+      "targets": [
+        "attitude"
+      ],
+      "detected": true,
+      "latency": 10,
+      "meanOverall": 66.54861111111111,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9236111111111112
+    },
+    {
+      "id": "v6-uni-param_12-spike",
+      "type": "univariate",
+      "mode": "spike",
+      "target": "param_12",
+      "targets": [
+        "attitude"
+      ],
+      "detected": true,
+      "latency": 3,
+      "meanOverall": 78.97916666666667,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.818351,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9722222222222222
+    },
+    {
+      "id": "v6-uni-param_12-step",
+      "type": "univariate",
+      "mode": "step",
+      "target": "param_12",
+      "targets": [
+        "attitude"
+      ],
+      "detected": true,
+      "latency": 3,
+      "meanOverall": 78.08333333333333,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.8125
+    },
+    {
+      "id": "v6-uni-param_12-noise",
+      "type": "univariate",
+      "mode": "noise",
+      "target": "param_12",
+      "targets": [
+        "attitude"
+      ],
+      "detected": true,
+      "latency": 49,
+      "meanOverall": 74.95138888888889,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.6597222222222222
+    },
+    {
+      "id": "v6-uni-param_12-oscillation",
+      "type": "univariate",
+      "mode": "oscillation",
+      "target": "param_12",
+      "targets": [
+        "attitude"
+      ],
+      "detected": true,
+      "latency": 4,
+      "meanOverall": 62.111111111111114,
+      "minOverall": 53,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9722222222222222
+    },
+    {
+      "id": "v6-uni-param_12-intermittent",
+      "type": "univariate",
+      "mode": "intermittent",
+      "target": "param_12",
+      "targets": [
+        "attitude"
+      ],
+      "detected": true,
+      "latency": 3,
+      "meanOverall": 78.15972222222223,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.817308,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.8541666666666666
+    },
+    {
+      "id": "v6-cpl-p01_p02-invert-0",
+      "type": "coupled",
+      "mode": "invert",
+      "target": "p01_p02",
+      "targets": [
+        "power"
+      ],
+      "detected": true,
+      "latency": 18,
+      "meanOverall": 73.34722222222223,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.819982,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.875
+    },
+    {
+      "id": "v6-cpl-p01_p02-invert-1",
+      "type": "coupled",
+      "mode": "invert",
+      "target": "p01_p02",
+      "targets": [
+        "power"
+      ],
+      "detected": true,
+      "latency": 27,
+      "meanOverall": 68.5,
+      "minOverall": 54,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.8125
+    },
+    {
+      "id": "v6-cpl-p01_p02-lag-0",
+      "type": "coupled",
+      "mode": "lag",
+      "target": "p01_p02",
+      "targets": [
+        "power"
+      ],
+      "detected": true,
+      "latency": 143,
+      "meanOverall": 99.84722222222223,
+      "minOverall": 90,
+      "maxTargetEvidence": 0.376044,
+      "minTargetHealth": 72,
+      "alarmFraction": 0.006944444444444444
+    },
+    {
+      "id": "v6-cpl-p01_p02-lag-1",
+      "type": "coupled",
+      "mode": "lag",
+      "target": "p01_p02",
+      "targets": [
+        "power"
+      ],
+      "detected": true,
+      "latency": 19,
+      "meanOverall": 75.75,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.819998,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.8680555555555556
+    },
+    {
+      "id": "v6-cpl-p01_p02-decouple-0",
+      "type": "coupled",
+      "mode": "decouple",
+      "target": "p01_p02",
+      "targets": [
+        "power"
+      ],
+      "detected": true,
+      "latency": 35,
+      "meanOverall": 76.96527777777777,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.819999,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.7569444444444444
+    },
+    {
+      "id": "v6-cpl-p01_p02-decouple-1",
+      "type": "coupled",
+      "mode": "decouple",
+      "target": "p01_p02",
+      "targets": [
+        "power"
+      ],
+      "detected": true,
+      "latency": 44,
+      "meanOverall": 73.96527777777777,
+      "minOverall": 50,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.6944444444444444
+    },
+    {
+      "id": "v6-cpl-p03_p04-invert-0",
+      "type": "coupled",
+      "mode": "invert",
+      "target": "p03_p04",
+      "targets": [
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 23,
+      "meanOverall": 80.01388888888889,
+      "minOverall": 75,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.8402777777777778
+    },
+    {
+      "id": "v6-cpl-p03_p04-invert-1",
+      "type": "coupled",
+      "mode": "invert",
+      "target": "p03_p04",
+      "targets": [
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 35,
+      "meanOverall": 82.05555555555556,
+      "minOverall": 75,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.7569444444444444
+    },
+    {
+      "id": "v6-cpl-p03_p04-lag-0",
+      "type": "coupled",
+      "mode": "lag",
+      "target": "p03_p04",
+      "targets": [
+        "thermal"
+      ],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 100,
+      "minOverall": 100,
+      "maxTargetEvidence": 0.004664,
+      "minTargetHealth": 100,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-cpl-p03_p04-lag-1",
+      "type": "coupled",
+      "mode": "lag",
+      "target": "p03_p04",
+      "targets": [
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 76,
+      "meanOverall": 99.02083333333333,
+      "minOverall": 90,
+      "maxTargetEvidence": 0.394929,
+      "minTargetHealth": 58,
+      "alarmFraction": 0.04861111111111111
+    },
+    {
+      "id": "v6-cpl-p03_p04-decouple-0",
+      "type": "coupled",
+      "mode": "decouple",
+      "target": "p03_p04",
+      "targets": [
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 31,
+      "meanOverall": 82.0625,
+      "minOverall": 75,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.7847222222222222
+    },
+    {
+      "id": "v6-cpl-p03_p04-decouple-1",
+      "type": "coupled",
+      "mode": "decouple",
+      "target": "p03_p04",
+      "targets": [
+        "thermal"
+      ],
+      "detected": true,
+      "latency": 41,
+      "meanOverall": 82.96527777777777,
+      "minOverall": 75,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.7152777777777778
+    },
+    {
+      "id": "v6-cpl-p06_p12-invert-0",
+      "type": "coupled",
+      "mode": "invert",
+      "target": "p06_p12",
+      "targets": [
+        "attitude"
+      ],
+      "detected": true,
+      "latency": 12,
+      "meanOverall": 64.77083333333333,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9166666666666666
+    },
+    {
+      "id": "v6-cpl-p06_p12-invert-1",
+      "type": "coupled",
+      "mode": "invert",
+      "target": "p06_p12",
+      "targets": [
+        "attitude"
+      ],
+      "detected": true,
+      "latency": 11,
+      "meanOverall": 64.48611111111111,
+      "minOverall": 57,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.9236111111111112
+    },
+    {
+      "id": "v6-cpl-p06_p12-lag-0",
+      "type": "coupled",
+      "mode": "lag",
+      "target": "p06_p12",
+      "targets": [
+        "attitude"
+      ],
+      "detected": true,
+      "latency": 20,
+      "meanOverall": 71.74305555555556,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.819999,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.8611111111111112
+    },
+    {
+      "id": "v6-cpl-p06_p12-lag-1",
+      "type": "coupled",
+      "mode": "lag",
+      "target": "p06_p12",
+      "targets": [
+        "attitude"
+      ],
+      "detected": true,
+      "latency": 15,
+      "meanOverall": 65.69444444444444,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.8958333333333334
+    },
+    {
+      "id": "v6-cpl-p06_p12-decouple-0",
+      "type": "coupled",
+      "mode": "decouple",
+      "target": "p06_p12",
+      "targets": [
+        "attitude"
+      ],
+      "detected": true,
+      "latency": 17,
+      "meanOverall": 74.47916666666667,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.819999,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.7777777777777778
+    },
+    {
+      "id": "v6-cpl-p06_p12-decouple-1",
+      "type": "coupled",
+      "mode": "decouple",
+      "target": "p06_p12",
+      "targets": [
+        "attitude"
+      ],
+      "detected": true,
+      "latency": 16,
+      "meanOverall": 65.65972222222223,
+      "minOverall": 56,
+      "maxTargetEvidence": 0.82,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.8888888888888888
+    },
+    {
+      "id": "v6-cpl-p10_p11-invert-0",
+      "type": "coupled",
+      "mode": "invert",
+      "target": "p10_p11",
+      "targets": [
+        "communication"
+      ],
+      "detected": true,
+      "latency": 39,
+      "meanOverall": 86.09027777777777,
+      "minOverall": 71,
+      "maxTargetEvidence": 0.819348,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.7291666666666666
+    },
+    {
+      "id": "v6-cpl-p10_p11-invert-1",
+      "type": "coupled",
+      "mode": "invert",
+      "target": "p10_p11",
+      "targets": [
+        "communication"
+      ],
+      "detected": true,
+      "latency": 70,
+      "meanOverall": 86.88194444444444,
+      "minOverall": 71,
+      "maxTargetEvidence": 0.819963,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.5138888888888888
+    },
+    {
+      "id": "v6-cpl-p10_p11-lag-0",
+      "type": "coupled",
+      "mode": "lag",
+      "target": "p10_p11",
+      "targets": [
+        "communication"
+      ],
+      "detected": true,
+      "latency": 90,
+      "meanOverall": 99.04166666666667,
+      "minOverall": 84,
+      "maxTargetEvidence": 0.008824,
+      "minTargetHealth": 100,
+      "alarmFraction": 0.020833333333333332
+    },
+    {
+      "id": "v6-cpl-p10_p11-lag-1",
+      "type": "coupled",
+      "mode": "lag",
+      "target": "p10_p11",
+      "targets": [
+        "communication"
+      ],
+      "detected": true,
+      "latency": 45,
+      "meanOverall": 82.29861111111111,
+      "minOverall": 71,
+      "maxTargetEvidence": 0.819989,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.6875
+    },
+    {
+      "id": "v6-cpl-p10_p11-decouple-0",
+      "type": "coupled",
+      "mode": "decouple",
+      "target": "p10_p11",
+      "targets": [
+        "communication"
+      ],
+      "detected": true,
+      "latency": 49,
+      "meanOverall": 85.4375,
+      "minOverall": 70,
+      "maxTargetEvidence": 0.819721,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.6597222222222222
+    },
+    {
+      "id": "v6-cpl-p10_p11-decouple-1",
+      "type": "coupled",
+      "mode": "decouple",
+      "target": "p10_p11",
+      "targets": [
+        "communication"
+      ],
+      "detected": true,
+      "latency": 40,
+      "meanOverall": 97.09027777777777,
+      "minOverall": 87,
+      "maxTargetEvidence": 0.667824,
+      "minTargetHealth": 50,
+      "alarmFraction": 0.25
+    },
+    {
+      "id": "v6-cpl-p01_p08-invert-0",
+      "type": "coupled",
+      "mode": "invert",
+      "target": "p01_p08",
+      "targets": [
+        "power"
+      ],
+      "detected": true,
+      "latency": 35,
+      "meanOverall": 86.75,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.819586,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.5347222222222222
+    },
+    {
+      "id": "v6-cpl-p01_p08-invert-1",
+      "type": "coupled",
+      "mode": "invert",
+      "target": "p01_p08",
+      "targets": [
+        "power"
+      ],
+      "detected": true,
+      "latency": 62,
+      "meanOverall": 87.46527777777777,
+      "minOverall": 60,
+      "maxTargetEvidence": 0.815326,
+      "minTargetHealth": 4,
+      "alarmFraction": 0.5555555555555556
+    },
+    {
+      "id": "v6-cpl-p01_p08-lag-0",
+      "type": "coupled",
+      "mode": "lag",
+      "target": "p01_p08",
+      "targets": [
+        "power"
+      ],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 98.04166666666667,
+      "minOverall": 88,
+      "maxTargetEvidence": 0.044535,
+      "minTargetHealth": 100,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-cpl-p01_p08-lag-1",
+      "type": "coupled",
+      "mode": "lag",
+      "target": "p01_p08",
+      "targets": [
+        "power"
+      ],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 100,
+      "minOverall": 100,
+      "maxTargetEvidence": 0.131361,
+      "minTargetHealth": 99,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-cpl-p01_p08-decouple-0",
+      "type": "coupled",
+      "mode": "decouple",
+      "target": "p01_p08",
+      "targets": [
+        "power"
+      ],
+      "detected": false,
+      "latency": null,
+      "meanOverall": 100,
+      "minOverall": 100,
+      "maxTargetEvidence": 0.001705,
+      "minTargetHealth": 100,
+      "alarmFraction": 0
+    },
+    {
+      "id": "v6-cpl-p01_p08-decouple-1",
+      "type": "coupled",
+      "mode": "decouple",
+      "target": "p01_p08",
+      "targets": [
+        "power"
+      ],
+      "detected": true,
+      "latency": 136,
+      "meanOverall": 99.75694444444444,
+      "minOverall": 93,
+      "maxTargetEvidence": 0.303544,
+      "minTargetHealth": 81,
+      "alarmFraction": 0.020833333333333332
+    }
+  ]
+}

@@ -1,0 +1,3504 @@
+{
+  "schemaVersion": "msf-satellite-multiseed-1.0",
+  "seeds": [
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101
+  ],
+  "dataset": {
+    "candidateFeatures": 267,
+    "trainRows": 1213,
+    "valRows": 1218,
+    "testRows": 1216,
+    "guidedCardinalities": [
+      10,
+      13,
+      27
+    ]
+  },
+  "runs": [
+    {
+      "seed": 92,
+      "methods": {
+        "MSF": {
+          "heldoutParetoHV": 0.8262388670507469,
+          "chosenFeatureCount": 18,
+          "chosenFeatureRatio": 0.06741573033707865,
+          "chosenTestGmean": 0.8602838240947583,
+          "chosenFeatures": [
+            "rel_param_1_param_2__absDiffMean__w8",
+            "rel_param_1_param_2__corr__w24",
+            "rel_param_1_param_2__lag1Corr__w24",
+            "rel_param_1_param_2__absDiffMean__w24",
+            "rel_param_1_param_2__corr__w64",
+            "rel_param_1_param_2__lag1Corr__w64",
+            "rel_param_1_param_2__diffStd__w64",
+            "rel_param_1_param_2__absDiffMean__w64",
+            "rel_param_1_param_9__diffStd__w64",
+            "rel_param_2_param_9__diffStd__w8",
+            "rel_param_2_param_9__corr__w24",
+            "rel_param_2_param_9__lag1Corr__w24",
+            "rel_param_2_param_10__corr__w64",
+            "rel_param_9_param_10__diffMean__w24",
+            "rel_param_1_param_8__diffStd__w8",
+            "rel_param_1_param_8__absDiffMean__w8",
+            "rel_param_1_param_8__corr__w64",
+            "rel_param_1_param_8__absDiffMean__w64"
+          ],
+          "uniqueWrapperEvaluations": 79,
+          "paretoValidation": [
+            {
+              "featureCount": 10,
+              "cvGmean": 0.7540587570372713,
+              "valGmean": 0.7074280786273144
+            },
+            {
+              "featureCount": 10,
+              "cvGmean": 0.7540587570372713,
+              "valGmean": 0.7074280786273144
+            },
+            {
+              "featureCount": 11,
+              "cvGmean": 0.8117779025247706,
+              "valGmean": 0.7594637066386822
+            },
+            {
+              "featureCount": 12,
+              "cvGmean": 0.8176236580750365,
+              "valGmean": 0.7702687840130018
+            },
+            {
+              "featureCount": 13,
+              "cvGmean": 0.8180078445679091,
+              "valGmean": 0.7730024501575767
+            },
+            {
+              "featureCount": 15,
+              "cvGmean": 0.8659989517530778,
+              "valGmean": 0.8324910256373147
+            },
+            {
+              "featureCount": 17,
+              "cvGmean": 0.8719539946292326,
+              "valGmean": 0.8075413926827452
+            },
+            {
+              "featureCount": 18,
+              "cvGmean": 0.8816283824912138,
+              "valGmean": 0.8538989409115553
+            },
+            {
+              "featureCount": 19,
+              "cvGmean": 0.8898766250348328,
+              "valGmean": 0.8521788060510411
+            },
+            {
+              "featureCount": 21,
+              "cvGmean": 0.8900956722201568,
+              "valGmean": 0.8348965989067876
+            },
+            {
+              "featureCount": 23,
+              "cvGmean": 0.8915195539638013,
+              "valGmean": 0.8265389817237162
+            },
+            {
+              "featureCount": 25,
+              "cvGmean": 0.9087784191144165,
+              "valGmean": 0.8412852648496957
+            }
+          ],
+          "heldoutTrainingFront": [
+            {
+              "featureCount": 10,
+              "featureRatio": 0.03745318352059925,
+              "searchCvGmean": 0.7540587570372713,
+              "testGmean": 0.7346733317778549,
+              "testError": 0.2653266682221451
+            },
+            {
+              "featureCount": 10,
+              "featureRatio": 0.03745318352059925,
+              "searchCvGmean": 0.7540587570372713,
+              "testGmean": 0.7346733317778549,
+              "testError": 0.2653266682221451
+            },
+            {
+              "featureCount": 25,
+              "featureRatio": 0.09363295880149813,
+              "searchCvGmean": 0.9087784191144165,
+              "testGmean": 0.8389965151851169,
+              "testError": 0.16100348481488314
+            },
+            {
+              "featureCount": 15,
+              "featureRatio": 0.056179775280898875,
+              "searchCvGmean": 0.8659989517530778,
+              "testGmean": 0.8347732909073388,
+              "testError": 0.16522670909266124
+            },
+            {
+              "featureCount": 11,
+              "featureRatio": 0.04119850187265917,
+              "searchCvGmean": 0.8117779025247706,
+              "testGmean": 0.7618436863589236,
+              "testError": 0.23815631364107637
+            },
+            {
+              "featureCount": 13,
+              "featureRatio": 0.04868913857677903,
+              "searchCvGmean": 0.8180078445679091,
+              "testGmean": 0.7842875627845932,
+              "testError": 0.21571243721540678
+            },
+            {
+              "featureCount": 23,
+              "featureRatio": 0.08614232209737828,
+              "searchCvGmean": 0.8915195539638013,
+              "testGmean": 0.8288864849992096,
+              "testError": 0.17111351500079042
+            },
+            {
+              "featureCount": 17,
+              "featureRatio": 0.06367041198501873,
+              "searchCvGmean": 0.8719539946292326,
+              "testGmean": 0.8065801186658885,
+              "testError": 0.19341988133411148
+            },
+            {
+              "featureCount": 19,
+              "featureRatio": 0.07116104868913857,
+              "searchCvGmean": 0.8898766250348328,
+              "testGmean": 0.8474410070569814,
+              "testError": 0.15255899294301856
+            },
+            {
+              "featureCount": 18,
+              "featureRatio": 0.06741573033707865,
+              "searchCvGmean": 0.8816283824912138,
+              "testGmean": 0.8602838240947583,
+              "testError": 0.13971617590524166
+            },
+            {
+              "featureCount": 21,
+              "featureRatio": 0.07865168539325842,
+              "searchCvGmean": 0.8900956722201568,
+              "testGmean": 0.8310382686336337,
+              "testError": 0.16896173136636627
+            },
+            {
+              "featureCount": 12,
+              "featureRatio": 0.0449438202247191,
+              "searchCvGmean": 0.8176236580750365,
+              "testGmean": 0.7980894706985974,
+              "testError": 0.20191052930140263
+            }
+          ],
+          "heldoutNondominatedObjectives": [
+            [
+              0.13971617590524166,
+              0.06741573033707865
+            ],
+            [
+              0.16522670909266124,
+              0.056179775280898875
+            ],
+            [
+              0.20191052930140263,
+              0.0449438202247191
+            ],
+            [
+              0.23815631364107637,
+              0.04119850187265917
+            ],
+            [
+              0.2653266682221451,
+              0.03745318352059925
+            ]
+          ]
+        },
+        "Random": {
+          "heldoutParetoHV": 0.7132931287104476,
+          "chosenFeatureCount": 42,
+          "chosenFeatureRatio": 0.15730337078651685,
+          "chosenTestGmean": 0.825503498809382,
+          "chosenFeatures": [
+            "param_1__madRatio__w24",
+            "param_1__thresholdMargin__w24",
+            "param_2__stdRatio__w24",
+            "param_2__violationRatio__w24",
+            "param_2__stdRatio__w64",
+            "param_2__madRatio__w64",
+            "param_2__thresholdMargin__w64",
+            "param_2__violationRatio__w64",
+            "param_8__meanPosition__w24",
+            "param_8__stdRatio__w64",
+            "param_9__meanPosition__w8",
+            "param_9__stdRatio__w8",
+            "param_9__violationRatio__w8",
+            "param_9__slopeRatio__w24",
+            "param_9__stdRatio__w64",
+            "param_9__slopeRatio__w64",
+            "param_9__diffMaxRatio__w64",
+            "param_10__stdRatio__w24",
+            "param_10__madRatio__w24",
+            "rel_param_1_param_2__absDiffMean__w8",
+            "rel_param_1_param_2__slopeDiff__w8",
+            "rel_param_1_param_2__corr__w24",
+            "rel_param_1_param_2__endpointDiff__w24",
+            "rel_param_1_param_2__lag1Corr__w64",
+            "rel_param_1_param_2__diffMean__w64",
+            "rel_param_1_param_2__endpointDiff__w64",
+            "rel_param_1_param_10__diffStd__w8",
+            "rel_param_2_param_9__diffMean__w24",
+            "rel_param_2_param_9__endpointDiff__w24",
+            "rel_param_2_param_9__corr__w64",
+            "rel_param_2_param_9__endpointDiff__w64",
+            "rel_param_2_param_10__lag1Corr__w8",
+            "rel_param_2_param_10__lag1Corr__w24",
+            "rel_param_2_param_10__lag1Corr__w64",
+            "rel_param_2_param_10__diffStd__w64",
+            "rel_param_9_param_10__diffMean__w8",
+            "rel_param_9_param_10__absDiffMean__w8",
+            "rel_param_9_param_10__lag1Corr__w24",
+            "rel_param_9_param_10__absDiffMean__w24",
+            "rel_param_9_param_10__absDiffMean__w64",
+            "rel_param_1_param_8__corr__w24",
+            "rel_param_1_param_8__corr__w64"
+          ],
+          "uniqueWrapperEvaluations": 71,
+          "paretoValidation": [
+            {
+              "featureCount": 36,
+              "cvGmean": 0.8215995316892388,
+              "valGmean": 0.7947547679500616
+            },
+            {
+              "featureCount": 36,
+              "cvGmean": 0.8215995316892388,
+              "valGmean": 0.7947547679500616
+            },
+            {
+              "featureCount": 42,
+              "cvGmean": 0.8526415561694906,
+              "valGmean": 0.8158796372318712
+            }
+          ],
+          "heldoutTrainingFront": [
+            {
+              "featureCount": 36,
+              "featureRatio": 0.1348314606741573,
+              "searchCvGmean": 0.8215995316892388,
+              "testGmean": 0.7851630222630878,
+              "testError": 0.21483697773691224
+            },
+            {
+              "featureCount": 36,
+              "featureRatio": 0.1348314606741573,
+              "searchCvGmean": 0.8215995316892388,
+              "testGmean": 0.7851630222630878,
+              "testError": 0.21483697773691224
+            },
+            {
+              "featureCount": 42,
+              "featureRatio": 0.15730337078651685,
+              "searchCvGmean": 0.8526415561694906,
+              "testGmean": 0.825503498809382,
+              "testError": 0.174496501190618
+            }
+          ],
+          "heldoutNondominatedObjectives": [
+            [
+              0.174496501190618,
+              0.15730337078651685
+            ],
+            [
+              0.21483697773691224,
+              0.1348314606741573
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "seed": 93,
+      "methods": {
+        "MSF": {
+          "heldoutParetoHV": 0.7838420305841857,
+          "chosenFeatureCount": 15,
+          "chosenFeatureRatio": 0.056179775280898875,
+          "chosenTestGmean": 0.8113354780351022,
+          "chosenFeatures": [
+            "param_2__rangeRatio__w64",
+            "param_10__violationRatio__w64",
+            "rel_param_1_param_2__diffStd__w8",
+            "rel_param_1_param_2__absDiffMean__w8",
+            "rel_param_1_param_2__corr__w24",
+            "rel_param_1_param_2__lag1Corr__w24",
+            "rel_param_1_param_2__absDiffMean__w24",
+            "rel_param_1_param_2__corr__w64",
+            "rel_param_1_param_2__lag1Corr__w64",
+            "rel_param_1_param_2__diffStd__w64",
+            "rel_param_1_param_2__absDiffMean__w64",
+            "rel_param_2_param_9__diffStd__w64",
+            "rel_param_2_param_10__corr__w64",
+            "rel_param_1_param_8__absDiffMean__w8",
+            "rel_param_1_param_8__corr__w64"
+          ],
+          "uniqueWrapperEvaluations": 78,
+          "paretoValidation": [
+            {
+              "featureCount": 10,
+              "cvGmean": 0.7522170341604605,
+              "valGmean": 0.7074280786273144
+            },
+            {
+              "featureCount": 10,
+              "cvGmean": 0.7522170341604605,
+              "valGmean": 0.7074280786273144
+            },
+            {
+              "featureCount": 11,
+              "cvGmean": 0.7736583555043328,
+              "valGmean": 0.710931458066563
+            },
+            {
+              "featureCount": 12,
+              "cvGmean": 0.8150820651882368,
+              "valGmean": 0.7891178668284679
+            },
+            {
+              "featureCount": 13,
+              "cvGmean": 0.8494902815553834,
+              "valGmean": 0.798785671751027
+            },
+            {
+              "featureCount": 15,
+              "cvGmean": 0.8667449589999511,
+              "valGmean": 0.8257128957475546
+            },
+            {
+              "featureCount": 18,
+              "cvGmean": 0.8807414028388066,
+              "valGmean": 0.7979001138059068
+            },
+            {
+              "featureCount": 20,
+              "cvGmean": 0.8842948657168606,
+              "valGmean": 0.8084734991200263
+            }
+          ],
+          "heldoutTrainingFront": [
+            {
+              "featureCount": 10,
+              "featureRatio": 0.03745318352059925,
+              "searchCvGmean": 0.7522170341604605,
+              "testGmean": 0.7346733317778549,
+              "testError": 0.2653266682221451
+            },
+            {
+              "featureCount": 10,
+              "featureRatio": 0.03745318352059925,
+              "searchCvGmean": 0.7522170341604605,
+              "testGmean": 0.7346733317778549,
+              "testError": 0.2653266682221451
+            },
+            {
+              "featureCount": 12,
+              "featureRatio": 0.0449438202247191,
+              "searchCvGmean": 0.8150820651882368,
+              "testGmean": 0.7933854220519523,
+              "testError": 0.20661457794804772
+            },
+            {
+              "featureCount": 20,
+              "featureRatio": 0.0749063670411985,
+              "searchCvGmean": 0.8842948657168606,
+              "testGmean": 0.8151978847740687,
+              "testError": 0.18480211522593126
+            },
+            {
+              "featureCount": 11,
+              "featureRatio": 0.04119850187265917,
+              "searchCvGmean": 0.7736583555043328,
+              "testGmean": 0.7312444608963816,
+              "testError": 0.2687555391036184
+            },
+            {
+              "featureCount": 13,
+              "featureRatio": 0.04868913857677903,
+              "searchCvGmean": 0.8494902815553834,
+              "testGmean": 0.8062675754997132,
+              "testError": 0.19373242450028683
+            },
+            {
+              "featureCount": 18,
+              "featureRatio": 0.06741573033707865,
+              "searchCvGmean": 0.8807414028388066,
+              "testGmean": 0.8020048963464245,
+              "testError": 0.19799510365357553
+            },
+            {
+              "featureCount": 15,
+              "featureRatio": 0.056179775280898875,
+              "searchCvGmean": 0.8667449589999511,
+              "testGmean": 0.8113354780351022,
+              "testError": 0.1886645219648978
+            }
+          ],
+          "heldoutNondominatedObjectives": [
+            [
+              0.18480211522593126,
+              0.0749063670411985
+            ],
+            [
+              0.1886645219648978,
+              0.056179775280898875
+            ],
+            [
+              0.19373242450028683,
+              0.04868913857677903
+            ],
+            [
+              0.20661457794804772,
+              0.0449438202247191
+            ],
+            [
+              0.2653266682221451,
+              0.03745318352059925
+            ]
+          ]
+        },
+        "Random": {
+          "heldoutParetoHV": 0.7293887681302664,
+          "chosenFeatureCount": 45,
+          "chosenFeatureRatio": 0.16853932584269662,
+          "chosenTestGmean": 0.840221290705213,
+          "chosenFeatures": [
+            "param_1__meanPosition__w8",
+            "param_1__diffMaxRatio__w8",
+            "param_1__meanPosition__w24",
+            "param_1__violationRatio__w24",
+            "param_1__rangeRatio__w64",
+            "param_2__thresholdMargin__w8",
+            "param_2__violationRatio__w8",
+            "param_2__meanPosition__w24",
+            "param_2__stdRatio__w24",
+            "param_2__madRatio__w24",
+            "param_2__diffMaxRatio__w64",
+            "param_8__meanPosition__w8",
+            "param_8__madRatio__w8",
+            "param_8__rangeRatio__w8",
+            "param_8__stdRatio__w64",
+            "param_9__rangeRatio__w8",
+            "param_9__violationRatio__w8",
+            "param_9__rangeRatio__w64",
+            "param_9__diffMaxRatio__w64",
+            "param_10__stdRatio__w8",
+            "rel_param_1_param_2__lag1Corr__w8",
+            "rel_param_1_param_2__diffStd__w8",
+            "rel_param_1_param_2__corr__w24",
+            "rel_param_1_param_2__endpointDiff__w64",
+            "rel_param_1_param_9__endpointDiff__w24",
+            "rel_param_1_param_9__lag1Corr__w64",
+            "rel_param_1_param_9__absDiffMean__w64",
+            "rel_param_1_param_10__lag1Corr__w8",
+            "rel_param_1_param_10__endpointDiff__w24",
+            "rel_param_1_param_10__endpointDiff__w64",
+            "rel_param_2_param_9__absDiffMean__w8",
+            "rel_param_2_param_9__corr__w64",
+            "rel_param_2_param_9__absDiffMean__w64",
+            "rel_param_2_param_10__endpointDiff__w8",
+            "rel_param_2_param_10__lag1Corr__w24",
+            "rel_param_2_param_10__absDiffMean__w24",
+            "rel_param_2_param_10__corr__w64",
+            "rel_param_2_param_10__diffStd__w64",
+            "rel_param_2_param_10__absDiffMean__w64",
+            "rel_param_9_param_10__diffMean__w8",
+            "rel_param_9_param_10__corr__w64",
+            "rel_param_9_param_10__diffMean__w64",
+            "rel_param_1_param_8__diffStd__w8",
+            "rel_param_1_param_8__lag1Corr__w64",
+            "rel_param_1_param_8__endpointDiff__w64"
+          ],
+          "uniqueWrapperEvaluations": 70,
+          "paretoValidation": [
+            {
+              "featureCount": 35,
+              "cvGmean": 0.8143166523257653,
+              "valGmean": 0.80521178150341
+            },
+            {
+              "featureCount": 37,
+              "cvGmean": 0.8347536377426993,
+              "valGmean": 0.8111246596149599
+            },
+            {
+              "featureCount": 39,
+              "cvGmean": 0.8367120683507793,
+              "valGmean": 0.7992659923186278
+            },
+            {
+              "featureCount": 45,
+              "cvGmean": 0.8674437494323608,
+              "valGmean": 0.8416401973978825
+            }
+          ],
+          "heldoutTrainingFront": [
+            {
+              "featureCount": 35,
+              "featureRatio": 0.13108614232209737,
+              "searchCvGmean": 0.8143166523257653,
+              "testGmean": 0.7773095354824276,
+              "testError": 0.22269046451757235
+            },
+            {
+              "featureCount": 37,
+              "featureRatio": 0.13857677902621723,
+              "searchCvGmean": 0.8347536377426993,
+              "testGmean": 0.8328819354073764,
+              "testError": 0.16711806459262357
+            },
+            {
+              "featureCount": 39,
+              "featureRatio": 0.14606741573033707,
+              "searchCvGmean": 0.8367120683507793,
+              "testGmean": 0.8110247674353446,
+              "testError": 0.18897523256465543
+            },
+            {
+              "featureCount": 45,
+              "featureRatio": 0.16853932584269662,
+              "searchCvGmean": 0.8674437494323608,
+              "testGmean": 0.840221290705213,
+              "testError": 0.159778709294787
+            }
+          ],
+          "heldoutNondominatedObjectives": [
+            [
+              0.159778709294787,
+              0.16853932584269662
+            ],
+            [
+              0.16711806459262357,
+              0.13857677902621723
+            ],
+            [
+              0.22269046451757235,
+              0.13108614232209737
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "seed": 94,
+      "methods": {
+        "MSF": {
+          "heldoutParetoHV": 0.8052765361638482,
+          "chosenFeatureCount": 17,
+          "chosenFeatureRatio": 0.06367041198501873,
+          "chosenTestGmean": 0.8378352737771207,
+          "chosenFeatures": [
+            "rel_param_1_param_2__diffStd__w8",
+            "rel_param_1_param_2__absDiffMean__w8",
+            "rel_param_1_param_2__corr__w24",
+            "rel_param_1_param_2__lag1Corr__w24",
+            "rel_param_1_param_2__absDiffMean__w24",
+            "rel_param_1_param_2__corr__w64",
+            "rel_param_1_param_2__lag1Corr__w64",
+            "rel_param_1_param_2__diffStd__w64",
+            "rel_param_1_param_2__absDiffMean__w64",
+            "rel_param_2_param_9__diffStd__w8",
+            "rel_param_2_param_9__absDiffMean__w8",
+            "rel_param_2_param_9__corr__w64",
+            "rel_param_2_param_9__diffStd__w64",
+            "rel_param_2_param_10__corr__w64",
+            "rel_param_1_param_8__diffStd__w8",
+            "rel_param_1_param_8__absDiffMean__w8",
+            "rel_param_1_param_8__corr__w64"
+          ],
+          "uniqueWrapperEvaluations": 78,
+          "paretoValidation": [
+            {
+              "featureCount": 10,
+              "cvGmean": 0.7999702172244101,
+              "valGmean": 0.7600524103122023
+            },
+            {
+              "featureCount": 11,
+              "cvGmean": 0.8045919472896212,
+              "valGmean": 0.7551923883593621
+            },
+            {
+              "featureCount": 13,
+              "cvGmean": 0.812927712246659,
+              "valGmean": 0.7872177117862011
+            },
+            {
+              "featureCount": 14,
+              "cvGmean": 0.8420885884417265,
+              "valGmean": 0.8208918462383761
+            },
+            {
+              "featureCount": 14,
+              "cvGmean": 0.8420885884417265,
+              "valGmean": 0.8208918462383761
+            },
+            {
+              "featureCount": 15,
+              "cvGmean": 0.881316245823823,
+              "valGmean": 0.8099426870820924
+            },
+            {
+              "featureCount": 15,
+              "cvGmean": 0.881316245823823,
+              "valGmean": 0.8099426870820924
+            },
+            {
+              "featureCount": 17,
+              "cvGmean": 0.9097206669740648,
+              "valGmean": 0.8419864124545157
+            }
+          ],
+          "heldoutTrainingFront": [
+            {
+              "featureCount": 14,
+              "featureRatio": 0.052434456928838954,
+              "searchCvGmean": 0.8420885884417265,
+              "testGmean": 0.8118217232005315,
+              "testError": 0.18817827679946852
+            },
+            {
+              "featureCount": 13,
+              "featureRatio": 0.04868913857677903,
+              "searchCvGmean": 0.812927712246659,
+              "testGmean": 0.7977447154241035,
+              "testError": 0.20225528457589648
+            },
+            {
+              "featureCount": 15,
+              "featureRatio": 0.056179775280898875,
+              "searchCvGmean": 0.881316245823823,
+              "testGmean": 0.8160490084215664,
+              "testError": 0.18395099157843364
+            },
+            {
+              "featureCount": 10,
+              "featureRatio": 0.03745318352059925,
+              "searchCvGmean": 0.7999702172244101,
+              "testGmean": 0.7674828783400485,
+              "testError": 0.23251712165995153
+            },
+            {
+              "featureCount": 14,
+              "featureRatio": 0.052434456928838954,
+              "searchCvGmean": 0.8420885884417265,
+              "testGmean": 0.8118217232005315,
+              "testError": 0.18817827679946852
+            },
+            {
+              "featureCount": 11,
+              "featureRatio": 0.04119850187265917,
+              "searchCvGmean": 0.8045919472896212,
+              "testGmean": 0.7704346888297302,
+              "testError": 0.2295653111702698
+            },
+            {
+              "featureCount": 17,
+              "featureRatio": 0.06367041198501873,
+              "searchCvGmean": 0.9097206669740648,
+              "testGmean": 0.8378352737771207,
+              "testError": 0.16216472622287925
+            },
+            {
+              "featureCount": 15,
+              "featureRatio": 0.056179775280898875,
+              "searchCvGmean": 0.881316245823823,
+              "testGmean": 0.8160490084215664,
+              "testError": 0.18395099157843364
+            }
+          ],
+          "heldoutNondominatedObjectives": [
+            [
+              0.16216472622287925,
+              0.06367041198501873
+            ],
+            [
+              0.18395099157843364,
+              0.056179775280898875
+            ],
+            [
+              0.18817827679946852,
+              0.052434456928838954
+            ],
+            [
+              0.20225528457589648,
+              0.04868913857677903
+            ],
+            [
+              0.2295653111702698,
+              0.04119850187265917
+            ],
+            [
+              0.23251712165995153,
+              0.03745318352059925
+            ]
+          ]
+        },
+        "Random": {
+          "heldoutParetoHV": 0.7134701928719853,
+          "chosenFeatureCount": 38,
+          "chosenFeatureRatio": 0.14232209737827714,
+          "chosenTestGmean": 0.8018252960986577,
+          "chosenFeatures": [
+            "param_1__rangeRatio__w8",
+            "param_1__meanPosition__w24",
+            "param_1__stdRatio__w24",
+            "param_1__stdRatio__w64",
+            "param_1__thresholdMargin__w64",
+            "param_1__violationRatio__w64",
+            "param_2__slopeRatio__w24",
+            "param_2__rangeRatio__w64",
+            "param_8__meanPosition__w8",
+            "param_8__madRatio__w8",
+            "param_9__rangeRatio__w8",
+            "param_9__violationRatio__w8",
+            "param_9__meanPosition__w24",
+            "param_9__stdRatio__w64",
+            "param_10__slopeRatio__w8",
+            "param_10__thresholdMargin__w24",
+            "param_10__stdRatio__w64",
+            "rel_param_1_param_2__corr__w8",
+            "rel_param_1_param_2__corr__w24",
+            "rel_param_1_param_9__corr__w8",
+            "rel_param_1_param_9__endpointDiff__w64",
+            "rel_param_1_param_10__corr__w8",
+            "rel_param_1_param_10__diffStd__w8",
+            "rel_param_1_param_10__absDiffMean__w24",
+            "rel_param_2_param_9__diffMean__w8",
+            "rel_param_2_param_9__diffStd__w8",
+            "rel_param_2_param_9__slopeDiff__w8",
+            "rel_param_2_param_9__corr__w24",
+            "rel_param_2_param_10__diffStd__w8",
+            "rel_param_2_param_10__endpointDiff__w8",
+            "rel_param_2_param_10__corr__w24",
+            "rel_param_2_param_10__absDiffMean__w64",
+            "rel_param_2_param_10__slopeDiff__w64",
+            "rel_param_9_param_10__endpointDiff__w8",
+            "rel_param_9_param_10__slopeDiff__w64",
+            "rel_param_1_param_8__absDiffMean__w24",
+            "rel_param_1_param_8__lag1Corr__w64",
+            "rel_param_1_param_8__slopeDiff__w64"
+          ],
+          "uniqueWrapperEvaluations": 80,
+          "paretoValidation": [
+            {
+              "featureCount": 38,
+              "cvGmean": 0.8102441144051179,
+              "valGmean": 0.7991829500077827
+            },
+            {
+              "featureCount": 39,
+              "cvGmean": 0.8108134226544447,
+              "valGmean": 0.7745463756551406
+            },
+            {
+              "featureCount": 40,
+              "cvGmean": 0.8162120919536298,
+              "valGmean": 0.8013860649879719
+            },
+            {
+              "featureCount": 44,
+              "cvGmean": 0.8178769583178709,
+              "valGmean": 0.7923110859844394
+            },
+            {
+              "featureCount": 46,
+              "cvGmean": 0.8242859862960317,
+              "valGmean": 0.7801591039672112
+            },
+            {
+              "featureCount": 49,
+              "cvGmean": 0.8306362277566016,
+              "valGmean": 0.7850189445174156
+            },
+            {
+              "featureCount": 51,
+              "cvGmean": 0.8343696496506653,
+              "valGmean": 0.7902177901576448
+            },
+            {
+              "featureCount": 58,
+              "cvGmean": 0.8533797308050844,
+              "valGmean": 0.8019152073797219
+            }
+          ],
+          "heldoutTrainingFront": [
+            {
+              "featureCount": 39,
+              "featureRatio": 0.14606741573033707,
+              "searchCvGmean": 0.8108134226544447,
+              "testGmean": 0.8319943693014097,
+              "testError": 0.1680056306985903
+            },
+            {
+              "featureCount": 38,
+              "featureRatio": 0.14232209737827714,
+              "searchCvGmean": 0.8102441144051179,
+              "testGmean": 0.8018252960986577,
+              "testError": 0.1981747039013423
+            },
+            {
+              "featureCount": 49,
+              "featureRatio": 0.18352059925093633,
+              "searchCvGmean": 0.8306362277566016,
+              "testGmean": 0.8242306439583379,
+              "testError": 0.1757693560416621
+            },
+            {
+              "featureCount": 40,
+              "featureRatio": 0.149812734082397,
+              "searchCvGmean": 0.8162120919536298,
+              "testGmean": 0.8177521205862028,
+              "testError": 0.18224787941379716
+            },
+            {
+              "featureCount": 51,
+              "featureRatio": 0.19101123595505617,
+              "searchCvGmean": 0.8343696496506653,
+              "testGmean": 0.8204476285304843,
+              "testError": 0.17955237146951575
+            },
+            {
+              "featureCount": 58,
+              "featureRatio": 0.21722846441947566,
+              "searchCvGmean": 0.8533797308050844,
+              "testGmean": 0.8262411699106218,
+              "testError": 0.1737588300893782
+            },
+            {
+              "featureCount": 46,
+              "featureRatio": 0.17228464419475656,
+              "searchCvGmean": 0.8242859862960317,
+              "testGmean": 0.8039778511022349,
+              "testError": 0.19602214889776515
+            },
+            {
+              "featureCount": 44,
+              "featureRatio": 0.1647940074906367,
+              "searchCvGmean": 0.8178769583178709,
+              "testGmean": 0.824382651722441,
+              "testError": 0.17561734827755904
+            }
+          ],
+          "heldoutNondominatedObjectives": [
+            [
+              0.1680056306985903,
+              0.14606741573033707
+            ],
+            [
+              0.1981747039013423,
+              0.14232209737827714
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "seed": 95,
+      "methods": {
+        "MSF": {
+          "heldoutParetoHV": 0.8165839339426123,
+          "chosenFeatureCount": 22,
+          "chosenFeatureRatio": 0.08239700374531835,
+          "chosenTestGmean": 0.8485195148883514,
+          "chosenFeatures": [
+            "param_2__diffMaxRatio__w8",
+            "param_8__diffMaxRatio__w8",
+            "param_8__diffMaxRatio__w24",
+            "rel_param_1_param_2__absDiffMean__w8",
+            "rel_param_1_param_2__corr__w24",
+            "rel_param_1_param_2__absDiffMean__w24",
+            "rel_param_1_param_2__corr__w64",
+            "rel_param_1_param_2__lag1Corr__w64",
+            "rel_param_1_param_2__diffStd__w64",
+            "rel_param_1_param_2__absDiffMean__w64",
+            "rel_param_1_param_9__diffStd__w8",
+            "rel_param_1_param_9__diffStd__w64",
+            "rel_param_2_param_9__diffStd__w8",
+            "rel_param_2_param_9__corr__w64",
+            "rel_param_2_param_9__diffStd__w64",
+            "rel_param_2_param_9__slopeDiff__w64",
+            "rel_param_2_param_10__corr__w64",
+            "rel_param_2_param_10__diffStd__w64",
+            "rel_param_9_param_10__absDiffMean__w64",
+            "rel_param_1_param_8__diffStd__w8",
+            "rel_param_1_param_8__absDiffMean__w8",
+            "rel_param_1_param_8__lag1Corr__w64"
+          ],
+          "uniqueWrapperEvaluations": 76,
+          "paretoValidation": [
+            {
+              "featureCount": 10,
+              "cvGmean": 0.739678804487506,
+              "valGmean": 0.7074280786273144
+            },
+            {
+              "featureCount": 11,
+              "cvGmean": 0.8045571851292158,
+              "valGmean": 0.7517302227385162
+            },
+            {
+              "featureCount": 12,
+              "cvGmean": 0.8090516361471569,
+              "valGmean": 0.7454701923049456
+            },
+            {
+              "featureCount": 13,
+              "cvGmean": 0.8458521430873297,
+              "valGmean": 0.801213208114115
+            },
+            {
+              "featureCount": 13,
+              "cvGmean": 0.8458521430873297,
+              "valGmean": 0.801213208114115
+            },
+            {
+              "featureCount": 15,
+              "cvGmean": 0.8827290753862505,
+              "valGmean": 0.7909058336403287
+            },
+            {
+              "featureCount": 16,
+              "cvGmean": 0.8835687761534023,
+              "valGmean": 0.8284011945614032
+            },
+            {
+              "featureCount": 18,
+              "cvGmean": 0.8862193040793157,
+              "valGmean": 0.8502057670589527
+            },
+            {
+              "featureCount": 19,
+              "cvGmean": 0.8877008447810009,
+              "valGmean": 0.8483659063614494
+            },
+            {
+              "featureCount": 22,
+              "cvGmean": 0.914696083012855,
+              "valGmean": 0.8646686186684135
+            },
+            {
+              "featureCount": 22,
+              "cvGmean": 0.914696083012855,
+              "valGmean": 0.8646686186684135
+            },
+            {
+              "featureCount": 27,
+              "cvGmean": 0.917523372600638,
+              "valGmean": 0.8664971749334031
+            }
+          ],
+          "heldoutTrainingFront": [
+            {
+              "featureCount": 10,
+              "featureRatio": 0.03745318352059925,
+              "searchCvGmean": 0.739678804487506,
+              "testGmean": 0.7346733317778549,
+              "testError": 0.2653266682221451
+            },
+            {
+              "featureCount": 22,
+              "featureRatio": 0.08239700374531835,
+              "searchCvGmean": 0.914696083012855,
+              "testGmean": 0.8485195148883514,
+              "testError": 0.15148048511164858
+            },
+            {
+              "featureCount": 13,
+              "featureRatio": 0.04868913857677903,
+              "searchCvGmean": 0.8458521430873297,
+              "testGmean": 0.7995174455729428,
+              "testError": 0.2004825544270572
+            },
+            {
+              "featureCount": 19,
+              "featureRatio": 0.07116104868913857,
+              "searchCvGmean": 0.8877008447810009,
+              "testGmean": 0.8337011858391756,
+              "testError": 0.16629881416082437
+            },
+            {
+              "featureCount": 15,
+              "featureRatio": 0.056179775280898875,
+              "searchCvGmean": 0.8827290753862505,
+              "testGmean": 0.8068104301098246,
+              "testError": 0.19318956989017544
+            },
+            {
+              "featureCount": 22,
+              "featureRatio": 0.08239700374531835,
+              "searchCvGmean": 0.914696083012855,
+              "testGmean": 0.8485195148883514,
+              "testError": 0.15148048511164858
+            },
+            {
+              "featureCount": 12,
+              "featureRatio": 0.0449438202247191,
+              "searchCvGmean": 0.8090516361471569,
+              "testGmean": 0.755583198273339,
+              "testError": 0.24441680172666103
+            },
+            {
+              "featureCount": 27,
+              "featureRatio": 0.10112359550561797,
+              "searchCvGmean": 0.917523372600638,
+              "testGmean": 0.8504235118778627,
+              "testError": 0.1495764881221373
+            },
+            {
+              "featureCount": 18,
+              "featureRatio": 0.06741573033707865,
+              "searchCvGmean": 0.8862193040793157,
+              "testGmean": 0.8456205671767949,
+              "testError": 0.1543794328232051
+            },
+            {
+              "featureCount": 16,
+              "featureRatio": 0.0599250936329588,
+              "searchCvGmean": 0.8835687761534023,
+              "testGmean": 0.8132326694912068,
+              "testError": 0.18676733050879324
+            },
+            {
+              "featureCount": 13,
+              "featureRatio": 0.04868913857677903,
+              "searchCvGmean": 0.8458521430873297,
+              "testGmean": 0.7995174455729428,
+              "testError": 0.2004825544270572
+            },
+            {
+              "featureCount": 11,
+              "featureRatio": 0.04119850187265917,
+              "searchCvGmean": 0.8045571851292158,
+              "testGmean": 0.7671018384127688,
+              "testError": 0.2328981615872312
+            }
+          ],
+          "heldoutNondominatedObjectives": [
+            [
+              0.1495764881221373,
+              0.10112359550561797
+            ],
+            [
+              0.15148048511164858,
+              0.08239700374531835
+            ],
+            [
+              0.1543794328232051,
+              0.06741573033707865
+            ],
+            [
+              0.18676733050879324,
+              0.0599250936329588
+            ],
+            [
+              0.19318956989017544,
+              0.056179775280898875
+            ],
+            [
+              0.2004825544270572,
+              0.04868913857677903
+            ],
+            [
+              0.2328981615872312,
+              0.04119850187265917
+            ],
+            [
+              0.2653266682221451,
+              0.03745318352059925
+            ]
+          ]
+        },
+        "Random": {
+          "heldoutParetoHV": 0.6788695937465777,
+          "chosenFeatureCount": 46,
+          "chosenFeatureRatio": 0.17228464419475656,
+          "chosenTestGmean": 0.8166417981181323,
+          "chosenFeatures": [
+            "param_1__madRatio__w24",
+            "param_2__stdRatio__w24",
+            "param_8__thresholdMargin__w8",
+            "param_8__violationRatio__w8",
+            "param_8__stdRatio__w24",
+            "param_8__thresholdMargin__w24",
+            "param_8__violationRatio__w64",
+            "param_9__meanPosition__w8",
+            "param_9__rangeRatio__w8",
+            "param_9__thresholdMargin__w8",
+            "param_9__slopeRatio__w24",
+            "param_9__stdRatio__w64",
+            "param_9__thresholdMargin__w64",
+            "param_10__madRatio__w8",
+            "param_10__madRatio__w24",
+            "param_10__diffMaxRatio__w24",
+            "param_10__madRatio__w64",
+            "rel_param_1_param_2__endpointDiff__w8",
+            "rel_param_1_param_2__corr__w24",
+            "rel_param_1_param_2__corr__w64",
+            "rel_param_1_param_9__corr__w64",
+            "rel_param_1_param_9__diffStd__w64",
+            "rel_param_1_param_9__absDiffMean__w64",
+            "rel_param_1_param_9__endpointDiff__w64",
+            "rel_param_1_param_10__corr__w8",
+            "rel_param_1_param_10__diffStd__w24",
+            "rel_param_1_param_10__lag1Corr__w64",
+            "rel_param_1_param_10__absDiffMean__w64",
+            "rel_param_2_param_9__diffMean__w8",
+            "rel_param_2_param_9__slopeDiff__w24",
+            "rel_param_2_param_9__endpointDiff__w24",
+            "rel_param_2_param_10__lag1Corr__w8",
+            "rel_param_2_param_10__lag1Corr__w24",
+            "rel_param_2_param_10__diffMean__w24",
+            "rel_param_2_param_10__diffStd__w24",
+            "rel_param_2_param_10__endpointDiff__w24",
+            "rel_param_2_param_10__corr__w64",
+            "rel_param_9_param_10__diffStd__w24",
+            "rel_param_9_param_10__corr__w64",
+            "rel_param_9_param_10__diffMean__w64",
+            "rel_param_9_param_10__absDiffMean__w64",
+            "rel_param_9_param_10__slopeDiff__w64",
+            "rel_param_1_param_8__diffMean__w8",
+            "rel_param_1_param_8__absDiffMean__w8",
+            "rel_param_1_param_8__slopeDiff__w24",
+            "rel_param_1_param_8__corr__w64"
+          ],
+          "uniqueWrapperEvaluations": 79,
+          "paretoValidation": [
+            {
+              "featureCount": 45,
+              "cvGmean": 0.8062829435450207,
+              "valGmean": 0.7777289266817448
+            },
+            {
+              "featureCount": 46,
+              "cvGmean": 0.8378354269848657,
+              "valGmean": 0.8156797818206732
+            },
+            {
+              "featureCount": 49,
+              "cvGmean": 0.8389096873608403,
+              "valGmean": 0.8178561000115339
+            },
+            {
+              "featureCount": 51,
+              "cvGmean": 0.8422345664778604,
+              "valGmean": 0.8140809445444851
+            },
+            {
+              "featureCount": 53,
+              "cvGmean": 0.8471958053250871,
+              "valGmean": 0.7906412723906989
+            },
+            {
+              "featureCount": 54,
+              "cvGmean": 0.8533952295837627,
+              "valGmean": 0.7892769206021063
+            }
+          ],
+          "heldoutTrainingFront": [
+            {
+              "featureCount": 53,
+              "featureRatio": 0.19850187265917604,
+              "searchCvGmean": 0.8471958053250871,
+              "testGmean": 0.8069068200331232,
+              "testError": 0.1930931799668768
+            },
+            {
+              "featureCount": 51,
+              "featureRatio": 0.19101123595505617,
+              "searchCvGmean": 0.8422345664778604,
+              "testGmean": 0.7953652716581782,
+              "testError": 0.20463472834182184
+            },
+            {
+              "featureCount": 45,
+              "featureRatio": 0.16853932584269662,
+              "searchCvGmean": 0.8062829435450207,
+              "testGmean": 0.7803441462290246,
+              "testError": 0.2196558537709754
+            },
+            {
+              "featureCount": 54,
+              "featureRatio": 0.20224719101123595,
+              "searchCvGmean": 0.8533952295837627,
+              "testGmean": 0.805824449565994,
+              "testError": 0.19417555043400603
+            },
+            {
+              "featureCount": 49,
+              "featureRatio": 0.18352059925093633,
+              "searchCvGmean": 0.8389096873608403,
+              "testGmean": 0.8164936410417828,
+              "testError": 0.1835063589582172
+            },
+            {
+              "featureCount": 46,
+              "featureRatio": 0.17228464419475656,
+              "searchCvGmean": 0.8378354269848657,
+              "testGmean": 0.8166417981181323,
+              "testError": 0.1833582018818677
+            }
+          ],
+          "heldoutNondominatedObjectives": [
+            [
+              0.1833582018818677,
+              0.17228464419475656
+            ],
+            [
+              0.2196558537709754,
+              0.16853932584269662
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "seed": 96,
+      "methods": {
+        "MSF": {
+          "heldoutParetoHV": 0.8181179404502965,
+          "chosenFeatureCount": 20,
+          "chosenFeatureRatio": 0.0749063670411985,
+          "chosenTestGmean": 0.8525395203666005,
+          "chosenFeatures": [
+            "param_1__thresholdMargin__w24",
+            "param_2__diffMaxRatio__w8",
+            "param_8__thresholdMargin__w8",
+            "param_8__madRatio__w24",
+            "param_9__rangeRatio__w8",
+            "rel_param_1_param_2__absDiffMean__w8",
+            "rel_param_1_param_2__corr__w24",
+            "rel_param_1_param_2__lag1Corr__w24",
+            "rel_param_1_param_2__corr__w64",
+            "rel_param_1_param_2__lag1Corr__w64",
+            "rel_param_1_param_2__diffStd__w64",
+            "rel_param_1_param_2__absDiffMean__w64",
+            "rel_param_2_param_9__lag1Corr__w64",
+            "rel_param_2_param_10__corr__w24",
+            "rel_param_2_param_10__corr__w64",
+            "rel_param_2_param_10__lag1Corr__w64",
+            "rel_param_9_param_10__diffMean__w8",
+            "rel_param_1_param_8__diffStd__w8",
+            "rel_param_1_param_8__absDiffMean__w8",
+            "rel_param_1_param_8__lag1Corr__w64"
+          ],
+          "uniqueWrapperEvaluations": 76,
+          "paretoValidation": [
+            {
+              "featureCount": 10,
+              "cvGmean": 0.7605536190720074,
+              "valGmean": 0.7074280786273144
+            },
+            {
+              "featureCount": 11,
+              "cvGmean": 0.7692958743808521,
+              "valGmean": 0.721383515754578
+            },
+            {
+              "featureCount": 12,
+              "cvGmean": 0.7950238167157645,
+              "valGmean": 0.7550280653173195
+            },
+            {
+              "featureCount": 13,
+              "cvGmean": 0.811743094363231,
+              "valGmean": 0.7570414236308461
+            },
+            {
+              "featureCount": 14,
+              "cvGmean": 0.8450251001536166,
+              "valGmean": 0.7756818427675533
+            },
+            {
+              "featureCount": 16,
+              "cvGmean": 0.8464573305032227,
+              "valGmean": 0.8045126587578006
+            },
+            {
+              "featureCount": 17,
+              "cvGmean": 0.8891408146528678,
+              "valGmean": 0.8089980058376756
+            },
+            {
+              "featureCount": 18,
+              "cvGmean": 0.8927895327272267,
+              "valGmean": 0.8192239301645552
+            },
+            {
+              "featureCount": 20,
+              "cvGmean": 0.8929886147128093,
+              "valGmean": 0.8338556126407024
+            },
+            {
+              "featureCount": 23,
+              "cvGmean": 0.909109401126517,
+              "valGmean": 0.8297690298271168
+            },
+            {
+              "featureCount": 24,
+              "cvGmean": 0.9099056043980109,
+              "valGmean": 0.8324996912355666
+            },
+            {
+              "featureCount": 26,
+              "cvGmean": 0.9153683760151011,
+              "valGmean": 0.8343434124296831
+            }
+          ],
+          "heldoutTrainingFront": [
+            {
+              "featureCount": 10,
+              "featureRatio": 0.03745318352059925,
+              "searchCvGmean": 0.7605536190720074,
+              "testGmean": 0.7346733317778549,
+              "testError": 0.2653266682221451
+            },
+            {
+              "featureCount": 26,
+              "featureRatio": 0.09737827715355805,
+              "searchCvGmean": 0.9153683760151011,
+              "testGmean": 0.8408929579263312,
+              "testError": 0.15910704207366877
+            },
+            {
+              "featureCount": 13,
+              "featureRatio": 0.04868913857677903,
+              "searchCvGmean": 0.811743094363231,
+              "testGmean": 0.7449522499209932,
+              "testError": 0.2550477500790068
+            },
+            {
+              "featureCount": 17,
+              "featureRatio": 0.06367041198501873,
+              "searchCvGmean": 0.8891408146528678,
+              "testGmean": 0.8244088571248578,
+              "testError": 0.17559114287514221
+            },
+            {
+              "featureCount": 20,
+              "featureRatio": 0.0749063670411985,
+              "searchCvGmean": 0.8929886147128093,
+              "testGmean": 0.8525395203666005,
+              "testError": 0.14746047963339948
+            },
+            {
+              "featureCount": 14,
+              "featureRatio": 0.052434456928838954,
+              "searchCvGmean": 0.8450251001536166,
+              "testGmean": 0.767734298613162,
+              "testError": 0.232265701386838
+            },
+            {
+              "featureCount": 16,
+              "featureRatio": 0.0599250936329588,
+              "searchCvGmean": 0.8464573305032227,
+              "testGmean": 0.7916408050657449,
+              "testError": 0.20835919493425514
+            },
+            {
+              "featureCount": 12,
+              "featureRatio": 0.0449438202247191,
+              "searchCvGmean": 0.7950238167157645,
+              "testGmean": 0.7800100121992127,
+              "testError": 0.21998998780078727
+            },
+            {
+              "featureCount": 23,
+              "featureRatio": 0.08614232209737828,
+              "searchCvGmean": 0.909109401126517,
+              "testGmean": 0.8149239942934621,
+              "testError": 0.18507600570653793
+            },
+            {
+              "featureCount": 11,
+              "featureRatio": 0.04119850187265917,
+              "searchCvGmean": 0.7692958743808521,
+              "testGmean": 0.740647812663823,
+              "testError": 0.25935218733617704
+            },
+            {
+              "featureCount": 24,
+              "featureRatio": 0.0898876404494382,
+              "searchCvGmean": 0.9099056043980109,
+              "testGmean": 0.8359318942281472,
+              "testError": 0.16406810577185282
+            },
+            {
+              "featureCount": 18,
+              "featureRatio": 0.06741573033707865,
+              "searchCvGmean": 0.8927895327272267,
+              "testGmean": 0.8242026854554565,
+              "testError": 0.1757973145445435
+            }
+          ],
+          "heldoutNondominatedObjectives": [
+            [
+              0.14746047963339948,
+              0.0749063670411985
+            ],
+            [
+              0.17559114287514221,
+              0.06367041198501873
+            ],
+            [
+              0.20835919493425514,
+              0.0599250936329588
+            ],
+            [
+              0.21998998780078727,
+              0.0449438202247191
+            ],
+            [
+              0.25935218733617704,
+              0.04119850187265917
+            ],
+            [
+              0.2653266682221451,
+              0.03745318352059925
+            ]
+          ]
+        },
+        "Random": {
+          "heldoutParetoHV": 0.716963531294907,
+          "chosenFeatureCount": 37,
+          "chosenFeatureRatio": 0.13857677902621723,
+          "chosenTestGmean": 0.8287891758260234,
+          "chosenFeatures": [
+            "param_1__slopeRatio__w8",
+            "param_1__stdRatio__w64",
+            "param_2__madRatio__w8",
+            "param_2__diffMaxRatio__w8",
+            "param_2__stdRatio__w64",
+            "param_8__stdRatio__w8",
+            "param_8__madRatio__w8",
+            "param_8__thresholdMargin__w8",
+            "param_8__stdRatio__w64",
+            "param_9__stdRatio__w8",
+            "param_9__madRatio__w24",
+            "param_9__violationRatio__w64",
+            "param_10__rangeRatio__w8",
+            "param_10__diffMaxRatio__w64",
+            "rel_param_1_param_2__lag1Corr__w8",
+            "rel_param_1_param_2__lag1Corr__w24",
+            "rel_param_1_param_2__absDiffMean__w64",
+            "rel_param_1_param_9__diffStd__w64",
+            "rel_param_1_param_10__diffStd__w8",
+            "rel_param_1_param_10__corr__w24",
+            "rel_param_1_param_10__lag1Corr__w24",
+            "rel_param_1_param_10__slopeDiff__w24",
+            "rel_param_1_param_10__corr__w64",
+            "rel_param_1_param_10__absDiffMean__w64",
+            "rel_param_2_param_9__diffMean__w24",
+            "rel_param_2_param_9__corr__w64",
+            "rel_param_2_param_9__lag1Corr__w64",
+            "rel_param_2_param_10__slopeDiff__w8",
+            "rel_param_2_param_10__endpointDiff__w8",
+            "rel_param_2_param_10__diffStd__w24",
+            "rel_param_2_param_10__lag1Corr__w64",
+            "rel_param_2_param_10__absDiffMean__w64",
+            "rel_param_9_param_10__diffMean__w8",
+            "rel_param_9_param_10__slopeDiff__w64",
+            "rel_param_9_param_10__endpointDiff__w64",
+            "rel_param_1_param_8__corr__w64",
+            "rel_param_1_param_8__lag1Corr__w64"
+          ],
+          "uniqueWrapperEvaluations": 76,
+          "paretoValidation": [
+            {
+              "featureCount": 36,
+              "cvGmean": 0.8339797734599892,
+              "valGmean": 0.796278260916247
+            },
+            {
+              "featureCount": 37,
+              "cvGmean": 0.8602076908805253,
+              "valGmean": 0.824906971504239
+            },
+            {
+              "featureCount": 38,
+              "cvGmean": 0.8645956182296878,
+              "valGmean": 0.8056990157143121
+            }
+          ],
+          "heldoutTrainingFront": [
+            {
+              "featureCount": 36,
+              "featureRatio": 0.1348314606741573,
+              "searchCvGmean": 0.8339797734599892,
+              "testGmean": 0.8077524157547767,
+              "testError": 0.19224758424522326
+            },
+            {
+              "featureCount": 38,
+              "featureRatio": 0.14232209737827714,
+              "searchCvGmean": 0.8645956182296878,
+              "testGmean": 0.8153197806180553,
+              "testError": 0.18468021938194468
+            },
+            {
+              "featureCount": 37,
+              "featureRatio": 0.13857677902621723,
+              "searchCvGmean": 0.8602076908805253,
+              "testGmean": 0.8287891758260234,
+              "testError": 0.1712108241739766
+            }
+          ],
+          "heldoutNondominatedObjectives": [
+            [
+              0.1712108241739766,
+              0.13857677902621723
+            ],
+            [
+              0.19224758424522326,
+              0.1348314606741573
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "seed": 97,
+      "methods": {
+        "MSF": {
+          "heldoutParetoHV": 0.8112808098441853,
+          "chosenFeatureCount": 25,
+          "chosenFeatureRatio": 0.09363295880149813,
+          "chosenTestGmean": 0.8420568241690577,
+          "chosenFeatures": [
+            "rel_param_1_param_2__diffStd__w8",
+            "rel_param_1_param_2__absDiffMean__w8",
+            "rel_param_1_param_2__corr__w24",
+            "rel_param_1_param_2__lag1Corr__w24",
+            "rel_param_1_param_2__diffStd__w24",
+            "rel_param_1_param_2__absDiffMean__w24",
+            "rel_param_1_param_2__corr__w64",
+            "rel_param_1_param_2__lag1Corr__w64",
+            "rel_param_1_param_2__diffStd__w64",
+            "rel_param_1_param_2__absDiffMean__w64",
+            "rel_param_1_param_9__diffStd__w8",
+            "rel_param_1_param_9__diffMean__w64",
+            "rel_param_2_param_9__diffStd__w8",
+            "rel_param_2_param_9__corr__w24",
+            "rel_param_2_param_9__corr__w64",
+            "rel_param_2_param_9__lag1Corr__w64",
+            "rel_param_2_param_10__corr__w64",
+            "rel_param_2_param_10__lag1Corr__w64",
+            "rel_param_1_param_8__diffStd__w8",
+            "rel_param_1_param_8__absDiffMean__w8",
+            "rel_param_1_param_8__absDiffMean__w24",
+            "rel_param_1_param_8__corr__w64",
+            "rel_param_1_param_8__lag1Corr__w64",
+            "rel_param_1_param_8__diffStd__w64",
+            "rel_param_1_param_8__absDiffMean__w64"
+          ],
+          "uniqueWrapperEvaluations": 77,
+          "paretoValidation": [
+            {
+              "featureCount": 9,
+              "cvGmean": 0.7602329661213528,
+              "valGmean": 0.7308813031262654
+            },
+            {
+              "featureCount": 10,
+              "cvGmean": 0.7626925969287504,
+              "valGmean": 0.7074280786273144
+            },
+            {
+              "featureCount": 10,
+              "cvGmean": 0.7626925969287504,
+              "valGmean": 0.7074280786273144
+            },
+            {
+              "featureCount": 11,
+              "cvGmean": 0.8105466695904012,
+              "valGmean": 0.7756818427675533
+            },
+            {
+              "featureCount": 13,
+              "cvGmean": 0.8497458133178508,
+              "valGmean": 0.8013590585592513
+            },
+            {
+              "featureCount": 14,
+              "cvGmean": 0.8696074241866477,
+              "valGmean": 0.810505407043381
+            },
+            {
+              "featureCount": 15,
+              "cvGmean": 0.8907761705836389,
+              "valGmean": 0.8066207302130906
+            },
+            {
+              "featureCount": 17,
+              "cvGmean": 0.8966716019898996,
+              "valGmean": 0.8262805911709232
+            },
+            {
+              "featureCount": 17,
+              "cvGmean": 0.8966716019898996,
+              "valGmean": 0.8262805911709232
+            },
+            {
+              "featureCount": 22,
+              "cvGmean": 0.9011245949937972,
+              "valGmean": 0.8278366962372049
+            },
+            {
+              "featureCount": 25,
+              "cvGmean": 0.9044869895765076,
+              "valGmean": 0.8384403954196314
+            },
+            {
+              "featureCount": 25,
+              "cvGmean": 0.9044869895765076,
+              "valGmean": 0.8384403954196314
+            }
+          ],
+          "heldoutTrainingFront": [
+            {
+              "featureCount": 25,
+              "featureRatio": 0.09363295880149813,
+              "searchCvGmean": 0.9044869895765076,
+              "testGmean": 0.8420568241690577,
+              "testError": 0.1579431758309423
+            },
+            {
+              "featureCount": 9,
+              "featureRatio": 0.033707865168539325,
+              "searchCvGmean": 0.7602329661213528,
+              "testGmean": 0.7457000748176933,
+              "testError": 0.2542999251823067
+            },
+            {
+              "featureCount": 25,
+              "featureRatio": 0.09363295880149813,
+              "searchCvGmean": 0.9044869895765076,
+              "testGmean": 0.8420568241690577,
+              "testError": 0.1579431758309423
+            },
+            {
+              "featureCount": 11,
+              "featureRatio": 0.04119850187265917,
+              "searchCvGmean": 0.8105466695904012,
+              "testGmean": 0.7551599183531283,
+              "testError": 0.24484008164687165
+            },
+            {
+              "featureCount": 13,
+              "featureRatio": 0.04868913857677903,
+              "searchCvGmean": 0.8497458133178508,
+              "testGmean": 0.7887318386993866,
+              "testError": 0.21126816130061343
+            },
+            {
+              "featureCount": 22,
+              "featureRatio": 0.08239700374531835,
+              "searchCvGmean": 0.9011245949937972,
+              "testGmean": 0.8321916880209637,
+              "testError": 0.16780831197903634
+            },
+            {
+              "featureCount": 14,
+              "featureRatio": 0.052434456928838954,
+              "searchCvGmean": 0.8696074241866477,
+              "testGmean": 0.798489993967258,
+              "testError": 0.20151000603274205
+            },
+            {
+              "featureCount": 10,
+              "featureRatio": 0.03745318352059925,
+              "searchCvGmean": 0.7626925969287504,
+              "testGmean": 0.7346733317778549,
+              "testError": 0.2653266682221451
+            },
+            {
+              "featureCount": 15,
+              "featureRatio": 0.056179775280898875,
+              "searchCvGmean": 0.8907761705836389,
+              "testGmean": 0.8178965278867381,
+              "testError": 0.18210347211326194
+            },
+            {
+              "featureCount": 17,
+              "featureRatio": 0.06367041198501873,
+              "searchCvGmean": 0.8966716019898996,
+              "testGmean": 0.822582968128171,
+              "testError": 0.177417031871829
+            },
+            {
+              "featureCount": 17,
+              "featureRatio": 0.06367041198501873,
+              "searchCvGmean": 0.8966716019898996,
+              "testGmean": 0.822582968128171,
+              "testError": 0.177417031871829
+            },
+            {
+              "featureCount": 10,
+              "featureRatio": 0.03745318352059925,
+              "searchCvGmean": 0.7626925969287504,
+              "testGmean": 0.7346733317778549,
+              "testError": 0.2653266682221451
+            }
+          ],
+          "heldoutNondominatedObjectives": [
+            [
+              0.1579431758309423,
+              0.09363295880149813
+            ],
+            [
+              0.16780831197903634,
+              0.08239700374531835
+            ],
+            [
+              0.177417031871829,
+              0.06367041198501873
+            ],
+            [
+              0.18210347211326194,
+              0.056179775280898875
+            ],
+            [
+              0.20151000603274205,
+              0.052434456928838954
+            ],
+            [
+              0.21126816130061343,
+              0.04868913857677903
+            ],
+            [
+              0.24484008164687165,
+              0.04119850187265917
+            ],
+            [
+              0.2542999251823067,
+              0.033707865168539325
+            ]
+          ]
+        },
+        "Random": {
+          "heldoutParetoHV": 0.7386146855514292,
+          "chosenFeatureCount": 38,
+          "chosenFeatureRatio": 0.14232209737827714,
+          "chosenTestGmean": 0.814531552028125,
+          "chosenFeatures": [
+            "param_1__stdRatio__w8",
+            "param_1__diffMaxRatio__w8",
+            "param_1__thresholdMargin__w24",
+            "param_1__stdRatio__w64",
+            "param_2__diffMaxRatio__w8",
+            "param_2__thresholdMargin__w8",
+            "param_2__madRatio__w24",
+            "param_2__thresholdMargin__w64",
+            "param_8__rangeRatio__w8",
+            "param_8__slopeRatio__w8",
+            "param_8__thresholdMargin__w8",
+            "param_8__thresholdMargin__w64",
+            "param_9__madRatio__w8",
+            "param_9__rangeRatio__w24",
+            "param_9__thresholdMargin__w24",
+            "param_9__meanPosition__w64",
+            "param_9__rangeRatio__w64",
+            "param_10__rangeRatio__w8",
+            "param_10__violationRatio__w64",
+            "rel_param_1_param_2__corr__w24",
+            "rel_param_1_param_2__endpointDiff__w24",
+            "rel_param_1_param_2__diffMean__w64",
+            "rel_param_1_param_2__endpointDiff__w64",
+            "rel_param_1_param_9__diffStd__w8",
+            "rel_param_1_param_9__slopeDiff__w24",
+            "rel_param_1_param_9__diffMean__w64",
+            "rel_param_1_param_9__absDiffMean__w64",
+            "rel_param_1_param_10__endpointDiff__w8",
+            "rel_param_1_param_10__corr__w24",
+            "rel_param_1_param_10__absDiffMean__w64",
+            "rel_param_2_param_9__diffStd__w64",
+            "rel_param_2_param_9__slopeDiff__w64",
+            "rel_param_2_param_10__diffMean__w8",
+            "rel_param_2_param_10__lag1Corr__w24",
+            "rel_param_2_param_10__lag1Corr__w64",
+            "rel_param_9_param_10__corr__w24",
+            "rel_param_1_param_8__lag1Corr__w64",
+            "rel_param_1_param_8__slopeDiff__w64"
+          ],
+          "uniqueWrapperEvaluations": 76,
+          "paretoValidation": [
+            {
+              "featureCount": 32,
+              "cvGmean": 0.8236756515898115,
+              "valGmean": 0.7754399973837329
+            },
+            {
+              "featureCount": 36,
+              "cvGmean": 0.8281954868461368,
+              "valGmean": 0.79728687664837
+            },
+            {
+              "featureCount": 37,
+              "cvGmean": 0.8537719053442537,
+              "valGmean": 0.8127523908311454
+            },
+            {
+              "featureCount": 37,
+              "cvGmean": 0.8537719053442537,
+              "valGmean": 0.8127523908311454
+            },
+            {
+              "featureCount": 38,
+              "cvGmean": 0.8710601226792081,
+              "valGmean": 0.8359811632633825
+            },
+            {
+              "featureCount": 39,
+              "cvGmean": 0.8788672344071125,
+              "valGmean": 0.8343382245710794
+            }
+          ],
+          "heldoutTrainingFront": [
+            {
+              "featureCount": 37,
+              "featureRatio": 0.13857677902621723,
+              "searchCvGmean": 0.8537719053442537,
+              "testGmean": 0.8271923685412841,
+              "testError": 0.17280763145871592
+            },
+            {
+              "featureCount": 37,
+              "featureRatio": 0.13857677902621723,
+              "searchCvGmean": 0.8537719053442537,
+              "testGmean": 0.8271923685412841,
+              "testError": 0.17280763145871592
+            },
+            {
+              "featureCount": 32,
+              "featureRatio": 0.1198501872659176,
+              "searchCvGmean": 0.8236756515898115,
+              "testGmean": 0.7747818377496593,
+              "testError": 0.22521816225034075
+            },
+            {
+              "featureCount": 36,
+              "featureRatio": 0.1348314606741573,
+              "searchCvGmean": 0.8281954868461368,
+              "testGmean": 0.7845684769588337,
+              "testError": 0.2154315230411663
+            },
+            {
+              "featureCount": 39,
+              "featureRatio": 0.14606741573033707,
+              "searchCvGmean": 0.8788672344071125,
+              "testGmean": 0.8406668441982087,
+              "testError": 0.1593331558017913
+            },
+            {
+              "featureCount": 38,
+              "featureRatio": 0.14232209737827714,
+              "searchCvGmean": 0.8710601226792081,
+              "testGmean": 0.814531552028125,
+              "testError": 0.185468447971875
+            }
+          ],
+          "heldoutNondominatedObjectives": [
+            [
+              0.1593331558017913,
+              0.14606741573033707
+            ],
+            [
+              0.17280763145871592,
+              0.13857677902621723
+            ],
+            [
+              0.2154315230411663,
+              0.1348314606741573
+            ],
+            [
+              0.22521816225034075,
+              0.1198501872659176
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "seed": 98,
+      "methods": {
+        "MSF": {
+          "heldoutParetoHV": 0.8072461698012486,
+          "chosenFeatureCount": 16,
+          "chosenFeatureRatio": 0.0599250936329588,
+          "chosenTestGmean": 0.8320913036423445,
+          "chosenFeatures": [
+            "param_1__violationRatio__w64",
+            "param_10__diffMaxRatio__w24",
+            "rel_param_1_param_2__absDiffMean__w8",
+            "rel_param_1_param_2__corr__w24",
+            "rel_param_1_param_2__lag1Corr__w24",
+            "rel_param_1_param_2__absDiffMean__w24",
+            "rel_param_1_param_2__corr__w64",
+            "rel_param_1_param_2__lag1Corr__w64",
+            "rel_param_1_param_2__diffStd__w64",
+            "rel_param_1_param_2__absDiffMean__w64",
+            "rel_param_2_param_9__diffStd__w8",
+            "rel_param_2_param_9__absDiffMean__w24",
+            "rel_param_2_param_10__diffMean__w24",
+            "rel_param_2_param_10__corr__w64",
+            "rel_param_1_param_8__absDiffMean__w8",
+            "rel_param_1_param_8__corr__w64"
+          ],
+          "uniqueWrapperEvaluations": 81,
+          "paretoValidation": [
+            {
+              "featureCount": 10,
+              "cvGmean": 0.7640720845660963,
+              "valGmean": 0.7074280786273144
+            },
+            {
+              "featureCount": 10,
+              "cvGmean": 0.7640720845660963,
+              "valGmean": 0.7074280786273144
+            },
+            {
+              "featureCount": 11,
+              "cvGmean": 0.802270960374539,
+              "valGmean": 0.7546763702681167
+            },
+            {
+              "featureCount": 15,
+              "cvGmean": 0.8609040730732122,
+              "valGmean": 0.8326123358056289
+            },
+            {
+              "featureCount": 16,
+              "cvGmean": 0.870998665075304,
+              "valGmean": 0.8467981150011966
+            },
+            {
+              "featureCount": 19,
+              "cvGmean": 0.8798908824449443,
+              "valGmean": 0.8225441017295885
+            },
+            {
+              "featureCount": 23,
+              "cvGmean": 0.8990248504383946,
+              "valGmean": 0.8228702972657044
+            },
+            {
+              "featureCount": 26,
+              "cvGmean": 0.9041530326127903,
+              "valGmean": 0.830092386239175
+            }
+          ],
+          "heldoutTrainingFront": [
+            {
+              "featureCount": 10,
+              "featureRatio": 0.03745318352059925,
+              "searchCvGmean": 0.7640720845660963,
+              "testGmean": 0.7346733317778549,
+              "testError": 0.2653266682221451
+            },
+            {
+              "featureCount": 11,
+              "featureRatio": 0.04119850187265917,
+              "searchCvGmean": 0.802270960374539,
+              "testGmean": 0.783741971370539,
+              "testError": 0.21625802862946097
+            },
+            {
+              "featureCount": 26,
+              "featureRatio": 0.09737827715355805,
+              "searchCvGmean": 0.9041530326127903,
+              "testGmean": 0.8402367176583802,
+              "testError": 0.15976328234161985
+            },
+            {
+              "featureCount": 19,
+              "featureRatio": 0.07116104868913857,
+              "searchCvGmean": 0.8798908824449443,
+              "testGmean": 0.8240890942835162,
+              "testError": 0.17591090571648382
+            },
+            {
+              "featureCount": 23,
+              "featureRatio": 0.08614232209737828,
+              "searchCvGmean": 0.8990248504383946,
+              "testGmean": 0.8389965151851169,
+              "testError": 0.16100348481488314
+            },
+            {
+              "featureCount": 16,
+              "featureRatio": 0.0599250936329588,
+              "searchCvGmean": 0.870998665075304,
+              "testGmean": 0.8320913036423445,
+              "testError": 0.16790869635765548
+            },
+            {
+              "featureCount": 15,
+              "featureRatio": 0.056179775280898875,
+              "searchCvGmean": 0.8609040730732122,
+              "testGmean": 0.8264084929520112,
+              "testError": 0.17359150704798876
+            },
+            {
+              "featureCount": 10,
+              "featureRatio": 0.03745318352059925,
+              "searchCvGmean": 0.7640720845660963,
+              "testGmean": 0.7346733317778549,
+              "testError": 0.2653266682221451
+            }
+          ],
+          "heldoutNondominatedObjectives": [
+            [
+              0.15976328234161985,
+              0.09737827715355805
+            ],
+            [
+              0.16100348481488314,
+              0.08614232209737828
+            ],
+            [
+              0.16790869635765548,
+              0.0599250936329588
+            ],
+            [
+              0.17359150704798876,
+              0.056179775280898875
+            ],
+            [
+              0.21625802862946097,
+              0.04119850187265917
+            ],
+            [
+              0.2653266682221451,
+              0.03745318352059925
+            ]
+          ]
+        },
+        "Random": {
+          "heldoutParetoHV": 0.7234241233872611,
+          "chosenFeatureCount": 45,
+          "chosenFeatureRatio": 0.16853932584269662,
+          "chosenTestGmean": 0.8358991581589671,
+          "chosenFeatures": [
+            "param_1__diffMaxRatio__w8",
+            "param_1__madRatio__w24",
+            "param_1__slopeRatio__w24",
+            "param_1__slopeRatio__w64",
+            "param_2__stdRatio__w8",
+            "param_2__rangeRatio__w8",
+            "param_2__diffMaxRatio__w8",
+            "param_2__meanPosition__w24",
+            "param_2__slopeRatio__w24",
+            "param_2__violationRatio__w24",
+            "param_2__slopeRatio__w64",
+            "param_8__rangeRatio__w8",
+            "param_8__slopeRatio__w24",
+            "param_8__thresholdMargin__w24",
+            "param_8__stdRatio__w64",
+            "param_8__thresholdMargin__w64",
+            "param_8__violationRatio__w64",
+            "param_9__madRatio__w8",
+            "param_9__rangeRatio__w64",
+            "param_10__thresholdMargin__w24",
+            "rel_param_1_param_2__lag1Corr__w24",
+            "rel_param_1_param_2__diffMean__w24",
+            "rel_param_1_param_2__slopeDiff__w64",
+            "rel_param_1_param_9__lag1Corr__w8",
+            "rel_param_1_param_9__slopeDiff__w8",
+            "rel_param_1_param_9__corr__w24",
+            "rel_param_1_param_9__endpointDiff__w24",
+            "rel_param_1_param_10__corr__w8",
+            "rel_param_1_param_10__diffMean__w24",
+            "rel_param_1_param_10__absDiffMean__w24",
+            "rel_param_1_param_10__endpointDiff__w64",
+            "rel_param_2_param_9__lag1Corr__w8",
+            "rel_param_2_param_9__absDiffMean__w8",
+            "rel_param_2_param_9__endpointDiff__w64",
+            "rel_param_2_param_10__diffStd__w8",
+            "rel_param_2_param_10__corr__w64",
+            "rel_param_2_param_10__diffStd__w64",
+            "rel_param_2_param_10__absDiffMean__w64",
+            "rel_param_9_param_10__diffStd__w24",
+            "rel_param_9_param_10__endpointDiff__w24",
+            "rel_param_9_param_10__absDiffMean__w64",
+            "rel_param_1_param_8__diffMean__w8",
+            "rel_param_1_param_8__absDiffMean__w24",
+            "rel_param_1_param_8__lag1Corr__w64",
+            "rel_param_1_param_8__slopeDiff__w64"
+          ],
+          "uniqueWrapperEvaluations": 82,
+          "paretoValidation": [
+            {
+              "featureCount": 37,
+              "cvGmean": 0.7970741936136271,
+              "valGmean": 0.7945423353656187
+            },
+            {
+              "featureCount": 40,
+              "cvGmean": 0.7998901136922186,
+              "valGmean": 0.7820727192816999
+            },
+            {
+              "featureCount": 41,
+              "cvGmean": 0.8143808838910397,
+              "valGmean": 0.8065277117041832
+            },
+            {
+              "featureCount": 42,
+              "cvGmean": 0.8281640222273076,
+              "valGmean": 0.7912651302994065
+            },
+            {
+              "featureCount": 45,
+              "cvGmean": 0.836084168798409,
+              "valGmean": 0.8095293018982131
+            },
+            {
+              "featureCount": 46,
+              "cvGmean": 0.8411041247735099,
+              "valGmean": 0.7962329609508608
+            },
+            {
+              "featureCount": 48,
+              "cvGmean": 0.8482547441880143,
+              "valGmean": 0.8019799763332686
+            },
+            {
+              "featureCount": 49,
+              "cvGmean": 0.8516125436833338,
+              "valGmean": 0.804684806866601
+            },
+            {
+              "featureCount": 51,
+              "cvGmean": 0.8709927372822595,
+              "valGmean": 0.8132883304810982
+            }
+          ],
+          "heldoutTrainingFront": [
+            {
+              "featureCount": 42,
+              "featureRatio": 0.15730337078651685,
+              "searchCvGmean": 0.8281640222273076,
+              "testGmean": 0.8251387795999283,
+              "testError": 0.17486122040007168
+            },
+            {
+              "featureCount": 51,
+              "featureRatio": 0.19101123595505617,
+              "searchCvGmean": 0.8709927372822595,
+              "testGmean": 0.8406599913176419,
+              "testError": 0.1593400086823581
+            },
+            {
+              "featureCount": 48,
+              "featureRatio": 0.1797752808988764,
+              "searchCvGmean": 0.8482547441880143,
+              "testGmean": 0.8234859250055442,
+              "testError": 0.17651407499445582
+            },
+            {
+              "featureCount": 46,
+              "featureRatio": 0.17228464419475656,
+              "searchCvGmean": 0.8411041247735099,
+              "testGmean": 0.7980732290291241,
+              "testError": 0.20192677097087586
+            },
+            {
+              "featureCount": 40,
+              "featureRatio": 0.149812734082397,
+              "searchCvGmean": 0.7998901136922186,
+              "testGmean": 0.7850969839079297,
+              "testError": 0.2149030160920703
+            },
+            {
+              "featureCount": 41,
+              "featureRatio": 0.15355805243445692,
+              "searchCvGmean": 0.8143808838910397,
+              "testGmean": 0.8127596728227584,
+              "testError": 0.1872403271772416
+            },
+            {
+              "featureCount": 49,
+              "featureRatio": 0.18352059925093633,
+              "searchCvGmean": 0.8516125436833338,
+              "testGmean": 0.8327211018156042,
+              "testError": 0.16727889818439579
+            },
+            {
+              "featureCount": 45,
+              "featureRatio": 0.16853932584269662,
+              "searchCvGmean": 0.836084168798409,
+              "testGmean": 0.8358991581589671,
+              "testError": 0.1641008418410329
+            },
+            {
+              "featureCount": 37,
+              "featureRatio": 0.13857677902621723,
+              "searchCvGmean": 0.7970741936136271,
+              "testGmean": 0.8161743064068963,
+              "testError": 0.18382569359310375
+            }
+          ],
+          "heldoutNondominatedObjectives": [
+            [
+              0.1593400086823581,
+              0.19101123595505617
+            ],
+            [
+              0.1641008418410329,
+              0.16853932584269662
+            ],
+            [
+              0.17486122040007168,
+              0.15730337078651685
+            ],
+            [
+              0.18382569359310375,
+              0.13857677902621723
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "seed": 99,
+      "methods": {
+        "MSF": {
+          "heldoutParetoHV": 0.8135099944505634,
+          "chosenFeatureCount": 30,
+          "chosenFeatureRatio": 0.11235955056179775,
+          "chosenTestGmean": 0.8486026813611498,
+          "chosenFeatures": [
+            "param_1__violationRatio__w64",
+            "param_9__thresholdMargin__w64",
+            "rel_param_1_param_2__diffStd__w8",
+            "rel_param_1_param_2__absDiffMean__w8",
+            "rel_param_1_param_2__corr__w24",
+            "rel_param_1_param_2__lag1Corr__w24",
+            "rel_param_1_param_2__diffStd__w24",
+            "rel_param_1_param_2__absDiffMean__w24",
+            "rel_param_1_param_2__corr__w64",
+            "rel_param_1_param_2__lag1Corr__w64",
+            "rel_param_1_param_2__diffStd__w64",
+            "rel_param_1_param_2__absDiffMean__w64",
+            "rel_param_1_param_9__diffStd__w8",
+            "rel_param_1_param_9__diffStd__w64",
+            "rel_param_2_param_9__diffStd__w8",
+            "rel_param_2_param_9__corr__w24",
+            "rel_param_2_param_9__lag1Corr__w24",
+            "rel_param_2_param_9__corr__w64",
+            "rel_param_2_param_9__lag1Corr__w64",
+            "rel_param_2_param_9__diffStd__w64",
+            "rel_param_2_param_10__corr__w64",
+            "rel_param_2_param_10__lag1Corr__w64",
+            "rel_param_2_param_10__absDiffMean__w64",
+            "rel_param_1_param_8__diffStd__w8",
+            "rel_param_1_param_8__absDiffMean__w8",
+            "rel_param_1_param_8__absDiffMean__w24",
+            "rel_param_1_param_8__corr__w64",
+            "rel_param_1_param_8__lag1Corr__w64",
+            "rel_param_1_param_8__diffStd__w64",
+            "rel_param_1_param_8__absDiffMean__w64"
+          ],
+          "uniqueWrapperEvaluations": 77,
+          "paretoValidation": [
+            {
+              "featureCount": 10,
+              "cvGmean": 0.7564226672538674,
+              "valGmean": 0.7074280786273144
+            },
+            {
+              "featureCount": 10,
+              "cvGmean": 0.7564226672538674,
+              "valGmean": 0.7074280786273144
+            },
+            {
+              "featureCount": 13,
+              "cvGmean": 0.7715567987477705,
+              "valGmean": 0.7166880820694136
+            },
+            {
+              "featureCount": 13,
+              "cvGmean": 0.7715567987477705,
+              "valGmean": 0.7166880820694136
+            },
+            {
+              "featureCount": 15,
+              "cvGmean": 0.8676109683542985,
+              "valGmean": 0.8004529154085396
+            },
+            {
+              "featureCount": 18,
+              "cvGmean": 0.869543380160193,
+              "valGmean": 0.8157010077280586
+            },
+            {
+              "featureCount": 19,
+              "cvGmean": 0.8895812965923587,
+              "valGmean": 0.8060356084015662
+            },
+            {
+              "featureCount": 24,
+              "cvGmean": 0.8909169789623043,
+              "valGmean": 0.8408478231406092
+            },
+            {
+              "featureCount": 26,
+              "cvGmean": 0.8909775675255353,
+              "valGmean": 0.8134692634426334
+            },
+            {
+              "featureCount": 28,
+              "cvGmean": 0.8935253093643541,
+              "valGmean": 0.8411463374317011
+            },
+            {
+              "featureCount": 30,
+              "cvGmean": 0.9039420219007982,
+              "valGmean": 0.8531128789379767
+            },
+            {
+              "featureCount": 30,
+              "cvGmean": 0.9039420219007982,
+              "valGmean": 0.8531128789379767
+            }
+          ],
+          "heldoutTrainingFront": [
+            {
+              "featureCount": 10,
+              "featureRatio": 0.03745318352059925,
+              "searchCvGmean": 0.7564226672538674,
+              "testGmean": 0.7346733317778549,
+              "testError": 0.2653266682221451
+            },
+            {
+              "featureCount": 30,
+              "featureRatio": 0.11235955056179775,
+              "searchCvGmean": 0.9039420219007982,
+              "testGmean": 0.8486026813611498,
+              "testError": 0.1513973186388502
+            },
+            {
+              "featureCount": 10,
+              "featureRatio": 0.03745318352059925,
+              "searchCvGmean": 0.7564226672538674,
+              "testGmean": 0.7346733317778549,
+              "testError": 0.2653266682221451
+            },
+            {
+              "featureCount": 30,
+              "featureRatio": 0.11235955056179775,
+              "searchCvGmean": 0.9039420219007982,
+              "testGmean": 0.8486026813611498,
+              "testError": 0.1513973186388502
+            },
+            {
+              "featureCount": 15,
+              "featureRatio": 0.056179775280898875,
+              "searchCvGmean": 0.8676109683542985,
+              "testGmean": 0.7873373513619059,
+              "testError": 0.21266264863809414
+            },
+            {
+              "featureCount": 13,
+              "featureRatio": 0.04868913857677903,
+              "searchCvGmean": 0.7715567987477705,
+              "testGmean": 0.7469370731097246,
+              "testError": 0.25306292689027543
+            },
+            {
+              "featureCount": 19,
+              "featureRatio": 0.07116104868913857,
+              "searchCvGmean": 0.8895812965923587,
+              "testGmean": 0.8155599857490501,
+              "testError": 0.1844400142509499
+            },
+            {
+              "featureCount": 24,
+              "featureRatio": 0.0898876404494382,
+              "searchCvGmean": 0.8909169789623043,
+              "testGmean": 0.8469956162200079,
+              "testError": 0.15300438377999215
+            },
+            {
+              "featureCount": 18,
+              "featureRatio": 0.06741573033707865,
+              "searchCvGmean": 0.869543380160193,
+              "testGmean": 0.8244088571248578,
+              "testError": 0.17559114287514221
+            },
+            {
+              "featureCount": 26,
+              "featureRatio": 0.09737827715355805,
+              "searchCvGmean": 0.8909775675255353,
+              "testGmean": 0.8216860301592479,
+              "testError": 0.1783139698407521
+            },
+            {
+              "featureCount": 13,
+              "featureRatio": 0.04868913857677903,
+              "searchCvGmean": 0.7715567987477705,
+              "testGmean": 0.7469370731097246,
+              "testError": 0.25306292689027543
+            },
+            {
+              "featureCount": 28,
+              "featureRatio": 0.10486891385767791,
+              "searchCvGmean": 0.8935253093643541,
+              "testGmean": 0.8398732519288002,
+              "testError": 0.16012674807119975
+            }
+          ],
+          "heldoutNondominatedObjectives": [
+            [
+              0.1513973186388502,
+              0.11235955056179775
+            ],
+            [
+              0.15300438377999215,
+              0.0898876404494382
+            ],
+            [
+              0.17559114287514221,
+              0.06741573033707865
+            ],
+            [
+              0.21266264863809414,
+              0.056179775280898875
+            ],
+            [
+              0.25306292689027543,
+              0.04868913857677903
+            ],
+            [
+              0.2653266682221451,
+              0.03745318352059925
+            ]
+          ]
+        },
+        "Random": {
+          "heldoutParetoHV": 0.7563080029480811,
+          "chosenFeatureCount": 43,
+          "chosenFeatureRatio": 0.16104868913857678,
+          "chosenTestGmean": 0.8104758504401863,
+          "chosenFeatures": [
+            "param_1__stdRatio__w24",
+            "param_1__meanPosition__w64",
+            "param_1__violationRatio__w64",
+            "param_2__madRatio__w8",
+            "param_2__violationRatio__w8",
+            "param_2__rangeRatio__w24",
+            "param_2__meanPosition__w64",
+            "param_2__madRatio__w64",
+            "param_8__thresholdMargin__w8",
+            "param_8__violationRatio__w64",
+            "param_9__meanPosition__w64",
+            "param_9__slopeRatio__w64",
+            "param_9__thresholdMargin__w64",
+            "param_9__violationRatio__w64",
+            "param_10__rangeRatio__w8",
+            "param_10__violationRatio__w24",
+            "rel_param_1_param_2__lag1Corr__w64",
+            "rel_param_1_param_2__endpointDiff__w64",
+            "rel_param_1_param_9__corr__w8",
+            "rel_param_1_param_9__lag1Corr__w8",
+            "rel_param_1_param_9__corr__w24",
+            "rel_param_1_param_9__endpointDiff__w24",
+            "rel_param_1_param_9__diffMean__w64",
+            "rel_param_1_param_9__endpointDiff__w64",
+            "rel_param_1_param_10__endpointDiff__w8",
+            "rel_param_1_param_10__lag1Corr__w64",
+            "rel_param_2_param_9__diffStd__w24",
+            "rel_param_2_param_9__endpointDiff__w24",
+            "rel_param_2_param_9__endpointDiff__w64",
+            "rel_param_2_param_10__lag1Corr__w24",
+            "rel_param_2_param_10__diffStd__w24",
+            "rel_param_2_param_10__absDiffMean__w24",
+            "rel_param_9_param_10__diffStd__w8",
+            "rel_param_9_param_10__absDiffMean__w8",
+            "rel_param_9_param_10__endpointDiff__w8",
+            "rel_param_9_param_10__corr__w24",
+            "rel_param_9_param_10__lag1Corr__w64",
+            "rel_param_9_param_10__endpointDiff__w64",
+            "rel_param_1_param_8__diffStd__w8",
+            "rel_param_1_param_8__endpointDiff__w8",
+            "rel_param_1_param_8__diffMean__w24",
+            "rel_param_1_param_8__diffStd__w24",
+            "rel_param_1_param_8__corr__w64"
+          ],
+          "uniqueWrapperEvaluations": 77,
+          "paretoValidation": [
+            {
+              "featureCount": 26,
+              "cvGmean": 0.7102735859355724,
+              "valGmean": 0.7355410570928476
+            },
+            {
+              "featureCount": 31,
+              "cvGmean": 0.7499387652042899,
+              "valGmean": 0.7287936991736517
+            },
+            {
+              "featureCount": 32,
+              "cvGmean": 0.7744286991555293,
+              "valGmean": 0.7807285065672225
+            },
+            {
+              "featureCount": 33,
+              "cvGmean": 0.7836175900201737,
+              "valGmean": 0.7880347174430087
+            },
+            {
+              "featureCount": 34,
+              "cvGmean": 0.8053048617296078,
+              "valGmean": 0.8135402065608464
+            },
+            {
+              "featureCount": 37,
+              "cvGmean": 0.8136328202536749,
+              "valGmean": 0.783731333787839
+            },
+            {
+              "featureCount": 41,
+              "cvGmean": 0.8259682801651783,
+              "valGmean": 0.8067870634966243
+            },
+            {
+              "featureCount": 42,
+              "cvGmean": 0.8304218598353268,
+              "valGmean": 0.7870674076871156
+            },
+            {
+              "featureCount": 43,
+              "cvGmean": 0.8427183316390024,
+              "valGmean": 0.8249664374946929
+            },
+            {
+              "featureCount": 47,
+              "cvGmean": 0.8553727121522362,
+              "valGmean": 0.8167457010801282
+            },
+            {
+              "featureCount": 47,
+              "cvGmean": 0.8553727121522362,
+              "valGmean": 0.8167457010801282
+            },
+            {
+              "featureCount": 48,
+              "cvGmean": 0.8556135504620918,
+              "valGmean": 0.8167457010801282
+            }
+          ],
+          "heldoutTrainingFront": [
+            {
+              "featureCount": 48,
+              "featureRatio": 0.1797752808988764,
+              "searchCvGmean": 0.8556135504620918,
+              "testGmean": 0.842371476251165,
+              "testError": 0.15762852374883496
+            },
+            {
+              "featureCount": 26,
+              "featureRatio": 0.09737827715355805,
+              "searchCvGmean": 0.7102735859355724,
+              "testGmean": 0.7328695249149982,
+              "testError": 0.26713047508500176
+            },
+            {
+              "featureCount": 31,
+              "featureRatio": 0.11610486891385768,
+              "searchCvGmean": 0.7499387652042899,
+              "testGmean": 0.7514201737645178,
+              "testError": 0.24857982623548225
+            },
+            {
+              "featureCount": 37,
+              "featureRatio": 0.13857677902621723,
+              "searchCvGmean": 0.8136328202536749,
+              "testGmean": 0.7854381223108632,
+              "testError": 0.21456187768913682
+            },
+            {
+              "featureCount": 43,
+              "featureRatio": 0.16104868913857678,
+              "searchCvGmean": 0.8427183316390024,
+              "testGmean": 0.8104758504401863,
+              "testError": 0.18952414955981367
+            },
+            {
+              "featureCount": 34,
+              "featureRatio": 0.12734082397003746,
+              "searchCvGmean": 0.8053048617296078,
+              "testGmean": 0.8166417981181323,
+              "testError": 0.1833582018818677
+            },
+            {
+              "featureCount": 41,
+              "featureRatio": 0.15355805243445692,
+              "searchCvGmean": 0.8259682801651783,
+              "testGmean": 0.8068479164483151,
+              "testError": 0.1931520835516849
+            },
+            {
+              "featureCount": 32,
+              "featureRatio": 0.1198501872659176,
+              "searchCvGmean": 0.7744286991555293,
+              "testGmean": 0.7902004190030677,
+              "testError": 0.2097995809969323
+            },
+            {
+              "featureCount": 33,
+              "featureRatio": 0.12359550561797752,
+              "searchCvGmean": 0.7836175900201737,
+              "testGmean": 0.7894217731681109,
+              "testError": 0.2105782268318891
+            },
+            {
+              "featureCount": 42,
+              "featureRatio": 0.15730337078651685,
+              "searchCvGmean": 0.8304218598353268,
+              "testGmean": 0.812121488379157,
+              "testError": 0.18787851162084301
+            },
+            {
+              "featureCount": 47,
+              "featureRatio": 0.1760299625468165,
+              "searchCvGmean": 0.8553727121522362,
+              "testGmean": 0.842371476251165,
+              "testError": 0.15762852374883496
+            },
+            {
+              "featureCount": 47,
+              "featureRatio": 0.1760299625468165,
+              "searchCvGmean": 0.8553727121522362,
+              "testGmean": 0.842371476251165,
+              "testError": 0.15762852374883496
+            }
+          ],
+          "heldoutNondominatedObjectives": [
+            [
+              0.15762852374883496,
+              0.1760299625468165
+            ],
+            [
+              0.1833582018818677,
+              0.12734082397003746
+            ],
+            [
+              0.2097995809969323,
+              0.1198501872659176
+            ],
+            [
+              0.24857982623548225,
+              0.11610486891385768
+            ],
+            [
+              0.26713047508500176,
+              0.09737827715355805
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "seed": 100,
+      "methods": {
+        "MSF": {
+          "heldoutParetoHV": 0.824330456189438,
+          "chosenFeatureCount": 16,
+          "chosenFeatureRatio": 0.0599250936329588,
+          "chosenTestGmean": 0.8426381544586452,
+          "chosenFeatures": [
+            "rel_param_1_param_2__absDiffMean__w8",
+            "rel_param_1_param_2__corr__w24",
+            "rel_param_1_param_2__lag1Corr__w24",
+            "rel_param_1_param_2__absDiffMean__w24",
+            "rel_param_1_param_2__lag1Corr__w64",
+            "rel_param_1_param_2__diffStd__w64",
+            "rel_param_1_param_2__absDiffMean__w64",
+            "rel_param_1_param_9__diffStd__w8",
+            "rel_param_1_param_10__absDiffMean__w64",
+            "rel_param_2_param_9__diffStd__w8",
+            "rel_param_2_param_9__absDiffMean__w64",
+            "rel_param_2_param_10__corr__w64",
+            "rel_param_2_param_10__lag1Corr__w64",
+            "rel_param_1_param_8__absDiffMean__w8",
+            "rel_param_1_param_8__absDiffMean__w24",
+            "rel_param_1_param_8__lag1Corr__w64"
+          ],
+          "uniqueWrapperEvaluations": 79,
+          "paretoValidation": [
+            {
+              "featureCount": 9,
+              "cvGmean": 0.7552117339182266,
+              "valGmean": 0.7308813031262654
+            },
+            {
+              "featureCount": 11,
+              "cvGmean": 0.7557437655133062,
+              "valGmean": 0.7380319543552858
+            },
+            {
+              "featureCount": 12,
+              "cvGmean": 0.7826242467433581,
+              "valGmean": 0.716510901316214
+            },
+            {
+              "featureCount": 13,
+              "cvGmean": 0.8110459778354793,
+              "valGmean": 0.7662008412271754
+            },
+            {
+              "featureCount": 14,
+              "cvGmean": 0.8229501548724448,
+              "valGmean": 0.7826186070947246
+            },
+            {
+              "featureCount": 15,
+              "cvGmean": 0.8489862450834291,
+              "valGmean": 0.80493220527182
+            },
+            {
+              "featureCount": 16,
+              "cvGmean": 0.8761692242636697,
+              "valGmean": 0.8434074875795099
+            },
+            {
+              "featureCount": 20,
+              "cvGmean": 0.8821026708989246,
+              "valGmean": 0.8138487371652847
+            },
+            {
+              "featureCount": 21,
+              "cvGmean": 0.8954840222007938,
+              "valGmean": 0.8471558472186163
+            },
+            {
+              "featureCount": 29,
+              "cvGmean": 0.8998704191549077,
+              "valGmean": 0.842986551248252
+            },
+            {
+              "featureCount": 30,
+              "cvGmean": 0.9010379297583043,
+              "valGmean": 0.8415647653260362
+            },
+            {
+              "featureCount": 30,
+              "cvGmean": 0.9010379297583043,
+              "valGmean": 0.8415647653260362
+            }
+          ],
+          "heldoutTrainingFront": [
+            {
+              "featureCount": 30,
+              "featureRatio": 0.11235955056179775,
+              "searchCvGmean": 0.9010379297583043,
+              "testGmean": 0.8558072270317246,
+              "testError": 0.14419277296827537
+            },
+            {
+              "featureCount": 9,
+              "featureRatio": 0.033707865168539325,
+              "searchCvGmean": 0.7552117339182266,
+              "testGmean": 0.7457000748176933,
+              "testError": 0.2542999251823067
+            },
+            {
+              "featureCount": 30,
+              "featureRatio": 0.11235955056179775,
+              "searchCvGmean": 0.9010379297583043,
+              "testGmean": 0.8558072270317246,
+              "testError": 0.14419277296827537
+            },
+            {
+              "featureCount": 21,
+              "featureRatio": 0.07865168539325842,
+              "searchCvGmean": 0.8954840222007938,
+              "testGmean": 0.8449594760866589,
+              "testError": 0.1550405239133411
+            },
+            {
+              "featureCount": 12,
+              "featureRatio": 0.0449438202247191,
+              "searchCvGmean": 0.7826242467433581,
+              "testGmean": 0.7422561702857038,
+              "testError": 0.2577438297142962
+            },
+            {
+              "featureCount": 29,
+              "featureRatio": 0.10861423220973783,
+              "searchCvGmean": 0.8998704191549077,
+              "testGmean": 0.853986069978539,
+              "testError": 0.146013930021461
+            },
+            {
+              "featureCount": 15,
+              "featureRatio": 0.056179775280898875,
+              "searchCvGmean": 0.8489862450834291,
+              "testGmean": 0.8104118747641629,
+              "testError": 0.18958812523583712
+            },
+            {
+              "featureCount": 13,
+              "featureRatio": 0.04868913857677903,
+              "searchCvGmean": 0.8110459778354793,
+              "testGmean": 0.8014515986632176,
+              "testError": 0.19854840133678242
+            },
+            {
+              "featureCount": 14,
+              "featureRatio": 0.052434456928838954,
+              "searchCvGmean": 0.8229501548724448,
+              "testGmean": 0.78724405378295,
+              "testError": 0.21275594621704996
+            },
+            {
+              "featureCount": 16,
+              "featureRatio": 0.0599250936329588,
+              "searchCvGmean": 0.8761692242636697,
+              "testGmean": 0.8426381544586452,
+              "testError": 0.1573618455413548
+            },
+            {
+              "featureCount": 11,
+              "featureRatio": 0.04119850187265917,
+              "searchCvGmean": 0.7557437655133062,
+              "testGmean": 0.7691755616850904,
+              "testError": 0.23082443831490962
+            },
+            {
+              "featureCount": 20,
+              "featureRatio": 0.0749063670411985,
+              "searchCvGmean": 0.8821026708989246,
+              "testGmean": 0.8366724206507561,
+              "testError": 0.1633275793492439
+            }
+          ],
+          "heldoutNondominatedObjectives": [
+            [
+              0.14419277296827537,
+              0.11235955056179775
+            ],
+            [
+              0.146013930021461,
+              0.10861423220973783
+            ],
+            [
+              0.1550405239133411,
+              0.07865168539325842
+            ],
+            [
+              0.1573618455413548,
+              0.0599250936329588
+            ],
+            [
+              0.18958812523583712,
+              0.056179775280898875
+            ],
+            [
+              0.19854840133678242,
+              0.04868913857677903
+            ],
+            [
+              0.23082443831490962,
+              0.04119850187265917
+            ],
+            [
+              0.2542999251823067,
+              0.033707865168539325
+            ]
+          ]
+        },
+        "Random": {
+          "heldoutParetoHV": 0.7330035048116773,
+          "chosenFeatureCount": 45,
+          "chosenFeatureRatio": 0.16853932584269662,
+          "chosenTestGmean": 0.8126692938299002,
+          "chosenFeatures": [
+            "param_1__rangeRatio__w8",
+            "param_1__stdRatio__w24",
+            "param_1__meanPosition__w64",
+            "param_1__diffMaxRatio__w64",
+            "param_1__violationRatio__w64",
+            "param_2__meanPosition__w8",
+            "param_2__madRatio__w8",
+            "param_8__rangeRatio__w8",
+            "param_8__stdRatio__w24",
+            "param_9__thresholdMargin__w8",
+            "param_9__meanPosition__w24",
+            "param_9__rangeRatio__w24",
+            "param_9__rangeRatio__w64",
+            "param_10__violationRatio__w8",
+            "param_10__violationRatio__w24",
+            "param_10__violationRatio__w64",
+            "rel_param_1_param_2__endpointDiff__w24",
+            "rel_param_1_param_2__corr__w64",
+            "rel_param_1_param_2__lag1Corr__w64",
+            "rel_param_1_param_9__lag1Corr__w8",
+            "rel_param_1_param_9__diffMean__w8",
+            "rel_param_1_param_9__diffStd__w24",
+            "rel_param_1_param_9__slopeDiff__w64",
+            "rel_param_1_param_9__endpointDiff__w64",
+            "rel_param_1_param_10__lag1Corr__w8",
+            "rel_param_1_param_10__diffMean__w8",
+            "rel_param_1_param_10__endpointDiff__w8",
+            "rel_param_1_param_10__corr__w24",
+            "rel_param_1_param_10__absDiffMean__w24",
+            "rel_param_2_param_9__slopeDiff__w8",
+            "rel_param_2_param_9__endpointDiff__w8",
+            "rel_param_2_param_9__diffMean__w24",
+            "rel_param_2_param_10__lag1Corr__w8",
+            "rel_param_2_param_10__diffStd__w8",
+            "rel_param_2_param_10__corr__w24",
+            "rel_param_2_param_10__endpointDiff__w64",
+            "rel_param_9_param_10__slopeDiff__w8",
+            "rel_param_9_param_10__absDiffMean__w24",
+            "rel_param_9_param_10__corr__w64",
+            "rel_param_9_param_10__diffMean__w64",
+            "rel_param_1_param_8__diffMean__w8",
+            "rel_param_1_param_8__absDiffMean__w8",
+            "rel_param_1_param_8__diffStd__w24",
+            "rel_param_1_param_8__corr__w64",
+            "rel_param_1_param_8__lag1Corr__w64"
+          ],
+          "uniqueWrapperEvaluations": 81,
+          "paretoValidation": [
+            {
+              "featureCount": 37,
+              "cvGmean": 0.8371144729063297,
+              "valGmean": 0.8030802493241389
+            },
+            {
+              "featureCount": 41,
+              "cvGmean": 0.8463326261985591,
+              "valGmean": 0.7995601815136398
+            },
+            {
+              "featureCount": 43,
+              "cvGmean": 0.8557299809822627,
+              "valGmean": 0.81821943250003
+            },
+            {
+              "featureCount": 45,
+              "cvGmean": 0.8569651198052042,
+              "valGmean": 0.8320056080883825
+            },
+            {
+              "featureCount": 46,
+              "cvGmean": 0.8581299522266225,
+              "valGmean": 0.8124576509162258
+            },
+            {
+              "featureCount": 55,
+              "cvGmean": 0.8690672017476239,
+              "valGmean": 0.8207266135422403
+            }
+          ],
+          "heldoutTrainingFront": [
+            {
+              "featureCount": 46,
+              "featureRatio": 0.17228464419475656,
+              "searchCvGmean": 0.8581299522266225,
+              "testGmean": 0.8279372327034691,
+              "testError": 0.17206276729653092
+            },
+            {
+              "featureCount": 45,
+              "featureRatio": 0.16853932584269662,
+              "searchCvGmean": 0.8569651198052042,
+              "testGmean": 0.8126692938299002,
+              "testError": 0.18733070617009984
+            },
+            {
+              "featureCount": 41,
+              "featureRatio": 0.15355805243445692,
+              "searchCvGmean": 0.8463326261985591,
+              "testGmean": 0.8286327621428168,
+              "testError": 0.17136723785718322
+            },
+            {
+              "featureCount": 37,
+              "featureRatio": 0.13857677902621723,
+              "searchCvGmean": 0.8371144729063297,
+              "testGmean": 0.8140451562564045,
+              "testError": 0.1859548437435955
+            },
+            {
+              "featureCount": 43,
+              "featureRatio": 0.16104868913857678,
+              "searchCvGmean": 0.8557299809822627,
+              "testGmean": 0.8517789715866365,
+              "testError": 0.1482210284133635
+            },
+            {
+              "featureCount": 55,
+              "featureRatio": 0.20599250936329588,
+              "searchCvGmean": 0.8690672017476239,
+              "testGmean": 0.8352872746223821,
+              "testError": 0.16471272537761794
+            }
+          ],
+          "heldoutNondominatedObjectives": [
+            [
+              0.1482210284133635,
+              0.16104868913857678
+            ],
+            [
+              0.17136723785718322,
+              0.15355805243445692
+            ],
+            [
+              0.1859548437435955,
+              0.13857677902621723
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "seed": 101,
+      "methods": {
+        "MSF": {
+          "heldoutParetoHV": 0.8306666923110565,
+          "chosenFeatureCount": 18,
+          "chosenFeatureRatio": 0.06741573033707865,
+          "chosenTestGmean": 0.858624819015678,
+          "chosenFeatures": [
+            "param_8__stdRatio__w8",
+            "rel_param_1_param_2__absDiffMean__w8",
+            "rel_param_1_param_2__corr__w24",
+            "rel_param_1_param_2__lag1Corr__w24",
+            "rel_param_1_param_2__absDiffMean__w24",
+            "rel_param_1_param_2__corr__w64",
+            "rel_param_1_param_2__diffStd__w64",
+            "rel_param_1_param_2__absDiffMean__w64",
+            "rel_param_1_param_9__diffStd__w64",
+            "rel_param_2_param_9__corr__w24",
+            "rel_param_2_param_10__diffStd__w8",
+            "rel_param_2_param_10__corr__w64",
+            "rel_param_9_param_10__absDiffMean__w24",
+            "rel_param_1_param_8__diffStd__w8",
+            "rel_param_1_param_8__corr__w64",
+            "rel_param_1_param_8__lag1Corr__w64",
+            "rel_param_1_param_8__diffStd__w64",
+            "rel_param_1_param_8__absDiffMean__w64"
+          ],
+          "uniqueWrapperEvaluations": 83,
+          "paretoValidation": [
+            {
+              "featureCount": 10,
+              "cvGmean": 0.7659850959540381,
+              "valGmean": 0.7074280786273144
+            },
+            {
+              "featureCount": 10,
+              "cvGmean": 0.7659850959540381,
+              "valGmean": 0.7074280786273144
+            },
+            {
+              "featureCount": 11,
+              "cvGmean": 0.7683297755738309,
+              "valGmean": 0.730901043603605
+            },
+            {
+              "featureCount": 13,
+              "cvGmean": 0.797869490581642,
+              "valGmean": 0.7503162702990516
+            },
+            {
+              "featureCount": 15,
+              "cvGmean": 0.8489786983382005,
+              "valGmean": 0.8136395165343767
+            },
+            {
+              "featureCount": 18,
+              "cvGmean": 0.8814007351375895,
+              "valGmean": 0.8609378512726187
+            },
+            {
+              "featureCount": 21,
+              "cvGmean": 0.883345854851989,
+              "valGmean": 0.8452103452877188
+            },
+            {
+              "featureCount": 22,
+              "cvGmean": 0.8869883254836862,
+              "valGmean": 0.8611121234074808
+            },
+            {
+              "featureCount": 24,
+              "cvGmean": 0.8904999285825087,
+              "valGmean": 0.8326504582083323
+            },
+            {
+              "featureCount": 25,
+              "cvGmean": 0.8916069517399916,
+              "valGmean": 0.8510402901037182
+            },
+            {
+              "featureCount": 27,
+              "cvGmean": 0.8942077690351189,
+              "valGmean": 0.8313724060993345
+            },
+            {
+              "featureCount": 28,
+              "cvGmean": 0.8943039403671298,
+              "valGmean": 0.842986551248252
+            }
+          ],
+          "heldoutTrainingFront": [
+            {
+              "featureCount": 10,
+              "featureRatio": 0.03745318352059925,
+              "searchCvGmean": 0.7659850959540381,
+              "testGmean": 0.7346733317778549,
+              "testError": 0.2653266682221451
+            },
+            {
+              "featureCount": 28,
+              "featureRatio": 0.10486891385767791,
+              "searchCvGmean": 0.8943039403671298,
+              "testGmean": 0.8380449659243282,
+              "testError": 0.1619550340756718
+            },
+            {
+              "featureCount": 10,
+              "featureRatio": 0.03745318352059925,
+              "searchCvGmean": 0.7659850959540381,
+              "testGmean": 0.7346733317778549,
+              "testError": 0.2653266682221451
+            },
+            {
+              "featureCount": 15,
+              "featureRatio": 0.056179775280898875,
+              "searchCvGmean": 0.8489786983382005,
+              "testGmean": 0.8139053742712125,
+              "testError": 0.18609462572878754
+            },
+            {
+              "featureCount": 13,
+              "featureRatio": 0.04868913857677903,
+              "searchCvGmean": 0.797869490581642,
+              "testGmean": 0.7928388250721191,
+              "testError": 0.2071611749278809
+            },
+            {
+              "featureCount": 18,
+              "featureRatio": 0.06741573033707865,
+              "searchCvGmean": 0.8814007351375895,
+              "testGmean": 0.858624819015678,
+              "testError": 0.141375180984322
+            },
+            {
+              "featureCount": 11,
+              "featureRatio": 0.04119850187265917,
+              "searchCvGmean": 0.7683297755738309,
+              "testGmean": 0.7398014411306395,
+              "testError": 0.2601985588693605
+            },
+            {
+              "featureCount": 22,
+              "featureRatio": 0.08239700374531835,
+              "searchCvGmean": 0.8869883254836862,
+              "testGmean": 0.8657626023836422,
+              "testError": 0.13423739761635778
+            },
+            {
+              "featureCount": 21,
+              "featureRatio": 0.07865168539325842,
+              "searchCvGmean": 0.883345854851989,
+              "testGmean": 0.8397274785610567,
+              "testError": 0.16027252143894333
+            },
+            {
+              "featureCount": 24,
+              "featureRatio": 0.0898876404494382,
+              "searchCvGmean": 0.8904999285825087,
+              "testGmean": 0.8486026813611498,
+              "testError": 0.1513973186388502
+            },
+            {
+              "featureCount": 25,
+              "featureRatio": 0.09363295880149813,
+              "searchCvGmean": 0.8916069517399916,
+              "testGmean": 0.842557817985508,
+              "testError": 0.157442182014492
+            },
+            {
+              "featureCount": 27,
+              "featureRatio": 0.10112359550561797,
+              "searchCvGmean": 0.8942077690351189,
+              "testGmean": 0.8403772612983281,
+              "testError": 0.15962273870167187
+            }
+          ],
+          "heldoutNondominatedObjectives": [
+            [
+              0.13423739761635778,
+              0.08239700374531835
+            ],
+            [
+              0.141375180984322,
+              0.06741573033707865
+            ],
+            [
+              0.18609462572878754,
+              0.056179775280898875
+            ],
+            [
+              0.2071611749278809,
+              0.04868913857677903
+            ],
+            [
+              0.2601985588693605,
+              0.04119850187265917
+            ],
+            [
+              0.2653266682221451,
+              0.03745318352059925
+            ]
+          ]
+        },
+        "Random": {
+          "heldoutParetoHV": 0.718683509354802,
+          "chosenFeatureCount": 42,
+          "chosenFeatureRatio": 0.15730337078651685,
+          "chosenTestGmean": 0.8227510351391197,
+          "chosenFeatures": [
+            "param_1__stdRatio__w8",
+            "param_1__slopeRatio__w64",
+            "param_2__diffMaxRatio__w8",
+            "param_2__violationRatio__w64",
+            "param_8__rangeRatio__w8",
+            "param_8__stdRatio__w24",
+            "param_8__slopeRatio__w64",
+            "param_8__thresholdMargin__w64",
+            "param_9__madRatio__w8",
+            "param_9__slopeRatio__w8",
+            "param_9__slopeRatio__w64",
+            "param_10__violationRatio__w8",
+            "param_10__rangeRatio__w24",
+            "param_10__violationRatio__w24",
+            "param_10__slopeRatio__w64",
+            "param_10__thresholdMargin__w64",
+            "rel_param_1_param_2__diffStd__w8",
+            "rel_param_1_param_2__absDiffMean__w8",
+            "rel_param_1_param_2__corr__w24",
+            "rel_param_1_param_2__diffMean__w24",
+            "rel_param_1_param_2__absDiffMean__w24",
+            "rel_param_1_param_2__slopeDiff__w24",
+            "rel_param_1_param_2__corr__w64",
+            "rel_param_1_param_9__corr__w8",
+            "rel_param_1_param_9__lag1Corr__w64",
+            "rel_param_1_param_10__diffMean__w8",
+            "rel_param_1_param_10__diffStd__w8",
+            "rel_param_1_param_10__corr__w64",
+            "rel_param_2_param_9__corr__w8",
+            "rel_param_2_param_9__diffMean__w8",
+            "rel_param_2_param_9__corr__w64",
+            "rel_param_2_param_9__diffMean__w64",
+            "rel_param_2_param_10__lag1Corr__w64",
+            "rel_param_9_param_10__diffStd__w8",
+            "rel_param_9_param_10__lag1Corr__w24",
+            "rel_param_9_param_10__corr__w64",
+            "rel_param_9_param_10__diffMean__w64",
+            "rel_param_1_param_8__diffMean__w8",
+            "rel_param_1_param_8__absDiffMean__w8",
+            "rel_param_1_param_8__corr__w24",
+            "rel_param_1_param_8__absDiffMean__w64",
+            "rel_param_1_param_8__endpointDiff__w64"
+          ],
+          "uniqueWrapperEvaluations": 83,
+          "paretoValidation": [
+            {
+              "featureCount": 36,
+              "cvGmean": 0.8065544903007226,
+              "valGmean": 0.7673411364858967
+            },
+            {
+              "featureCount": 38,
+              "cvGmean": 0.8066318887210663,
+              "valGmean": 0.7957834456235927
+            },
+            {
+              "featureCount": 39,
+              "cvGmean": 0.8142711544061783,
+              "valGmean": 0.7573901154891342
+            },
+            {
+              "featureCount": 40,
+              "cvGmean": 0.8213744509797537,
+              "valGmean": 0.7723806534233141
+            },
+            {
+              "featureCount": 41,
+              "cvGmean": 0.8498040779486455,
+              "valGmean": 0.7990547590659703
+            },
+            {
+              "featureCount": 42,
+              "cvGmean": 0.8551710913733931,
+              "valGmean": 0.8116154550026243
+            },
+            {
+              "featureCount": 45,
+              "cvGmean": 0.8712123859194678,
+              "valGmean": 0.8153542487135675
+            }
+          ],
+          "heldoutTrainingFront": [
+            {
+              "featureCount": 40,
+              "featureRatio": 0.149812734082397,
+              "searchCvGmean": 0.8213744509797537,
+              "testGmean": 0.8112360635909144,
+              "testError": 0.18876393640908562
+            },
+            {
+              "featureCount": 36,
+              "featureRatio": 0.1348314606741573,
+              "searchCvGmean": 0.8065544903007226,
+              "testGmean": 0.8082764546610881,
+              "testError": 0.1917235453389119
+            },
+            {
+              "featureCount": 38,
+              "featureRatio": 0.14232209737827714,
+              "searchCvGmean": 0.8066318887210663,
+              "testGmean": 0.778971621874224,
+              "testError": 0.22102837812577603
+            },
+            {
+              "featureCount": 41,
+              "featureRatio": 0.15355805243445692,
+              "searchCvGmean": 0.8498040779486455,
+              "testGmean": 0.8177045662598736,
+              "testError": 0.18229543374012636
+            },
+            {
+              "featureCount": 42,
+              "featureRatio": 0.15730337078651685,
+              "searchCvGmean": 0.8551710913733931,
+              "testGmean": 0.8227510351391197,
+              "testError": 0.17724896486088026
+            },
+            {
+              "featureCount": 39,
+              "featureRatio": 0.14606741573033707,
+              "searchCvGmean": 0.8142711544061783,
+              "testGmean": 0.7781428733218808,
+              "testError": 0.2218571266781192
+            },
+            {
+              "featureCount": 45,
+              "featureRatio": 0.16853932584269662,
+              "searchCvGmean": 0.8712123859194678,
+              "testGmean": 0.8313432317289172,
+              "testError": 0.16865676827108278
+            }
+          ],
+          "heldoutNondominatedObjectives": [
+            [
+              0.16865676827108278,
+              0.16853932584269662
+            ],
+            [
+              0.17724896486088026,
+              0.15730337078651685
+            ],
+            [
+              0.18229543374012636,
+              0.15355805243445692
+            ],
+            [
+              0.18876393640908562,
+              0.149812734082397
+            ],
+            [
+              0.1917235453389119,
+              0.1348314606741573
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "summary": {
+    "primaryEndpoint": "held-out Pareto-set HV with reference point (1,1)",
+    "allFeatures5nnTestGmean": 0.817583025970629,
+    "heldoutParetoHV": {
+      "aMean": 0.8137093430788183,
+      "aStd": 0.013316349272622291,
+      "bMean": 0.7222019040807435,
+      "bStd": 0.020208751178696124,
+      "meanDifference": 0.09150743899807466,
+      "wilcoxonP": 0.001953125,
+      "rankBiserialEffect": 1.0,
+      "winsTiesLosses": [
+        10,
+        0,
+        0
+      ]
+    },
+    "chosenTestGmean": {
+      "aMean": 0.8434527393808808,
+      "aStd": 0.014310096918273873,
+      "bMean": 0.8209307949153708,
+      "bStd": 0.01194467023952091,
+      "meanDifference": 0.022521944465510167,
+      "wilcoxonP": 0.01953125,
+      "rankBiserialEffect": 0.8181818181818182,
+      "winsTiesLosses": [
+        8,
+        0,
+        2
+      ]
+    },
+    "chosenFeatureCount": {
+      "aMean": 19.7,
+      "aStd": 4.738729318662922,
+      "bMean": 42.1,
+      "bStd": 3.348299734359383,
+      "meanDifference": 22.4,
+      "wilcoxonP": 0.001953125,
+      "rankBiserialEffect": 1.0,
+      "winsTiesLosses": [
+        10,
+        0,
+        0
+      ]
+    },
+    "uniqueWrapperEvaluations": {
+      "aMean": 78.4,
+      "aStd": 2.2211108331943574,
+      "bMean": 77.5,
+      "bStd": 4.403281604540969,
+      "meanDifference": -0.9,
+      "wilcoxonP": 1.0,
+      "rankBiserialEffect": -0.03571428571428571,
+      "winsTiesLosses": [
+        4,
+        3,
+        3
+      ]
+    }
+  }
+}

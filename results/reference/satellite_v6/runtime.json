@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "msf-v6-runtime-1.0",
+  "candidateFeatures": 582,
+  "selectedUnion": 140,
+  "featureReduction": 0.7594501718213058,
+  "allFeatureExtraction": {
+    "n": 2000,
+    "medianUs": 556.1099999995349,
+    "p95Us": 1221.3110000011511,
+    "meanUs": 1374.1865334999954
+  },
+  "selectedFeatureExtraction": {
+    "n": 2000,
+    "medianUs": 223.57999999803724,
+    "p95Us": 418.2470000014291,
+    "meanUs": 253.9141635000452
+  },
+  "extractionSpeedup": 2.487297611612921,
+  "extractionMedianReduction": 0.5979572386789948,
+  "endToEndHealthCalculate": {
+    "n": 1000,
+    "medianUs": 597.1009999993839,
+    "p95Us": 967.3570000013569,
+    "meanUs": 656.0373820000431
+  }
+}

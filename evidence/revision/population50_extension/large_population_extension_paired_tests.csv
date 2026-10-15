@@ -1,0 +1,5 @@
+dataset,candidate,baseline,stage,n,mean_difference,median_difference,wins,ties,losses,rank_biserial,wilcoxon_stat,p_raw
+hill_valley,MSF-MOFS,Random,gen0,10,0.021524215743532128,0.02312993069312838,10,0,0,1.0,0.0,0.001953125
+hill_valley,MSF-MOFS,Random,gen1,10,0.031244913004254294,0.024028095128013238,10,0,0,1.0,0.0,0.001953125
+Prostate-GE,MSF-MOFS,Random,gen0,10,0.43355222742625454,0.42547852771810557,10,0,0,1.0,0.0,0.001953125
+Prostate-GE,MSF-MOFS,Random,gen1,10,0.4216704198618483,0.42519709984521575,10,0,0,1.0,0.0,0.001953125

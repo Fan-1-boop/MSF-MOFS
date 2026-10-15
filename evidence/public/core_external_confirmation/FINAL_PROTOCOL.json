@@ -1,0 +1,41 @@
+{
+  "status": "FINAL_V2_UNTOUCHED_CONFIRMATION_COMPLETE",
+  "configuration_freeze_record": "/mnt/data/msf_v2_work/v2_development_summary/FINAL_V2_SELECTION_FREEZE.json",
+  "datasets": [
+    "madelon",
+    "hill_valley",
+    "musk",
+    "arcene"
+  ],
+  "seeds": [
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101
+  ],
+  "methods": [
+    "MSF-MOFS",
+    "HFMOEA-CP",
+    "MBLPE-CP"
+  ],
+  "population": 12,
+  "generations": 6,
+  "outer_split": "stratified 70/30, random_state=seed",
+  "wrapper": "5-NN, 3-fold, mean G-mean across controlled IR={1,3,5}, minimize feature ratio",
+  "msf": "Full outer-training Fisher; matched random base population; replace exactly 3 chromosomes with smallest 3 distinct integer sizes from {10,0.05D,0.10D,0.20D}; standard NSGA-II thereafter",
+  "timing_scope": "method-specific only; excludes dataset loading, outer split, and shared IR-environment construction; includes ranking/filter preprocessing, search, and held-out PF evaluation",
+  "data_note": "Internet Advertisements and SECOM were development-only; not part of this untouched core4 external-baseline confirmation.",
+  "raw_integrity": {
+    "rows": 120,
+    "expected_rows": 120,
+    "duplicates": 0,
+    "missing": 0,
+    "hill_alias_normalized": true
+  }
+}

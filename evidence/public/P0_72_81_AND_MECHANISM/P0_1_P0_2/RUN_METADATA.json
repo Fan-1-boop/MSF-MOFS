@@ -1,0 +1,12 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "processor": "",
+  "cpu_count": 5,
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "scikit_learn": "1.8.0",
+  "formal_raw_rows": 120,
+  "formal_complete": true,
+  "timestamp_asia_singapore": "2026-08-17T21:05:36+08:00"
+}

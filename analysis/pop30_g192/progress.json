@@ -1,0 +1,251 @@
+{
+  "experiment": "Population=30, generation 0..192, three methods, four datasets",
+  "completed_triplets": 40,
+  "target_triplets": 40,
+  "completed_algorithms": 120,
+  "target_algorithms": 120,
+  "missing_triplets": [],
+  "completed": [
+    {
+      "dataset": "hill_valley",
+      "seed": 92,
+      "rows": 579,
+      "sha256": "4ee3f4ef2eb9dece75dac5ba2926629e1e0e09d16aad08916c6c1547a8eb7a00"
+    },
+    {
+      "dataset": "hill_valley",
+      "seed": 93,
+      "rows": 579,
+      "sha256": "1a3acffe0f4fca2fe60c32c1688e20336cdf98bc38a963cea501230ece368c9a"
+    },
+    {
+      "dataset": "hill_valley",
+      "seed": 94,
+      "rows": 579,
+      "sha256": "c360ff118502a2e695f48242ea9cbf45262b4cde7bc152c2218422d8f33b7f02"
+    },
+    {
+      "dataset": "hill_valley",
+      "seed": 95,
+      "rows": 579,
+      "sha256": "31d38a6889eadd8a7d956c4eaee27653448004e74390d6f20defd68c5b223808"
+    },
+    {
+      "dataset": "hill_valley",
+      "seed": 96,
+      "rows": 579,
+      "sha256": "134aaf5c430b3894d92da56483003927c113ec2be88b72726438e8207d616a1e"
+    },
+    {
+      "dataset": "hill_valley",
+      "seed": 97,
+      "rows": 579,
+      "sha256": "0bbc2315930a471b237a99e93f8bb16517a901040c396eeb2fc276ab769a176e"
+    },
+    {
+      "dataset": "hill_valley",
+      "seed": 98,
+      "rows": 579,
+      "sha256": "55e20a76897c6c0afa340bb123bf75882a73cd49c6181bc6105b447d51a32270"
+    },
+    {
+      "dataset": "hill_valley",
+      "seed": 99,
+      "rows": 579,
+      "sha256": "06253b5d4a3326195dd8fc87e694b87a9089fef280f9f0b56db94019ce21462a"
+    },
+    {
+      "dataset": "hill_valley",
+      "seed": 100,
+      "rows": 579,
+      "sha256": "3208c62ce02dd6854b89517fe9dd72061ce01d02ee14130696dcec54a2b84915"
+    },
+    {
+      "dataset": "hill_valley",
+      "seed": 101,
+      "rows": 579,
+      "sha256": "eca5eafa919bd89625ed416f05001cc6c249fe565be7c476097b0b72cc8c50e7"
+    },
+    {
+      "dataset": "musk1",
+      "seed": 92,
+      "rows": 579,
+      "sha256": "926299013dd20f7ae9fec0d82744ddc58a1b29966683b4cc62c4b74ddf40ad85"
+    },
+    {
+      "dataset": "musk1",
+      "seed": 93,
+      "rows": 579,
+      "sha256": "7fa61c8fae970a559c2b1fa8a95497854d8950c5216c2265d9dc4e18d084531e"
+    },
+    {
+      "dataset": "musk1",
+      "seed": 94,
+      "rows": 579,
+      "sha256": "710549f41d6dfe4885d8bc8fdf633ef79670e6946f786f1498c6980aed2313c4"
+    },
+    {
+      "dataset": "musk1",
+      "seed": 95,
+      "rows": 579,
+      "sha256": "787653f861b2d188228cd2dedbbb12820b1275b123edcafebeebd6828e89668f"
+    },
+    {
+      "dataset": "musk1",
+      "seed": 96,
+      "rows": 579,
+      "sha256": "d8ce054c859ed3f23590595eae34f402d62705004868fe394a2b2b0c412d97ca"
+    },
+    {
+      "dataset": "musk1",
+      "seed": 97,
+      "rows": 579,
+      "sha256": "e73f9c5b851ee2592a8a10eee2772f9e97b4ebdded8dc8393d081b254871da16"
+    },
+    {
+      "dataset": "musk1",
+      "seed": 98,
+      "rows": 579,
+      "sha256": "7aaf4d7d16f2710ffa912db3c7c2b690361d402a3180e57740419ec1c4c05c9d"
+    },
+    {
+      "dataset": "musk1",
+      "seed": 99,
+      "rows": 579,
+      "sha256": "ba6a3ae70d82d8f9ceeb7c8df693077b11832dbb09fde67e8fe17f0e824b50d8"
+    },
+    {
+      "dataset": "musk1",
+      "seed": 100,
+      "rows": 579,
+      "sha256": "75c2397a02ee056a6bcf06e3448bd28d31514f775ff94c2fd9f4f127a8dcf54e"
+    },
+    {
+      "dataset": "musk1",
+      "seed": 101,
+      "rows": 579,
+      "sha256": "10be908cee960d27a2cab7f49d24262dced312451ee780636f5c68d4e1528d0d"
+    },
+    {
+      "dataset": "arcene",
+      "seed": 92,
+      "rows": 579,
+      "sha256": "f54a59a931e3e0f558faf228ef713f3e1c5ba82b9d0cd14562b225cbbda7b3f4"
+    },
+    {
+      "dataset": "arcene",
+      "seed": 93,
+      "rows": 579,
+      "sha256": "caef553c359a5cf4f9969c86c7c0628df9562657f519fddd9211388e97c08f16"
+    },
+    {
+      "dataset": "arcene",
+      "seed": 94,
+      "rows": 579,
+      "sha256": "7393851aecc16dc4ae1cd0b59169c4750250a978ed9cb57e04e70c3a9d4d17b0"
+    },
+    {
+      "dataset": "arcene",
+      "seed": 95,
+      "rows": 579,
+      "sha256": "085eafe45b0c9c23854a01940c96242234c52fc9bbb786efd50435de9c3ba4bd"
+    },
+    {
+      "dataset": "arcene",
+      "seed": 96,
+      "rows": 579,
+      "sha256": "934ad8cba411924407d4e2db3a416e40ff1d29d815a3e0b85d8c9c4b9ce1572d"
+    },
+    {
+      "dataset": "arcene",
+      "seed": 97,
+      "rows": 579,
+      "sha256": "a76c8c55aeeacca5157bf3a3aae2494950a7fd877cda1093208b51341fa8bb98"
+    },
+    {
+      "dataset": "arcene",
+      "seed": 98,
+      "rows": 579,
+      "sha256": "f186da6676f5c52dc35394e4161de3f261c0371676b47179601a30eded923107"
+    },
+    {
+      "dataset": "arcene",
+      "seed": 99,
+      "rows": 579,
+      "sha256": "cb273075550577fe9aee17bedafccd559867f80782d3363bddd7066f97549186"
+    },
+    {
+      "dataset": "arcene",
+      "seed": 100,
+      "rows": 579,
+      "sha256": "5bca8d2567de5392c3e8ba3f22977deeef870704e2ecb0999620f25772794317"
+    },
+    {
+      "dataset": "arcene",
+      "seed": 101,
+      "rows": 579,
+      "sha256": "b6db1ee43248d8b998fd4bbbcd9ca6d844885959944d8ac0967e288f1891bfeb"
+    },
+    {
+      "dataset": "madelon",
+      "seed": 92,
+      "rows": 579,
+      "sha256": "7fd3a2d23ddf6741ad55dd307e364eeb5fd43333dfd318939296bd1b0e6c8463"
+    },
+    {
+      "dataset": "madelon",
+      "seed": 93,
+      "rows": 579,
+      "sha256": "d288913a52702b8f10d0bb7c131a3cde640dec6b642b2c64151e51b08ace193a"
+    },
+    {
+      "dataset": "madelon",
+      "seed": 94,
+      "rows": 579,
+      "sha256": "ee822b4c108374199c413454f8d9fd45f502e19f09c0d322955c8d43b915b795"
+    },
+    {
+      "dataset": "madelon",
+      "seed": 95,
+      "rows": 579,
+      "sha256": "bce86cb05c0749df76a988a1380dfc9d58a07b58006a7605179ba3145b3a9c9a"
+    },
+    {
+      "dataset": "madelon",
+      "seed": 96,
+      "rows": 579,
+      "sha256": "27d5bb6a435eb390a759b0add7492b9848b1edd390091a07d3d3abbf838a672e"
+    },
+    {
+      "dataset": "madelon",
+      "seed": 97,
+      "rows": 579,
+      "sha256": "254568dadfc5a8c70e6e4254d04ffda74f42b5fb5a84ee42725ac47c093f5f21"
+    },
+    {
+      "dataset": "madelon",
+      "seed": 98,
+      "rows": 579,
+      "sha256": "28e7bdefc1e18a3ecafc4cff6c9787d17acd3e81debdc193a48f9bb075f2adc2"
+    },
+    {
+      "dataset": "madelon",
+      "seed": 99,
+      "rows": 579,
+      "sha256": "cbe818fbbd9210cad66a53cf67c2232d5237f00f7a9c7b1cb971f63d49690cbf"
+    },
+    {
+      "dataset": "madelon",
+      "seed": 100,
+      "rows": 579,
+      "sha256": "f5c05f319901d1f29dc18c48736bbbab48fc11a46387578a756cdaae734c2b4e"
+    },
+    {
+      "dataset": "madelon",
+      "seed": 101,
+      "rows": 579,
+      "sha256": "0705b982487b64a049331ff6f9247db247856ab3300d9bf2efe9602c76c27308"
+    }
+  ],
+  "project_root_at_run": "C:\\Users\\jcfAN\\Desktop\\会议论文\\终稿\\MSF_MOFS_ReproducibilityV3\\MSF_MOFS_Reproducibility"
+}

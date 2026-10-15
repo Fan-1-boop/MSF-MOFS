@@ -1,0 +1,39 @@
+{
+  "experiment": "P0-1 frozen final confirmation + P0-2 wall-clock decomposition",
+  "datasets": [
+    "madelon",
+    "hill_valley",
+    "musk1",
+    "arcene"
+  ],
+  "seeds": [
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81
+  ],
+  "methods": [
+    "MSF-MOFS",
+    "HFMOEA-CP",
+    "MBLPE-CP"
+  ],
+  "population": 12,
+  "generations": 6,
+  "outer_split": "stratified 70/30, random_state=seed",
+  "wrapper": "5-NN, 3-fold, mean G-mean across controlled IR={1,3,5}, minimize feature ratio",
+  "msf": "Full outer-training Fisher ranking computed once; matched random NSGA-II base population; replace exactly 3 chromosomes using smallest 3 distinct integer sizes from {10,0.05D,0.10D,0.20D}; standard NSGA-II thereafter",
+  "guided_chromosomes_exactly": 3,
+  "timing_scope": "method-specific only; excludes dataset loading, outer split, and shared IR-environment construction; includes ranking/filter preprocessing, wrapper search, and held-out Pareto-set evaluation",
+  "confirmation_status": "frozen; no method/parameter changes permitted based on seeds 72-81",
+  "execution": "each HFMOEA dataset/seed run executed in a fresh Python process to avoid repeated process-pool resource contamination; this does not alter splits, random states, rankings, or search semantics",
+  "hf_mutual_information_executor": "sklearn 1.8 dense continuous-feature mutual_info_classif preprocessing/noise stream reproduced exactly; per-column sklearn _compute_mi calls parallelized with a short-lived fork ProcessPoolExecutor. Equivalence audit: MADELON seed 72 scores bit-for-bit equal to sklearn mutual_info_classif(..., n_jobs=1).",
+  "formal_row_count": 120,
+  "expected_row_count": 120,
+  "smoke_results_excluded_from_formal_statistics": true
+}

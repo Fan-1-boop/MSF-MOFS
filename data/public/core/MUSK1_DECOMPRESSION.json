@@ -1,0 +1,10 @@
+{
+  "source_archive": "musk+version+1.zip",
+  "source_archive_sha256": "84fd967a312cfe1d48d6f5a2becdda68f122767c0d51a3246cf699ff92a66031",
+  "member": "clean1.data.Z",
+  "compressed_member_sha256": "20a4f24d100de12d932a666012eb54fc95fa76f1b5569f4bfccc63fa1c7cdaa7",
+  "decoded_file": "musk1_clean1_decompressed.data",
+  "decoded_file_sha256": "59e3be669d645a72b2de7e7baa21e7d4e537be918e4320e8dea6aadc9227f379",
+  "decoded_file_bytes": 328852,
+  "transformation": "Unix compress .Z decoding; no row, label or feature transformation"
+}

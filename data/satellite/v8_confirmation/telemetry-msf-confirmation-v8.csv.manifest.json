@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "msf-confirmation-bank-v8-1.0",
+  "generatedAt": "2026-08-26T04:34:46.188Z",
+  "file": "telemetry-msf-confirmation-v8.csv",
+  "seedBase": 8600000,
+  "length": 240,
+  "stride": 8,
+  "normalPerSplit": 20,
+  "scenarios": 411,
+  "rows": 9042,
+  "featureCount": 582,
+  "featureBreakdown": {
+    "univariate": 288,
+    "crossChannel": 294
+  },
+  "relationPairs": 14,
+  "coupledScenarioPairs": [
+    "p01_p02",
+    "p03_p04",
+    "p06_p12",
+    "p10_p11",
+    "p01_p08"
+  ],
+  "coupledFaultModes": [
+    "invert",
+    "lag",
+    "decouple"
+  ],
+  "coupledSeverities": [
+    0.55,
+    0.85,
+    1.15
+  ],
+  "coupledLags": [
+    6,
+    10,
+    14
+  ],
+  "labelCounts": {
+    "0": 3034,
+    "1": 4921,
+    "-1": 1087
+  },
+  "scenarioScopeCounts": {
+    "normal": 60,
+    "univariate": 216,
+    "coupled": 135
+  },
+  "splitRule": "scenario-disjoint train/val/test",
+  "noTuning": true
+}

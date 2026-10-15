@@ -1,0 +1,5 @@
+scope,n,rho,p_two_sided,mean_reliability,mean_identity_gain_hv
+arcene,1,,,0.5389631388915708,
+madelon,10,-0.09090909090909088,0.8027717312071619,0.5471234893818198,0.3535779749565218
+pooled_raw_2datasets,11,,,0.5463816393372517,0.3535779749565218
+pooled_within_dataset_ranks,11,,,,

@@ -1,0 +1,293 @@
+{
+  "title": "论文参考数据清单",
+  "scope": "本包包含的历史参考数据；所有路径均相对项目根目录",
+  "archiveSource": "MSF_MOFS_Reproducibility_Paper_Satellite_Windows_v1_2_1.zip",
+  "fileCount": 57,
+  "files": [
+    {
+      "path": "results/reference/deployment/summary.json",
+      "bytes": 1017,
+      "sha256": "b7e6cd575a7f02e638fd57e6fb0ce6b357f1998bc0dcb0f02df75bb43e5857bd"
+    },
+    {
+      "path": "results/reference/deployment/timings_raw.csv",
+      "bytes": 148846,
+      "sha256": "d16a584bdf828a7865045e74455cfe8fdef01abe57e604302e132cc6553b341c"
+    },
+    {
+      "path": "results/reference/fisher_stability/pairwise.csv",
+      "bytes": 27969,
+      "sha256": "2433f906728c46aefdab5f5bc24386d8fefe9656a36dc11928ee7d9458adbeb2"
+    },
+    {
+      "path": "results/reference/fisher_stability/verification.json",
+      "bytes": 323,
+      "sha256": "a9ebe45e0714d998d4e27eb470768663584faa27cf56dc60b71ce463069adc1c"
+    },
+    {
+      "path": "results/reference/population50/extension/paired_tests.csv",
+      "bytes": 539,
+      "sha256": "97a481008afde2507c0c6100c19086b1268a4834e9f3f51b2266f9c9b51ce36a"
+    },
+    {
+      "path": "results/reference/population50/extension/raw.csv",
+      "bytes": 5232,
+      "sha256": "916b91f50d0cb4a7421ce93e624859240f61ec634b7584dddab3d297f1e6f15a"
+    },
+    {
+      "path": "results/reference/population50/extension/summary.csv",
+      "bytes": 798,
+      "sha256": "b05014a42f9bfca2b5128ea13e0f1b507706df66c616cfdc75ed6a10c2a5d5f3"
+    },
+    {
+      "path": "results/reference/population50/madelon/paired_tests.csv",
+      "bytes": 319,
+      "sha256": "6d52694a93d528eea5ed716e758235dfba00e694dabee749845d83edbe53652f"
+    },
+    {
+      "path": "results/reference/population50/madelon/protocol.json",
+      "bytes": 712,
+      "sha256": "3e1d84f98f1174b05e06cb55bc7c1f8dd42987cfd5a5181010057dd187b1a136"
+    },
+    {
+      "path": "results/reference/population50/madelon/raw.csv",
+      "bytes": 2656,
+      "sha256": "2274bc8ee6dc6af6d14d45ae3462fec7d8c45c67b514e878c0e3cbdf280814e7"
+    },
+    {
+      "path": "results/reference/population50/madelon/summary.csv",
+      "bytes": 442,
+      "sha256": "888427c3cbffcba01b7e8a4ddc7e4ba423ae54b64e34495868491ea5c127d334"
+    },
+    {
+      "path": "results/reference/reliability/association_summary.csv",
+      "bytes": 875,
+      "sha256": "56a816e3aa3b95c9fb1afe3aee1b3484d75904695b2b59f2dc792010784ce300"
+    },
+    {
+      "path": "results/reference/reliability/replay_status.json",
+      "bytes": 311,
+      "sha256": "5e2d2822775af8f9973ac8e9aa1e9fceab871e91113f1db30d7c3bbd52451481"
+    },
+    {
+      "path": "results/reference/reliability/replayed_runs.csv",
+      "bytes": 4938,
+      "sha256": "3245d79cf6390cc2c89b1264a3e4b51491d8bc87dfd637d7348af15a175a1d15"
+    },
+    {
+      "path": "results/reference/reliability/seedlevel.csv",
+      "bytes": 3129,
+      "sha256": "9e5aa4ea11b2dc6b6a91ea1b325f7fb1bc5b67c7eb110b51018f2d3fee66691a"
+    },
+    {
+      "path": "results/reference/satellite_v6/fisher_same_k.csv",
+      "bytes": 3566,
+      "sha256": "4afd56879d1ab53318ee48d2dac91a78aa490ae340a50c78d1e2f42ac79151ea"
+    },
+    {
+      "path": "results/reference/satellite_v6/health_evaluation.json",
+      "bytes": 47628,
+      "sha256": "155083114c246437ddf7124693edd979078ba0ae0055f4e93c763c889d563896"
+    },
+    {
+      "path": "results/reference/satellite_v6/refit_exact_match_verification.json",
+      "bytes": 1718,
+      "sha256": "487294f72c40ee07736a110ae1fdeba62380e9d4d049bb86ae57fc5ce85e8040"
+    },
+    {
+      "path": "results/reference/satellite_v6/runtime.json",
+      "bytes": 683,
+      "sha256": "37feda8af21be466907b5baa99572b6d10673495109592b95d7fa589b6b04cce"
+    },
+    {
+      "path": "results/reference/satellite_v6/subsystem_comparison.csv",
+      "bytes": 940,
+      "sha256": "c0203739e85e40d58d16be1849f749a4276ebe3285901b126999ba4ad9a3eb23"
+    },
+    {
+      "path": "results/reference/satellite_v6/subsystem_comparison.json",
+      "bytes": 5676,
+      "sha256": "7f7eded835ad910676c9f71236049441d2932d3b67f37da71833ebf7e20bb179"
+    },
+    {
+      "path": "results/reference/satellite_v6/subsystem_search/attitude_92_101/per_seed_results.csv",
+      "bytes": 1011,
+      "sha256": "4281b0917cad3a252e2e2118ecc0fb2b20925eaf39159a3dea055c69d14daa6b"
+    },
+    {
+      "path": "results/reference/satellite_v6/subsystem_search/attitude_sparse_92_101/per_seed_results.csv",
+      "bytes": 542,
+      "sha256": "41eab4e4089fa3ec5b42728851a0fc2b3f173fbf6167957023d3d7428c523758"
+    },
+    {
+      "path": "results/reference/satellite_v6/subsystem_search/communication_92_101/per_seed_results.csv",
+      "bytes": 1025,
+      "sha256": "06896ca316e652874403741016f835f234747a40caac55457607f066298eb7ea"
+    },
+    {
+      "path": "results/reference/satellite_v6/subsystem_search/communication_sparse_92_101/per_seed_results.csv",
+      "bytes": 532,
+      "sha256": "7261f882e3cb504b36100bad3fc0003b8be035eeba5f674e157d074555da439d"
+    },
+    {
+      "path": "results/reference/satellite_v6/subsystem_search/data_92_101/per_seed_results.csv",
+      "bytes": 922,
+      "sha256": "375d348902ffbe4c3ae002282faeaf5ad81e5e5e4df2cf6b0db39508f019f3a1"
+    },
+    {
+      "path": "results/reference/satellite_v6/subsystem_search/data_sparse_92_101/per_seed_results.csv",
+      "bytes": 545,
+      "sha256": "f2a88701b128b81a9596a1338f5c85795002472670356d3b98ea16c7f7a69251"
+    },
+    {
+      "path": "results/reference/satellite_v6/subsystem_search/power_92_101/per_seed_results.csv",
+      "bytes": 1036,
+      "sha256": "c83ae43fb5dc3ae87d8ec3a2b9ba089bed3f8cbb837a745c3346530f8f45622c"
+    },
+    {
+      "path": "results/reference/satellite_v6/subsystem_search/power_seed101/per_seed_results.csv",
+      "bytes": 221,
+      "sha256": "17d2b6693db49b2697e57140ea6425d955f6911d28bd882d62a72e37e550e87b"
+    },
+    {
+      "path": "results/reference/satellite_v6/subsystem_search/power_sparse_92_101/per_seed_results.csv",
+      "bytes": 545,
+      "sha256": "4f14cf292c08d03ef71bbb95c28824c2df677de9e646d307f869ef0d29fe9a1a"
+    },
+    {
+      "path": "results/reference/satellite_v6/subsystem_search/thermal_92_101/per_seed_results.csv",
+      "bytes": 1039,
+      "sha256": "cbac8fcd048d10c11f7a4773d9c35d6b1af2a4692a01bfa19d10181c8c964414"
+    },
+    {
+      "path": "results/reference/satellite_v6/subsystem_search/thermal_sparse_92_101/per_seed_results.csv",
+      "bytes": 544,
+      "sha256": "e50321025178477d4088b33f106ffb4b66c47e6a6e600779d08d0e205db15b21"
+    },
+    {
+      "path": "results/reference/satellite_v6/trajectory_evaluation.json",
+      "bytes": 11966,
+      "sha256": "bcc644cb2e7f363be91715741f5e03b7e5006681186780827154609a9de75448"
+    },
+    {
+      "path": "results/reference/sparse_control/protocol.json",
+      "bytes": 713,
+      "sha256": "f5c0c95709a2d0d59a6b9dad20c2bba1294260237d0a88b7c9c97e298470e881"
+    },
+    {
+      "path": "results/reference/sparse_control/raw.csv",
+      "bytes": 9850,
+      "sha256": "78cfc6c0f6c2389eb64c00ef5f70fc11f58c65c109592a6372908ba91956954c"
+    },
+    {
+      "path": "results/reference/table2_external/average_ranks.csv",
+      "bytes": 62,
+      "sha256": "4a7f6c38f4e96979360ae32452614f4ab2b3747f97a628a6ba662bae60d73ea8"
+    },
+    {
+      "path": "results/reference/table2_external/dataset_ranks.csv",
+      "bytes": 279,
+      "sha256": "d124eea01ded825c4251e1db8b548da74649ebf3c7ccc24f1811b25cb46e60b2"
+    },
+    {
+      "path": "results/reference/table2_external/paired_tests.csv",
+      "bytes": 1130,
+      "sha256": "523486a67b7b89d55173dc8611431efe3806abf685a8aa39be5d86adc62bf0fe"
+    },
+    {
+      "path": "results/reference/table2_external/protocol.json",
+      "bytes": 858,
+      "sha256": "783942c8885c37f46616e2c53ed28a9866f8f372e6e165a2dbefa3e73f521b96"
+    },
+    {
+      "path": "results/reference/table2_external/raw.csv",
+      "bytes": 25043,
+      "sha256": "cfee411a401a7df1f856be2532e248ad5523b177e5b58e3241086c0270ff8491"
+    },
+    {
+      "path": "results/reference/table2_external/summary.csv",
+      "bytes": 3650,
+      "sha256": "cb028f9155e2a9bc0d03b3c3cca642c6b0d294e03a3738860aa4612a4dbbe73f"
+    },
+    {
+      "path": "results/reference/table3/breadth/raw.csv",
+      "bytes": 42590,
+      "sha256": "c48f112959d993d871c91b210c2f8461a6aa9c505a31cf7a0aba3d8c27e8bb90"
+    },
+    {
+      "path": "results/reference/table3/breadth/reference_per_seed_comparison.json",
+      "bytes": 465,
+      "sha256": "f5f3e6ae542263001e84e3fe1f385f6e6bfadfeb81afd715cb812c3c219457fe"
+    },
+    {
+      "path": "results/reference/table3/core/paired_msf_vs_random.csv",
+      "bytes": 785,
+      "sha256": "7207d2d064d638617b4b02f441681fa2dacd0099759d7853d09b3b72f0200744"
+    },
+    {
+      "path": "results/reference/table3/core/protocol.json",
+      "bytes": 943,
+      "sha256": "3652a3861d64466d4e6ddfc28dc782ffece11106e1afb3a1794cfde6957b3570"
+    },
+    {
+      "path": "results/reference/table3/core/raw.csv",
+      "bytes": 25488,
+      "sha256": "0b8a7ae9e3a502e8e06fc945da9bd075ef23368a036a325bf7102819efeee0b0"
+    },
+    {
+      "path": "results/reference/table3/core/summary.csv",
+      "bytes": 1816,
+      "sha256": "2c6aa64dad82f6564b0b726fa48f3d232cfc3d71894cd79eb8d85f721e02a08a"
+    },
+    {
+      "path": "results/reference/table3/hv_reference_sensitivity_summary.csv",
+      "bytes": 743,
+      "sha256": "58fadb87dfd5fa8f0de0d03156a5a69ede1b6b4b18bbe193cb87bd572a6675fb"
+    },
+    {
+      "path": "results/reference/table3/paired_hv_ci_effect.csv",
+      "bytes": 3281,
+      "sha256": "27c1b403593aa374d553a1f03ad6043f7a5c51c3afc8147b1ab7c02e2fbffcb4"
+    },
+    {
+      "path": "results/reference/table4_satellite/attitude/per_seed_results.csv",
+      "bytes": 1048,
+      "sha256": "efa0ad100f3d64f30256941c24fe794f75f942c66dd8688713cca2bd04be5775"
+    },
+    {
+      "path": "results/reference/table4_satellite/attitude/summary.json",
+      "bytes": 394,
+      "sha256": "3cf06da7493f71e704a682e2ae893c6b8bca269ea324f6eae9a39e67e5899271"
+    },
+    {
+      "path": "results/reference/table4_satellite/data/per_seed_results.csv",
+      "bytes": 1032,
+      "sha256": "a32171891a006d474fb66ebfe23b3ef7f497a5e9ce58b6b91e8b7eb1a659e6c0"
+    },
+    {
+      "path": "results/reference/table4_satellite/data/summary.json",
+      "bytes": 396,
+      "sha256": "943aa98bb3c74a8880592b1b960ad89d069c7466471fe83f95f245f10fd79e8a"
+    },
+    {
+      "path": "results/reference/table4_satellite/power/per_seed_results.csv",
+      "bytes": 1044,
+      "sha256": "48edc13df626b23fb15fcbbef33fa75e108987b4fdbccabd29dd57558ca75365"
+    },
+    {
+      "path": "results/reference/table4_satellite/power/summary.json",
+      "bytes": 394,
+      "sha256": "d8da2dcd1cdd74fbcecbfd671981dad475e8119fb4038ebab1eb131684bfe273"
+    },
+    {
+      "path": "results/reference/table4_satellite/thermal/per_seed_results.csv",
+      "bytes": 1046,
+      "sha256": "1d1cefbc9abbf980ac6883ba3cd09da99d9ee8c02158ab220cfcbeddc26b8b8f"
+    },
+    {
+      "path": "results/reference/table4_satellite/thermal/summary.json",
+      "bytes": 394,
+      "sha256": "4e2a75f1f87135c9e2715d29606a46e26faf6ce42d5b963a6ab02873c948e505"
+    }
+  ]
+}

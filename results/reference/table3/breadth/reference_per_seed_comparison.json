@@ -1,0 +1,16 @@
+{
+  "status": "MATCH",
+  "compared_rows": 200,
+  "numerical_comparison_tolerance": 1e-10,
+  "max_abs_difference": {
+    "train_hv": 0.0,
+    "test_pf_hv": 0.0,
+    "pf_size": 0.0,
+    "best_test_mean_gmean_on_pf": 0.0,
+    "best_test_worst_gmean_on_pf": 0.0,
+    "min_features_on_pf": 0.0,
+    "unique_wrapper_evaluations": 0.0
+  },
+  "mismatches": [],
+  "note": "True rerun vs archived per-seed regression; not an independent replication on different hardware."
+}

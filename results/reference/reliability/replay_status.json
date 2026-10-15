@@ -1,0 +1,8 @@
+{
+  "new_search_rows": 40,
+  "expected_rows": 40,
+  "complete": true,
+  "matches_historical_heldout_and_train": true,
+  "historical_replay_sha256": "5b3f84143a295a9b4d6d4a597cbf9fc7971e12129786b4058b71954391d76b93",
+  "original_p0_3_sha256": "9cc74bb0a7bc4d3e8ba26335556a2d94500cb98a7e7e0877d54c263eb6a7471a"
+}

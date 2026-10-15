@@ -1,0 +1,105 @@
+{
+  "status": "LOCKED_BEFORE_UNTOUCHED_BREADTH_RESULTS",
+  "purpose": "untouched-dataset breadth validation of the frozen mixed_m3 initializer across two binary MOEA carriers",
+  "selection_rule": "ASU Biological Data; binary; D>=2000; 50<=N<=200; exclude duplicate leukemia representation; all five locked datasets must be reported without filtering",
+  "datasets": [
+    "ALLAML",
+    "colon",
+    "GLI-85",
+    "Prostate-GE",
+    "SMK-CAN-187"
+  ],
+  "dataset_manifests": [
+    {
+      "dataset": "ALLAML",
+      "path": "/mnt/data/ALLAML.mat",
+      "sha256": "068afe0fe1021932e1e7d801294c267de8aeaa9d41899acfac024e72b0d44c1e",
+      "n_samples": 72,
+      "n_features": 7129,
+      "class_counts": {
+        "0": 47,
+        "1": 25
+      }
+    },
+    {
+      "dataset": "colon",
+      "path": "/mnt/data/pone.0246039.s002.csv",
+      "sha256": "84dae0c344c6d2a7ee6edae3a3be4d95aefd1cc371492b16bc1677aec0b11129",
+      "n_samples": 62,
+      "n_features": 2000,
+      "class_counts": {
+        "0": 22,
+        "1": 40
+      }
+    },
+    {
+      "dataset": "GLI-85",
+      "path": "/mnt/data/GLI-85.mat",
+      "sha256": "17513912ba769a26d6685f683ae2686d8c4af7c13b688276b69a49e2e5985aba",
+      "n_samples": 85,
+      "n_features": 22283,
+      "class_counts": {
+        "0": 26,
+        "1": 59
+      }
+    },
+    {
+      "dataset": "Prostate-GE",
+      "path": "/mnt/data/Prostate_GE.mat",
+      "sha256": "050b598534dbc662f23e30f39b41354b61d02ab8567837bcf9b1091c1c636ab4",
+      "n_samples": 102,
+      "n_features": 5966,
+      "class_counts": {
+        "0": 50,
+        "1": 52
+      }
+    },
+    {
+      "dataset": "SMK-CAN-187",
+      "path": "/mnt/data/SMK_CAN_187.mat",
+      "sha256": "96ff62a9dad001b4bb28a5c31f69e9c41fb1f42d02e4b39c31e4a57b46238aa7",
+      "n_samples": 187,
+      "n_features": 19993,
+      "class_counts": {
+        "0": 90,
+        "1": 97
+      }
+    }
+  ],
+  "seeds": [
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101
+  ],
+  "population": 12,
+  "generations": 6,
+  "carriers": [
+    "NSGA-II",
+    "SPEA2"
+  ],
+  "comparison": "MSF vs matched Random within each carrier/dataset",
+  "msf": "one full outer-training Fisher ranking; exactly 3 guided chromosomes; smallest three distinct integer sizes from {10,0.05D,0.10D,0.20D}; standard downstream carrier thereafter",
+  "matched_initialization": "same deterministic random base population; MSF replaces exactly first 3 chromosomes",
+  "outer_split": "70/30 stratified, random_state=seed",
+  "wrapper": "same 5-NN / 3-fold / mean G-mean across IR={1,3,5}; feature-ratio second objective",
+  "primary_endpoint": "held-out Pareto-set HV",
+  "secondary_endpoints": [
+    "train HV",
+    "best held-out mean G-mean on PF",
+    "best held-out worst-IR G-mean on PF",
+    "minimum PF feature count",
+    "unique wrapper evaluations",
+    "wall-clock decomposition"
+  ],
+  "primary_inference": "paired two-sided Wilcoxon MSF vs Random, Holm corrected across 5 datasets separately within each carrier; rank-biserial effect size; wins/ties/losses",
+  "carrier_interaction": "paired difference in MSF-Random gain between NSGA-II and SPEA2, Holm corrected across 5 datasets",
+  "no_result_filtering": true,
+  "method_selection": "none; these untouched datasets cannot change mixed_m3 or its schedule"
+}

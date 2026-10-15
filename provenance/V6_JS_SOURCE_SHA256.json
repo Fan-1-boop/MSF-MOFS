@@ -1,0 +1,13 @@
+{
+  "src/satellite/health-v2-service/core/health-algorithm-v5.js": "f1f47740ac995210852e74d1d841062412f91b4a1e15b860206f1230982b076d",
+  "src/satellite/health-v2-service/core/health-algorithm.js": "1f3fd25f091cba8a99bddfd3f9fed8d23f883d5b119d8bb630c3a2d939e05070",
+  "src/satellite/health-v2-service/core/health-features.js": "826d1bc6592525eb151ad369414310258b982b2110a2983e5d214f40dc5fddb6",
+  "src/satellite/health-v2-service/service/server.js": "8af9a5b4c6e2921fe93b4091659833b8a102944c01da5aa89e6e2e60122312e9",
+  "src/satellite/msf-training/benchmark_v6_runtime.js": "effd11a1d51fe5f83a7d9131445309cd8acc1da700169326f5a03fc86fc965ab",
+  "src/satellite/msf-training/evaluate_v6_final.js": "9ea219fdaaf88d7e93f7e6c90f63845cbd36960a8ceeed08c285f221d0070258",
+  "src/satellite/msf-training/evaluate_v6_trajectory.js": "44ef239a2f576f8e60fc7bf155679f46c959a0fa44afc11680aa976463dfec0f",
+  "src/satellite/msf-training/integration-smoke-test-v6.js": "45f82ff9cf73c447e998cc517a8cf2c7eb3dc5ca9e08548a54297dc65c24adcf",
+  "src/satellite/satellite-datastream-service/generate-training-data-v6.js": "eb1b2dc7dfdbac729aa0529c19bbadcc7025ef450238fb4decde88401a31e1fc",
+  "src/satellite/satellite-datastream-service/stream-service.js": "4ae5218a135747d09f3aac05b38f10ee53e7c6f18d3065e44ab26118dd9ac8ce",
+  "src/satellite/satellite-datastream-service/telemetry-simulator.js": "540011609e7361ad5c13d074751d90ca59d9401d97f8a43777835f6c8d8968aa"
+}

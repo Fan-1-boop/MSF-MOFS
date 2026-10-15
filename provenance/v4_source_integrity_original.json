@@ -1,0 +1,140 @@
+{
+  "source_zip": "MSF_MOFS_EIC2026_Repro_Code_20261013",
+  "files_verified": 22,
+  "all_identical": true,
+  "files": [
+    {
+      "project": "src/irmofs/__init__.py",
+      "origin": "01_public_code/irmofs/__init__.py",
+      "identical": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "project": "src/irmofs/datasets.py",
+      "origin": "01_public_code/irmofs/datasets.py",
+      "identical": true,
+      "sha256": "dc11996f6467df6b9264b421a6098a0e500824b4a0239f5d2e996469944f311c"
+    },
+    {
+      "project": "src/irmofs/environments.py",
+      "origin": "01_public_code/irmofs/environments.py",
+      "identical": true,
+      "sha256": "ce1c81030f1a0f563883915e4b5ca60f681a428f86c1be9a2bb6821622a68b22"
+    },
+    {
+      "project": "src/irmofs/evaluator.py",
+      "origin": "01_public_code/irmofs/evaluator.py",
+      "identical": true,
+      "sha256": "8ae77282cc9cc27613e57418202ffd060dfde06e3bef4d3471f2ac8a1a124e58"
+    },
+    {
+      "project": "src/irmofs/external_baselines.py",
+      "origin": "01_public_code/irmofs/external_baselines.py",
+      "identical": true,
+      "sha256": "739e7aa168e39cff4e5e063de39ffdaafc734cdaf3a9b6097eac585c722ed966"
+    },
+    {
+      "project": "src/irmofs/highdim_datasets.py",
+      "origin": "01_public_code/irmofs/highdim_datasets.py",
+      "identical": true,
+      "sha256": "a7c02f20a9e609981e7c964e6635a85e2b4742e2ee31a2cecfa651ef1302b730"
+    },
+    {
+      "project": "src/irmofs/highdim_formal.py",
+      "origin": "01_public_code/irmofs/highdim_formal.py",
+      "identical": true,
+      "sha256": "595b8a66612adf4029a1ce60c52060dc6e21768f2159da7dd572120631475106"
+    },
+    {
+      "project": "src/irmofs/nsga2.py",
+      "origin": "01_public_code/irmofs/nsga2.py",
+      "identical": true,
+      "sha256": "b72c83e894202e54b219e4d85208b5eea960eebed594d83c154614c2dd1c4ecc"
+    },
+    {
+      "project": "src/irmofs/selection.py",
+      "origin": "01_public_code/irmofs/selection.py",
+      "identical": true,
+      "sha256": "71816a664a2585be0bb6ac21aa114855df4d748b6677670884e05b259f6d58a6"
+    },
+    {
+      "project": "src/irmofs/spea2.py",
+      "origin": "01_public_code/irmofs/spea2.py",
+      "identical": true,
+      "sha256": "6fc34787974a00e5416906c488c25b487db653cf77cca89d9eb068db8ab41987"
+    },
+    {
+      "project": "src/irmofs/stable_guidance.py",
+      "origin": "01_public_code/irmofs/stable_guidance.py",
+      "identical": true,
+      "sha256": "99ae2cbbf7a21d3538c9f887bee765d3251b6e94d331f3495ab0c5cbbbbbb4d0"
+    },
+    {
+      "project": "satellite/code/msf_core.py",
+      "origin": "05_satellite_code/msf_core.py",
+      "identical": true,
+      "sha256": "9582bee192a3d3b9cae7b5d0f3fa67ae40dd8e4884f1d56b1f5409580f78d814"
+    },
+    {
+      "project": "satellite/code/run_msf_vs_random.py",
+      "origin": "05_satellite_code/run_msf_vs_random.py",
+      "identical": true,
+      "sha256": "d2d3a1a9b7017e876c7742eb93aa363575b1f21fa6cce0e20ac4b852bab7ee79"
+    },
+    {
+      "project": "satellite/code/analyze_msf_vs_random.py",
+      "origin": "05_satellite_code/analyze_msf_vs_random.py",
+      "identical": true,
+      "sha256": "b154c9aa21433e1f2f71c5afb41da8050600541bd4832cdc25876186d5409499"
+    },
+    {
+      "project": "satellite/code/build_subsystem_datasets.py",
+      "origin": "05_satellite_code/build_subsystem_datasets.py",
+      "identical": true,
+      "sha256": "bcd553282cb09ea4bec2169daf79507a5a55acca6e4558b59eb9aa7296370aaf"
+    },
+    {
+      "project": "runners/public/run_breadth5_sparse_control_nsga2.py",
+      "origin": "01_public_code/runners/run_breadth5_sparse_control_nsga2.py",
+      "identical": true,
+      "sha256": "0a35b0e359c523b53b15338b5f5886b9e85b1143261f0bc615ad7e5846987c3b"
+    },
+    {
+      "project": "runners/public/run_frozen_confirmation.py",
+      "origin": "01_public_code/runners/run_frozen_confirmation.py",
+      "identical": true,
+      "sha256": "33445accc2fc76dab5ccfa52f5885c1c8d1c2082a4444a506b5b5d7a7009be39"
+    },
+    {
+      "project": "runners/public/run_p0_3_mechanism.py",
+      "origin": "01_public_code/runners/run_p0_3_mechanism.py",
+      "identical": true,
+      "sha256": "b9d4f76d5d04dd469aca7ba5f7b18d088d047a11b00a531a28a3f797a87c5e3d"
+    },
+    {
+      "project": "runners/public/run_p0_4_large_population.py",
+      "origin": "01_public_code/runners/run_p0_4_large_population.py",
+      "identical": true,
+      "sha256": "2bf7b9152d958a243f6140e426edefdfa1fe11c93b7ddfd42da49ca8ab7b19f4"
+    },
+    {
+      "project": "runners/public/run_v2_dose_sensitivity.py",
+      "origin": "01_public_code/runners/run_v2_dose_sensitivity.py",
+      "identical": true,
+      "sha256": "845b14f510c448eae8a801704cff251d096c4b4b8c4ee672da07d21488aeb7cc"
+    },
+    {
+      "project": "runners/public/run_v2_spea2_plugin.py",
+      "origin": "01_public_code/runners/run_v2_spea2_plugin.py",
+      "identical": true,
+      "sha256": "4a7f7445e6780626c05a972671b87e23f952af2c93fe7461b66ff4f96d9a2b78"
+    },
+    {
+      "project": "runners/public/run_v2_untouched_breadth.py",
+      "origin": "01_public_code/runners/run_v2_untouched_breadth.py",
+      "identical": true,
+      "sha256": "f47b470510793e99dee8f9d2b426d898280cceca36ea22d21d6f89a3ec8e12ee"
+    }
+  ],
+  "note": "This verifies equality with the third source ZIP only; SPEA2 upstream file is reconstructed; see docs."
+}

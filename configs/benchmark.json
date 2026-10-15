@@ -1,0 +1,9 @@
+{
+  "warmup": 100,
+  "repeats": 2000,
+  "expectedCandidateCount": 582,
+  "expectedFrozenUniqueCount": 140,
+  "units": "microseconds_per_frame",
+  "historyLength": 64,
+  "notes": "计时随环境波动，论文59.8%仅供对照，不得凑数"
+}

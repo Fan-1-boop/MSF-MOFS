@@ -1,0 +1,2068 @@
+{
+  "schemaVersion": "msf-subsystem-health-v6-2.0",
+  "createdAt": "2026-08-26T03:50:05.838169+00:00",
+  "method": {
+    "name": "hybrid subsystem-local health evidence",
+    "msfSubsystems": [
+      "power",
+      "thermal",
+      "attitude",
+      "data"
+    ],
+    "directSubsystems": [
+      "communication",
+      "propulsion"
+    ],
+    "msfSelectionRule": "best validation G-mean; within 0.01 choose smallest feature subset; test untouched until finalization",
+    "directRule": "use full local feature set when MSF is not statistically justified or dimensionality is too small"
+  },
+  "subsystems": {
+    "power": {
+      "selectionMethod": "MSF-MOFS",
+      "candidateFeatureCount": 267,
+      "guidedCardinalities": [
+        10,
+        13,
+        27
+      ],
+      "selectedSeed": 101,
+      "selectedFeatureCount": 18,
+      "selectionValidationGmean": 0.8609378512726187,
+      "bestValidationGmean": 0.8646686186684135,
+      "selectedFeatures": [
+        {
+          "name": "param_8__stdRatio__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_8",
+          "descriptor": "stdRatio",
+          "scale": 8
+        },
+        {
+          "name": "rel_param_1_param_2__absDiffMean__w8",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_1",
+            "param_2"
+          ],
+          "descriptor": "absDiffMean",
+          "scale": 8
+        },
+        {
+          "name": "rel_param_1_param_2__corr__w24",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_1",
+            "param_2"
+          ],
+          "descriptor": "corr",
+          "scale": 24
+        },
+        {
+          "name": "rel_param_1_param_2__lag1Corr__w24",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_1",
+            "param_2"
+          ],
+          "descriptor": "lag1Corr",
+          "scale": 24
+        },
+        {
+          "name": "rel_param_1_param_2__absDiffMean__w24",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_1",
+            "param_2"
+          ],
+          "descriptor": "absDiffMean",
+          "scale": 24
+        },
+        {
+          "name": "rel_param_1_param_2__corr__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_1",
+            "param_2"
+          ],
+          "descriptor": "corr",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_1_param_2__diffStd__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_1",
+            "param_2"
+          ],
+          "descriptor": "diffStd",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_1_param_2__absDiffMean__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_1",
+            "param_2"
+          ],
+          "descriptor": "absDiffMean",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_1_param_9__diffStd__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_1",
+            "param_9"
+          ],
+          "descriptor": "diffStd",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_2_param_9__corr__w24",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_2",
+            "param_9"
+          ],
+          "descriptor": "corr",
+          "scale": 24
+        },
+        {
+          "name": "rel_param_2_param_10__diffStd__w8",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_2",
+            "param_10"
+          ],
+          "descriptor": "diffStd",
+          "scale": 8
+        },
+        {
+          "name": "rel_param_2_param_10__corr__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_2",
+            "param_10"
+          ],
+          "descriptor": "corr",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_9_param_10__absDiffMean__w24",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_9",
+            "param_10"
+          ],
+          "descriptor": "absDiffMean",
+          "scale": 24
+        },
+        {
+          "name": "rel_param_1_param_8__diffStd__w8",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_1",
+            "param_8"
+          ],
+          "descriptor": "diffStd",
+          "scale": 8
+        },
+        {
+          "name": "rel_param_1_param_8__corr__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_1",
+            "param_8"
+          ],
+          "descriptor": "corr",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_1_param_8__lag1Corr__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_1",
+            "param_8"
+          ],
+          "descriptor": "lag1Corr",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_1_param_8__diffStd__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_1",
+            "param_8"
+          ],
+          "descriptor": "diffStd",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_1_param_8__absDiffMean__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_1",
+            "param_8"
+          ],
+          "descriptor": "absDiffMean",
+          "scale": 64
+        }
+      ],
+      "imputationMedians": {
+        "param_8__stdRatio__w8": 0.001721439696,
+        "rel_param_1_param_2__absDiffMean__w8": 0.01035883333,
+        "rel_param_1_param_2__corr__w24": 0.7225799233,
+        "rel_param_1_param_2__lag1Corr__w24": 0.6938722289,
+        "rel_param_1_param_2__absDiffMean__w24": 0.01116735675,
+        "rel_param_1_param_2__corr__w64": 0.5067267355,
+        "rel_param_1_param_2__diffStd__w64": 0.01193128063,
+        "rel_param_1_param_2__absDiffMean__w64": 0.01100017402,
+        "rel_param_1_param_9__diffStd__w64": 0.01102270137,
+        "rel_param_2_param_9__corr__w24": 0.6802955397,
+        "rel_param_2_param_10__diffStd__w8": 0.0036942479,
+        "rel_param_2_param_10__corr__w64": 0.5489253633,
+        "rel_param_9_param_10__absDiffMean__w24": 0.07242033877,
+        "rel_param_1_param_8__diffStd__w8": 0.003389745347,
+        "rel_param_1_param_8__corr__w64": 0.5298497627,
+        "rel_param_1_param_8__lag1Corr__w64": 0.5267426876,
+        "rel_param_1_param_8__diffStd__w64": 0.009610035571,
+        "rel_param_1_param_8__absDiffMean__w64": 0.01260663638
+      },
+      "logisticEvidence": {
+        "mean": [
+          0.005233132734297279,
+          0.023782438914530996,
+          0.5113861416894774,
+          0.4936762830233767,
+          0.023020828868388292,
+          0.4479566855166409,
+          0.019950948975868094,
+          0.020861816981059357,
+          0.019016957163868094,
+          0.48921080285572466,
+          0.007756100383050288,
+          0.4708510922688868,
+          0.07757370324638087,
+          0.010223661705356471,
+          0.4424278283838945,
+          0.4418652231625825,
+          0.018141245676429513,
+          0.02259400782911047
+        ],
+        "scale": [
+          0.019968005947527376,
+          0.05115989586621892,
+          0.49301493569200155,
+          0.4967067072958527,
+          0.0465114019527349,
+          0.34086472828849196,
+          0.027761400069931455,
+          0.03736535293895799,
+          0.027253225170782,
+          0.49183542945744135,
+          0.02140186091495704,
+          0.3608995594281519,
+          0.035647405814942024,
+          0.028888053012513258,
+          0.3432395940309795,
+          0.3416416077093794,
+          0.026830619842708292,
+          0.037736498984825735
+        ],
+        "coef": [
+          1.134139992649004,
+          1.423710261901772,
+          -0.8222344726824525,
+          0.49770543318371846,
+          0.6912300480465534,
+          -1.2248131767054187,
+          -2.2318674640333382,
+          1.5164265728930595,
+          0.998257921996845,
+          -0.19420081828018232,
+          2.3063606182190646,
+          -0.5491614124415383,
+          0.8555523358428307,
+          1.9058209891678028,
+          -0.682017984718316,
+          -0.38352175484491413,
+          -1.1708123991914337,
+          2.4532350962807365
+        ],
+        "intercept": 1.0691070473428286,
+        "threshold": 0.8452028738658038,
+        "validationGmeanOptimumThreshold": 0.4599999999999999,
+        "validationNormalQuantile": 0.99,
+        "validationNormalQuantileProbability": 0.8452028738658038,
+        "validationGmeanAtThreshold": 0.7820727192816999,
+        "validationSpecificityAtThreshold": 0.9895424836601308,
+        "validationRecallAtThreshold": 0.6181015452538632,
+        "riskLogitSlope": 2.5
+      },
+      "test": {
+        "knnGmean": 0.858624819015678,
+        "knnSpecificity": 0.9538258575197889,
+        "knnRecall": 0.7729257641921398,
+        "logisticGmean": 0.8199946015355546,
+        "logisticSpecificity": 0.9934036939313984,
+        "logisticRecall": 0.6768558951965066
+      }
+    },
+    "thermal": {
+      "selectionMethod": "MSF-MOFS",
+      "candidateFeatureCount": 135,
+      "guidedCardinalities": [
+        7,
+        10,
+        14
+      ],
+      "selectedSeed": 95,
+      "selectedFeatureCount": 11,
+      "selectionValidationGmean": 0.9387162078135656,
+      "bestValidationGmean": 0.9416094045145281,
+      "selectedFeatures": [
+        {
+          "name": "param_3__meanPosition__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_3",
+          "descriptor": "meanPosition",
+          "scale": 24
+        },
+        {
+          "name": "param_4__thresholdMargin__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_4",
+          "descriptor": "thresholdMargin",
+          "scale": 8
+        },
+        {
+          "name": "param_9__meanPosition__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_9",
+          "descriptor": "meanPosition",
+          "scale": 24
+        },
+        {
+          "name": "param_9__rangeRatio__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_9",
+          "descriptor": "rangeRatio",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_3_param_4__diffStd__w8",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_3",
+            "param_4"
+          ],
+          "descriptor": "diffStd",
+          "scale": 8
+        },
+        {
+          "name": "rel_param_3_param_4__lag1Corr__w24",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_3",
+            "param_4"
+          ],
+          "descriptor": "lag1Corr",
+          "scale": 24
+        },
+        {
+          "name": "rel_param_3_param_4__corr__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_3",
+            "param_4"
+          ],
+          "descriptor": "corr",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_3_param_4__lag1Corr__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_3",
+            "param_4"
+          ],
+          "descriptor": "lag1Corr",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_3_param_4__diffStd__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_3",
+            "param_4"
+          ],
+          "descriptor": "diffStd",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_4_param_9__diffStd__w8",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_4",
+            "param_9"
+          ],
+          "descriptor": "diffStd",
+          "scale": 8
+        },
+        {
+          "name": "rel_param_4_param_9__lag1Corr__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_4",
+            "param_9"
+          ],
+          "descriptor": "lag1Corr",
+          "scale": 64
+        }
+      ],
+      "imputationMedians": {
+        "param_3__meanPosition__w24": 0.110682185,
+        "param_4__thresholdMargin__w8": 0.306212775,
+        "param_9__meanPosition__w24": 0.1837387986,
+        "param_9__rangeRatio__w64": 0.03411941667,
+        "rel_param_3_param_4__diffStd__w8": 0.002155385671,
+        "rel_param_3_param_4__lag1Corr__w24": 0.8307129335,
+        "rel_param_3_param_4__corr__w64": 0.8115785102,
+        "rel_param_3_param_4__lag1Corr__w64": 0.8079741636,
+        "rel_param_3_param_4__diffStd__w64": 0.007200859089,
+        "rel_param_4_param_9__diffStd__w8": 0.002964163365,
+        "rel_param_4_param_9__lag1Corr__w64": 0.5044234208
+      },
+      "logisticEvidence": {
+        "mean": [
+          0.11584833750487253,
+          0.2996287781536733,
+          0.18984956774693107,
+          0.050736483930698774,
+          0.010315411186931162,
+          0.5884742142171963,
+          0.6499004384429301,
+          0.6408275844598654,
+          0.016411365728840416,
+          0.011114262247449954,
+          0.41947949344378876
+        ],
+        "scale": [
+          0.03526458621895388,
+          0.041980435515224845,
+          0.03773529159918819,
+          0.07252163706513069,
+          0.030855696365935336,
+          0.4942701973563062,
+          0.399573785994515,
+          0.4016010676296465,
+          0.028256867257266876,
+          0.03130629663379034,
+          0.35013271788616107
+        ],
+        "coef": [
+          1.0834760357298119,
+          -1.796290628042788,
+          1.3234530350632006,
+          0.008908922830469491,
+          3.16632294271964,
+          -0.047199654069705034,
+          -2.1612225380288765,
+          0.27771269223553424,
+          -1.2901637013283085,
+          4.939069118062754,
+          -0.676421923899404
+        ],
+        "intercept": 0.7490848917621935,
+        "threshold": 0.7313035206936379,
+        "validationGmeanOptimumThreshold": 0.4549999999999999,
+        "validationNormalQuantile": 0.995,
+        "validationNormalQuantileProbability": 0.7313035206936379,
+        "validationGmeanAtThreshold": 0.8968572820231989,
+        "validationSpecificityAtThreshold": 0.9947712418300654,
+        "validationRecallAtThreshold": 0.8085808580858086,
+        "riskLogitSlope": 2.5
+      },
+      "test": {
+        "knnGmean": 0.9307098021327341,
+        "knnSpecificity": 1.0,
+        "knnRecall": 0.8662207357859532,
+        "logisticGmean": 0.8947389047932081,
+        "logisticSpecificity": 0.9973614775725593,
+        "logisticRecall": 0.802675585284281
+      }
+    },
+    "attitude": {
+      "selectionMethod": "MSF-MOFS",
+      "candidateFeatureCount": 135,
+      "guidedCardinalities": [
+        7,
+        10,
+        14
+      ],
+      "selectedSeed": 98,
+      "selectedFeatureCount": 15,
+      "selectionValidationGmean": 0.9916595707796788,
+      "bestValidationGmean": 0.995004131946879,
+      "selectedFeatures": [
+        {
+          "name": "param_6__rangeRatio__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_6",
+          "descriptor": "rangeRatio",
+          "scale": 24
+        },
+        {
+          "name": "param_6__diffMaxRatio__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_6",
+          "descriptor": "diffMaxRatio",
+          "scale": 64
+        },
+        {
+          "name": "param_7__diffMaxRatio__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_7",
+          "descriptor": "diffMaxRatio",
+          "scale": 8
+        },
+        {
+          "name": "param_12__thresholdMargin__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_12",
+          "descriptor": "thresholdMargin",
+          "scale": 8
+        },
+        {
+          "name": "param_12__diffMaxRatio__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_12",
+          "descriptor": "diffMaxRatio",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_6_param_7__diffStd__w8",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_6",
+            "param_7"
+          ],
+          "descriptor": "diffStd",
+          "scale": 8
+        },
+        {
+          "name": "rel_param_6_param_7__endpointDiff__w24",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_6",
+            "param_7"
+          ],
+          "descriptor": "endpointDiff",
+          "scale": 24
+        },
+        {
+          "name": "rel_param_6_param_12__corr__w24",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_6",
+            "param_12"
+          ],
+          "descriptor": "corr",
+          "scale": 24
+        },
+        {
+          "name": "rel_param_6_param_12__diffMean__w24",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_6",
+            "param_12"
+          ],
+          "descriptor": "diffMean",
+          "scale": 24
+        },
+        {
+          "name": "rel_param_6_param_12__corr__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_6",
+            "param_12"
+          ],
+          "descriptor": "corr",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_6_param_12__lag1Corr__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_6",
+            "param_12"
+          ],
+          "descriptor": "lag1Corr",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_6_param_12__diffStd__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_6",
+            "param_12"
+          ],
+          "descriptor": "diffStd",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_7_param_12__absDiffMean__w8",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_7",
+            "param_12"
+          ],
+          "descriptor": "absDiffMean",
+          "scale": 8
+        },
+        {
+          "name": "rel_param_7_param_12__corr__w24",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_7",
+            "param_12"
+          ],
+          "descriptor": "corr",
+          "scale": 24
+        },
+        {
+          "name": "rel_param_7_param_12__lag1Corr__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_7",
+            "param_12"
+          ],
+          "descriptor": "lag1Corr",
+          "scale": 64
+        }
+      ],
+      "imputationMedians": {
+        "param_6__rangeRatio__w24": 0.030910718939999998,
+        "param_6__diffMaxRatio__w64": 0.0058585703845,
+        "param_7__diffMaxRatio__w8": 0.0041062500000000005,
+        "param_12__thresholdMargin__w8": 0.20032725,
+        "param_12__diffMaxRatio__w64": 0.003857,
+        "rel_param_6_param_7__diffStd__w8": 0.0020916035375000003,
+        "rel_param_6_param_7__endpointDiff__w24": 0.51889416265,
+        "rel_param_6_param_12__corr__w24": 0.9152520792,
+        "rel_param_6_param_12__diffMean__w24": 0.56901406575,
+        "rel_param_6_param_12__corr__w64": 0.7434535472499999,
+        "rel_param_6_param_12__lag1Corr__w64": 0.7252824794499999,
+        "rel_param_6_param_12__diffStd__w64": 0.007407344198,
+        "rel_param_7_param_12__absDiffMean__w8": 0.0513753125,
+        "rel_param_7_param_12__corr__w24": 0.9090265897,
+        "rel_param_7_param_12__lag1Corr__w64": 0.6910484664500001
+      },
+      "logisticEvidence": {
+        "mean": [
+          0.046684780626478344,
+          0.021616329311093217,
+          0.013770715630885123,
+          0.20577629331450095,
+          0.019402080979284368,
+          0.010852089867287761,
+          0.5175657515947646,
+          0.7150328743402308,
+          0.5689990965502825,
+          0.629534925102177,
+          0.61166034278076,
+          0.017423025036622408,
+          0.06157978407485876,
+          0.7040840574007262,
+          0.591790736685228
+        ],
+        "scale": [
+          0.07115244090033852,
+          0.07274590899946112,
+          0.05739514034828195,
+          0.030435370832611528,
+          0.07205552663741571,
+          0.03266666614267926,
+          0.06731064819206262,
+          0.44434955411074434,
+          0.05016300510874934,
+          0.3717961153358925,
+          0.36095605423273186,
+          0.029870526027935083,
+          0.04650092520382379,
+          0.45528709357176134,
+          0.37583801376331516
+        ],
+        "coef": [
+          -0.21790413246425042,
+          -0.6982025293623968,
+          3.383767590397866,
+          2.604654315751917,
+          -1.0757310404952525,
+          4.251312909779601,
+          0.2763126674270075,
+          -2.203936341837674,
+          2.264849908831788,
+          -0.48708711958277956,
+          -1.2607155186441288,
+          -0.47468272857031213,
+          2.883923317399495,
+          -0.09217418006235402,
+          -1.584654620402378
+        ],
+        "intercept": 0.8471772763886002,
+        "threshold": 0.8409838181249543,
+        "validationGmeanOptimumThreshold": 0.3549999999999999,
+        "validationNormalQuantile": 0.99,
+        "validationNormalQuantileProbability": 0.8409838181249543,
+        "validationGmeanAtThreshold": 0.9333766054534238,
+        "validationSpecificityAtThreshold": 0.9895424836601308,
+        "validationRecallAtThreshold": 0.8803986710963455,
+        "riskLogitSlope": 2.5
+      },
+      "test": {
+        "knnGmean": 0.9983646759294876,
+        "knnSpecificity": 1.0,
+        "knnRecall": 0.9967320261437909,
+        "logisticGmean": 0.9384456044161337,
+        "logisticSpecificity": 0.9907651715039578,
+        "logisticRecall": 0.8888888888888888
+      }
+    },
+    "data": {
+      "selectionMethod": "MSF-MOFS",
+      "candidateFeatureCount": 204,
+      "guidedCardinalities": [
+        10,
+        20,
+        41
+      ],
+      "selectedSeed": 100,
+      "selectedFeatureCount": 10,
+      "selectionValidationGmean": 0.9932202608115113,
+      "bestValidationGmean": 1.0,
+      "selectedFeatures": [
+        {
+          "name": "param_10__meanPosition__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "meanPosition",
+          "scale": 24
+        },
+        {
+          "name": "param_10__stdRatio__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "stdRatio",
+          "scale": 64
+        },
+        {
+          "name": "param_10__rangeRatio__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "rangeRatio",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_2_param_10__diffStd__w8",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_2",
+            "param_10"
+          ],
+          "descriptor": "diffStd",
+          "scale": 8
+        },
+        {
+          "name": "rel_param_2_param_10__corr__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_2",
+            "param_10"
+          ],
+          "descriptor": "corr",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_2_param_10__lag1Corr__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_2",
+            "param_10"
+          ],
+          "descriptor": "lag1Corr",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_2_param_10__diffStd__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_2",
+            "param_10"
+          ],
+          "descriptor": "diffStd",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_9_param_10__diffStd__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_9",
+            "param_10"
+          ],
+          "descriptor": "diffStd",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_10_param_11__diffStd__w8",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_10",
+            "param_11"
+          ],
+          "descriptor": "diffStd",
+          "scale": 8
+        },
+        {
+          "name": "rel_param_10_param_11__diffStd__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_10",
+            "param_11"
+          ],
+          "descriptor": "diffStd",
+          "scale": 64
+        }
+      ],
+      "imputationMedians": {
+        "param_10__meanPosition__w24": 0.1122105561,
+        "param_10__stdRatio__w64": 0.013762311595,
+        "param_10__rangeRatio__w64": 0.048262364710000005,
+        "rel_param_2_param_10__diffStd__w8": 0.003673542625,
+        "rel_param_2_param_10__corr__w64": 0.5821225256,
+        "rel_param_2_param_10__lag1Corr__w64": 0.5690251159,
+        "rel_param_2_param_10__diffStd__w64": 0.01157978464,
+        "rel_param_9_param_10__diffStd__w64": 0.012854637055,
+        "rel_param_10_param_11__diffStd__w8": 0.0040656236425,
+        "rel_param_10_param_11__diffStd__w64": 0.01143672784
+      },
+      "logisticEvidence": {
+        "mean": [
+          0.12008260922481927,
+          0.019309475756206024,
+          0.07033613397607229,
+          0.009004800105868313,
+          0.5225453345560855,
+          0.5126566448648662,
+          0.018803948942934943,
+          0.019883701999624095,
+          0.00932272417252313,
+          0.018993811711526504
+        ],
+        "scale": [
+          0.043834140587125904,
+          0.022137667336416648,
+          0.08463603592972764,
+          0.0241830149306529,
+          0.2930322430939193,
+          0.3008445836490879,
+          0.02413957895964593,
+          0.024112931681231513,
+          0.024224700038885286,
+          0.024602893051591565
+        ],
+        "coef": [
+          3.02152876785719,
+          0.7895814118757151,
+          -0.3754356871432362,
+          4.181349973757358,
+          -0.5277005864305808,
+          -0.13185742257821975,
+          -0.2208106526076282,
+          0.27562143416002965,
+          4.476687012544599,
+          -0.34760286259796724
+        ],
+        "intercept": -1.690609532371156,
+        "threshold": 0.5349999999999999,
+        "validationGmeanOptimumThreshold": 0.5349999999999999,
+        "validationNormalQuantile": 0.99,
+        "validationNormalQuantileProbability": 0.1788244322623901,
+        "validationGmeanAtThreshold": 0.9986919549666117,
+        "validationSpecificityAtThreshold": 0.9973856209150327,
+        "validationRecallAtThreshold": 1.0,
+        "riskLogitSlope": 2.5
+      },
+      "test": {
+        "knnGmean": 1.0,
+        "knnSpecificity": 1.0,
+        "knnRecall": 1.0,
+        "logisticGmean": 0.9935690651280802,
+        "logisticSpecificity": 1.0,
+        "logisticRecall": 0.9871794871794872
+      }
+    },
+    "communication": {
+      "selectionMethod": "all-local-features",
+      "candidateFeatureCount": 69,
+      "guidedCardinalities": [],
+      "selectedSeed": null,
+      "selectedFeatureCount": 69,
+      "selectionValidationGmean": 0.6998605248000715,
+      "bestValidationGmean": 0.6998605248000715,
+      "selectedFeatures": [
+        {
+          "name": "param_10__meanPosition__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "meanPosition",
+          "scale": 8
+        },
+        {
+          "name": "param_10__stdRatio__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "stdRatio",
+          "scale": 8
+        },
+        {
+          "name": "param_10__madRatio__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "madRatio",
+          "scale": 8
+        },
+        {
+          "name": "param_10__rangeRatio__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "rangeRatio",
+          "scale": 8
+        },
+        {
+          "name": "param_10__slopeRatio__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "slopeRatio",
+          "scale": 8
+        },
+        {
+          "name": "param_10__diffMaxRatio__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "diffMaxRatio",
+          "scale": 8
+        },
+        {
+          "name": "param_10__thresholdMargin__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "thresholdMargin",
+          "scale": 8
+        },
+        {
+          "name": "param_10__violationRatio__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "violationRatio",
+          "scale": 8
+        },
+        {
+          "name": "param_10__meanPosition__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "meanPosition",
+          "scale": 24
+        },
+        {
+          "name": "param_10__stdRatio__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "stdRatio",
+          "scale": 24
+        },
+        {
+          "name": "param_10__madRatio__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "madRatio",
+          "scale": 24
+        },
+        {
+          "name": "param_10__rangeRatio__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "rangeRatio",
+          "scale": 24
+        },
+        {
+          "name": "param_10__slopeRatio__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "slopeRatio",
+          "scale": 24
+        },
+        {
+          "name": "param_10__diffMaxRatio__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "diffMaxRatio",
+          "scale": 24
+        },
+        {
+          "name": "param_10__thresholdMargin__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "thresholdMargin",
+          "scale": 24
+        },
+        {
+          "name": "param_10__violationRatio__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "violationRatio",
+          "scale": 24
+        },
+        {
+          "name": "param_10__meanPosition__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "meanPosition",
+          "scale": 64
+        },
+        {
+          "name": "param_10__stdRatio__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "stdRatio",
+          "scale": 64
+        },
+        {
+          "name": "param_10__madRatio__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "madRatio",
+          "scale": 64
+        },
+        {
+          "name": "param_10__rangeRatio__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "rangeRatio",
+          "scale": 64
+        },
+        {
+          "name": "param_10__slopeRatio__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "slopeRatio",
+          "scale": 64
+        },
+        {
+          "name": "param_10__diffMaxRatio__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "diffMaxRatio",
+          "scale": 64
+        },
+        {
+          "name": "param_10__thresholdMargin__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "thresholdMargin",
+          "scale": 64
+        },
+        {
+          "name": "param_10__violationRatio__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_10",
+          "descriptor": "violationRatio",
+          "scale": 64
+        },
+        {
+          "name": "param_11__meanPosition__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_11",
+          "descriptor": "meanPosition",
+          "scale": 8
+        },
+        {
+          "name": "param_11__stdRatio__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_11",
+          "descriptor": "stdRatio",
+          "scale": 8
+        },
+        {
+          "name": "param_11__madRatio__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_11",
+          "descriptor": "madRatio",
+          "scale": 8
+        },
+        {
+          "name": "param_11__rangeRatio__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_11",
+          "descriptor": "rangeRatio",
+          "scale": 8
+        },
+        {
+          "name": "param_11__slopeRatio__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_11",
+          "descriptor": "slopeRatio",
+          "scale": 8
+        },
+        {
+          "name": "param_11__diffMaxRatio__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_11",
+          "descriptor": "diffMaxRatio",
+          "scale": 8
+        },
+        {
+          "name": "param_11__thresholdMargin__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_11",
+          "descriptor": "thresholdMargin",
+          "scale": 8
+        },
+        {
+          "name": "param_11__violationRatio__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_11",
+          "descriptor": "violationRatio",
+          "scale": 8
+        },
+        {
+          "name": "param_11__meanPosition__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_11",
+          "descriptor": "meanPosition",
+          "scale": 24
+        },
+        {
+          "name": "param_11__stdRatio__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_11",
+          "descriptor": "stdRatio",
+          "scale": 24
+        },
+        {
+          "name": "param_11__madRatio__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_11",
+          "descriptor": "madRatio",
+          "scale": 24
+        },
+        {
+          "name": "param_11__rangeRatio__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_11",
+          "descriptor": "rangeRatio",
+          "scale": 24
+        },
+        {
+          "name": "param_11__slopeRatio__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_11",
+          "descriptor": "slopeRatio",
+          "scale": 24
+        },
+        {
+          "name": "param_11__diffMaxRatio__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_11",
+          "descriptor": "diffMaxRatio",
+          "scale": 24
+        },
+        {
+          "name": "param_11__thresholdMargin__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_11",
+          "descriptor": "thresholdMargin",
+          "scale": 24
+        },
+        {
+          "name": "param_11__violationRatio__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_11",
+          "descriptor": "violationRatio",
+          "scale": 24
+        },
+        {
+          "name": "param_11__meanPosition__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_11",
+          "descriptor": "meanPosition",
+          "scale": 64
+        },
+        {
+          "name": "param_11__stdRatio__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_11",
+          "descriptor": "stdRatio",
+          "scale": 64
+        },
+        {
+          "name": "param_11__madRatio__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_11",
+          "descriptor": "madRatio",
+          "scale": 64
+        },
+        {
+          "name": "param_11__rangeRatio__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_11",
+          "descriptor": "rangeRatio",
+          "scale": 64
+        },
+        {
+          "name": "param_11__slopeRatio__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_11",
+          "descriptor": "slopeRatio",
+          "scale": 64
+        },
+        {
+          "name": "param_11__diffMaxRatio__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_11",
+          "descriptor": "diffMaxRatio",
+          "scale": 64
+        },
+        {
+          "name": "param_11__thresholdMargin__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_11",
+          "descriptor": "thresholdMargin",
+          "scale": 64
+        },
+        {
+          "name": "param_11__violationRatio__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_11",
+          "descriptor": "violationRatio",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_10_param_11__corr__w8",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_10",
+            "param_11"
+          ],
+          "descriptor": "corr",
+          "scale": 8
+        },
+        {
+          "name": "rel_param_10_param_11__lag1Corr__w8",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_10",
+            "param_11"
+          ],
+          "descriptor": "lag1Corr",
+          "scale": 8
+        },
+        {
+          "name": "rel_param_10_param_11__diffMean__w8",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_10",
+            "param_11"
+          ],
+          "descriptor": "diffMean",
+          "scale": 8
+        },
+        {
+          "name": "rel_param_10_param_11__diffStd__w8",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_10",
+            "param_11"
+          ],
+          "descriptor": "diffStd",
+          "scale": 8
+        },
+        {
+          "name": "rel_param_10_param_11__absDiffMean__w8",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_10",
+            "param_11"
+          ],
+          "descriptor": "absDiffMean",
+          "scale": 8
+        },
+        {
+          "name": "rel_param_10_param_11__slopeDiff__w8",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_10",
+            "param_11"
+          ],
+          "descriptor": "slopeDiff",
+          "scale": 8
+        },
+        {
+          "name": "rel_param_10_param_11__endpointDiff__w8",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_10",
+            "param_11"
+          ],
+          "descriptor": "endpointDiff",
+          "scale": 8
+        },
+        {
+          "name": "rel_param_10_param_11__corr__w24",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_10",
+            "param_11"
+          ],
+          "descriptor": "corr",
+          "scale": 24
+        },
+        {
+          "name": "rel_param_10_param_11__lag1Corr__w24",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_10",
+            "param_11"
+          ],
+          "descriptor": "lag1Corr",
+          "scale": 24
+        },
+        {
+          "name": "rel_param_10_param_11__diffMean__w24",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_10",
+            "param_11"
+          ],
+          "descriptor": "diffMean",
+          "scale": 24
+        },
+        {
+          "name": "rel_param_10_param_11__diffStd__w24",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_10",
+            "param_11"
+          ],
+          "descriptor": "diffStd",
+          "scale": 24
+        },
+        {
+          "name": "rel_param_10_param_11__absDiffMean__w24",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_10",
+            "param_11"
+          ],
+          "descriptor": "absDiffMean",
+          "scale": 24
+        },
+        {
+          "name": "rel_param_10_param_11__slopeDiff__w24",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_10",
+            "param_11"
+          ],
+          "descriptor": "slopeDiff",
+          "scale": 24
+        },
+        {
+          "name": "rel_param_10_param_11__endpointDiff__w24",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_10",
+            "param_11"
+          ],
+          "descriptor": "endpointDiff",
+          "scale": 24
+        },
+        {
+          "name": "rel_param_10_param_11__corr__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_10",
+            "param_11"
+          ],
+          "descriptor": "corr",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_10_param_11__lag1Corr__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_10",
+            "param_11"
+          ],
+          "descriptor": "lag1Corr",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_10_param_11__diffMean__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_10",
+            "param_11"
+          ],
+          "descriptor": "diffMean",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_10_param_11__diffStd__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_10",
+            "param_11"
+          ],
+          "descriptor": "diffStd",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_10_param_11__absDiffMean__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_10",
+            "param_11"
+          ],
+          "descriptor": "absDiffMean",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_10_param_11__slopeDiff__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_10",
+            "param_11"
+          ],
+          "descriptor": "slopeDiff",
+          "scale": 64
+        },
+        {
+          "name": "rel_param_10_param_11__endpointDiff__w64",
+          "featureType": "relation",
+          "parameterKeys": [
+            "param_10",
+            "param_11"
+          ],
+          "descriptor": "endpointDiff",
+          "scale": 64
+        }
+      ],
+      "imputationMedians": {
+        "param_10__meanPosition__w8": 0.1114060779,
+        "param_10__stdRatio__w8": 0.004140759229,
+        "param_10__madRatio__w8": 0.004153634718,
+        "param_10__rangeRatio__w8": 0.01233025882,
+        "param_10__slopeRatio__w8": -4.973669468e-06,
+        "param_10__diffMaxRatio__w8": 0.003578823529,
+        "param_10__thresholdMargin__w8": 0.3885939221,
+        "param_10__violationRatio__w8": 0.0,
+        "param_10__meanPosition__w24": 0.1115621681,
+        "param_10__stdRatio__w24": 0.01050054597,
+        "param_10__madRatio__w24": 0.01077219659,
+        "param_10__rangeRatio__w24": 0.03338896471,
+        "param_10__slopeRatio__w24": -1.08866087e-05,
+        "param_10__diffMaxRatio__w24": 0.005037082353,
+        "param_10__thresholdMargin__w24": 0.3884378319,
+        "param_10__violationRatio__w24": 0.0,
+        "param_10__meanPosition__w64": 0.1117004382,
+        "param_10__stdRatio__w64": 0.01344121505,
+        "param_10__madRatio__w64": 0.0150203427,
+        "param_10__rangeRatio__w64": 0.04766276471,
+        "param_10__slopeRatio__w64": 1.419285984e-06,
+        "param_10__diffMaxRatio__w64": 0.005680176471,
+        "param_10__thresholdMargin__w64": 0.3882995618,
+        "param_10__violationRatio__w64": 0.0,
+        "param_11__meanPosition__w8": 0.1371853391,
+        "param_11__stdRatio__w8": 0.002775840492,
+        "param_11__madRatio__w8": 0.002860843493,
+        "param_11__rangeRatio__w8": 0.0082434875,
+        "param_11__slopeRatio__w8": 0.000138865253,
+        "param_11__diffMaxRatio__w8": 0.00230309375,
+        "param_11__thresholdMargin__w8": 0.3628146609,
+        "param_11__violationRatio__w8": 0.0,
+        "param_11__meanPosition__w24": 0.1371293635,
+        "param_11__stdRatio__w24": 0.007261434993,
+        "param_11__madRatio__w24": 0.007287391348,
+        "param_11__rangeRatio__w24": 0.02270659375,
+        "param_11__slopeRatio__w24": 8.426592391e-05,
+        "param_11__diffMaxRatio__w24": 0.00326403125,
+        "param_11__thresholdMargin__w24": 0.3628706365,
+        "param_11__violationRatio__w24": 0.0,
+        "param_11__meanPosition__w64": 0.1371247685,
+        "param_11__stdRatio__w64": 0.009415753841,
+        "param_11__madRatio__w64": 0.01050711207,
+        "param_11__rangeRatio__w64": 0.0316431,
+        "param_11__slopeRatio__w64": 1.196180274e-05,
+        "param_11__diffMaxRatio__w64": 0.00376519375,
+        "param_11__thresholdMargin__w64": 0.3628752315,
+        "param_11__violationRatio__w64": 0.0,
+        "rel_param_10_param_11__corr__w8": 0.7093201184,
+        "rel_param_10_param_11__lag1Corr__w8": 0.7085595076,
+        "rel_param_10_param_11__diffMean__w8": -0.02613589894,
+        "rel_param_10_param_11__diffStd__w8": 0.004157013754,
+        "rel_param_10_param_11__absDiffMean__w8": 0.02724176866,
+        "rel_param_10_param_11__slopeDiff__w8": 6.073978029e-05,
+        "rel_param_10_param_11__endpointDiff__w8": -0.02623011176,
+        "rel_param_10_param_11__corr__w24": 0.5697918602,
+        "rel_param_10_param_11__lag1Corr__w24": 0.5846016031,
+        "rel_param_10_param_11__diffMean__w24": -0.02542615443,
+        "rel_param_10_param_11__diffStd__w24": 0.009472688901,
+        "rel_param_10_param_11__absDiffMean__w24": 0.02706096322,
+        "rel_param_10_param_11__slopeDiff__w24": -7.314618254e-05,
+        "rel_param_10_param_11__endpointDiff__w24": -0.02623011176,
+        "rel_param_10_param_11__corr__w64": 0.5098584723,
+        "rel_param_10_param_11__lag1Corr__w64": 0.5238811563,
+        "rel_param_10_param_11__diffMean__w64": -0.0255443797,
+        "rel_param_10_param_11__diffStd__w64": 0.01172358535,
+        "rel_param_10_param_11__absDiffMean__w64": 0.02617235947,
+        "rel_param_10_param_11__slopeDiff__w64": -9.01979473e-06,
+        "rel_param_10_param_11__endpointDiff__w64": -0.02623011176
+      },
+      "logisticEvidence": {
+        "mean": [
+          0.11142133044093923,
+          0.004828010427595138,
+          0.0054373770343731495,
+          0.014255230770342872,
+          -7.638840247356912e-06,
+          0.003820215677603757,
+          0.38857866955911596,
+          0.0,
+          0.11188471964579005,
+          0.012093349266086188,
+          0.01212285871915282,
+          0.039482996620053036,
+          -4.146108706926388e-05,
+          0.009898700006352486,
+          0.3881152803543646,
+          0.0005064456722320441,
+          0.11199931089569062,
+          0.01462090527260221,
+          0.015374504864128176,
+          0.05377777762761326,
+          -4.659793690628176e-06,
+          0.012036797737836464,
+          0.38800068910430935,
+          0.0005870165745856354,
+          0.13847314131324662,
+          0.0067383081726859655,
+          0.005101763372007624,
+          0.01904199667834254,
+          0.00016088957553378296,
+          0.011339728701823204,
+          0.36152641058032486,
+          0.004005524861878453,
+          0.13810564799632707,
+          0.012151056559901655,
+          0.009807572744919339,
+          0.040559886526353596,
+          6.675449994569281e-05,
+          0.01936632974447514,
+          0.3618943520035017,
+          0.0029005524861878454,
+          0.1374175526023536,
+          0.014230691147687291,
+          0.012701607494214364,
+          0.052785312149005524,
+          3.8682889127320414e-05,
+          0.021775285946298344,
+          0.3625824473977658,
+          0.0011740331491712707,
+          0.3075532978362768,
+          0.2931710270418773,
+          -0.027051810871107845,
+          0.008156673761503535,
+          0.03318177266935801,
+          -0.00016852841576203755,
+          -0.0279969588100178,
+          0.4105703436606503,
+          0.40838689212412926,
+          -0.02622092835244199,
+          0.01527728421022431,
+          0.032727440303971275,
+          -0.00010821558700485192,
+          -0.0279969588100178,
+          0.4167027559271923,
+          0.4158060621671436,
+          -0.02541824170383315,
+          0.017971551457251937,
+          0.031225328989082875,
+          -4.334268281171005e-05,
+          -0.0279969588100178
+        ],
+        "scale": [
+          0.013384402951900628,
+          0.0030193209803674958,
+          0.004127227792511273,
+          0.00876769780802784,
+          0.0023978097614374937,
+          0.0015987015630707562,
+          0.01338440295203528,
+          1.0,
+          0.008092971493228332,
+          0.009504933015664596,
+          0.006996966007007305,
+          0.045287941965781675,
+          0.0014713325534250787,
+          0.04342962251109751,
+          0.008092971493497763,
+          0.004565678021108595,
+          0.0036580545749231017,
+          0.009000145429748503,
+          0.0058867695022903005,
+          0.05053763860244458,
+          0.0002008903644093933,
+          0.04888722137687946,
+          0.0036580545749231013,
+          0.0066255165498405825,
+          0.04129138783045953,
+          0.020695550526543198,
+          0.012431810689458414,
+          0.0559543008832331,
+          0.0034708222001369323,
+          0.05359081501554854,
+          0.041289885048066646,
+          0.061077841578651426,
+          0.037491869468293255,
+          0.02034935882325327,
+          0.014495704209244602,
+          0.0748748222958914,
+          0.0012288076969146245,
+          0.07413234795287449,
+          0.03749186946869824,
+          0.04811147972154017,
+          0.029737624808875346,
+          0.01937560833716569,
+          0.014100873836086,
+          0.08078181266860456,
+          0.0004597655038935518,
+          0.07759776600349289,
+          0.029737624808236777,
+          0.019919843580311934,
+          0.7452738441365482,
+          0.7596271969908173,
+          0.042193941202609025,
+          0.0205204849355955,
+          0.03927144473356829,
+          0.003810703849963288,
+          0.04518201152782123,
+          0.5184100555908564,
+          0.5248479010225975,
+          0.03790260355204299,
+          0.021776935951457698,
+          0.035132263365705255,
+          0.001534940816293118,
+          0.04518201152782123,
+          0.38829783952050223,
+          0.39011396410393223,
+          0.029821814227963598,
+          0.020682344458426514,
+          0.027129615867539515,
+          0.000499330978892938,
+          0.04518201152782123
+        ],
+        "coef": [
+          -0.044464161283100656,
+          0.13069653606888718,
+          -0.5868229509811699,
+          0.9610621156320079,
+          -0.09074282877061647,
+          -0.6638087433203845,
+          0.04446414908111997,
+          0.0,
+          0.3804867827117024,
+          0.21629971499543493,
+          0.006102033048337271,
+          -0.40459619519614176,
+          0.24653397314912626,
+          -0.28728840401710076,
+          -0.38048677569530454,
+          -0.27389432092553934,
+          -0.4519058702054735,
+          0.7671843569657045,
+          0.1480388149294048,
+          0.7454644885803317,
+          -0.0002827616092650043,
+          -1.306563117633958,
+          0.4519058702054208,
+          -0.7891799443525814,
+          -0.12295281258575323,
+          0.22036857540887714,
+          -0.10651477295959152,
+          0.5266792875835477,
+          0.24184282432312776,
+          2.2119894719719824,
+          0.12295305831086482,
+          0.02194708347706406,
+          -0.22721472336530738,
+          -1.3404457468574527,
+          0.4406225268584698,
+          -1.00087841462177,
+          -0.01897959265505579,
+          0.7292204066542074,
+          0.22721472337090007,
+          0.020127841938577324,
+          -0.11473607204462827,
+          -1.2561159244121762,
+          -0.6460435109029704,
+          -1.7725716867203685,
+          0.2857484994799085,
+          1.0472233120569487,
+          0.11473607199695052,
+          0.01967067421912249,
+          0.48010329028353654,
+          -0.5870832560009733,
+          0.10621824312627022,
+          1.7051238521651717,
+          1.6070691441363094,
+          -0.2773706710141326,
+          0.06726107981580448,
+          1.0496434256124645,
+          -1.337874223543042,
+          0.30599408610862305,
+          0.7572345081219087,
+          1.1418065801638384,
+          0.25151180247805255,
+          0.06726107981580448,
+          -1.5259863068121102,
+          0.4932608769047974,
+          0.05897971463051657,
+          1.4693741194400838,
+          0.8652093098099815,
+          -0.26322041221668263,
+          0.06726107981580448
+        ],
+        "intercept": -0.33833819110647023,
+        "threshold": 0.8417535846631004,
+        "validationGmeanOptimumThreshold": 0.605,
+        "validationNormalQuantile": 0.995,
+        "validationNormalQuantileProbability": 0.8417535846631004,
+        "validationGmeanAtThreshold": 0.831045942759822,
+        "validationSpecificityAtThreshold": 0.9947712418300654,
+        "validationRecallAtThreshold": 0.6942675159235668,
+        "riskLogitSlope": 2.5
+      },
+      "test": {
+        "knnGmean": 0.7057061060947535,
+        "knnSpecificity": 0.996042216358839,
+        "knnRecall": 0.5,
+        "logisticGmean": 0.733315189423188,
+        "logisticSpecificity": 0.9986807387862797,
+        "logisticRecall": 0.5384615384615384
+      }
+    },
+    "propulsion": {
+      "selectionMethod": "all-local-features",
+      "candidateFeatureCount": 24,
+      "guidedCardinalities": [],
+      "selectedSeed": null,
+      "selectedFeatureCount": 24,
+      "selectionValidationGmean": 1.0,
+      "bestValidationGmean": 1.0,
+      "selectedFeatures": [
+        {
+          "name": "param_5__meanPosition__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_5",
+          "descriptor": "meanPosition",
+          "scale": 8
+        },
+        {
+          "name": "param_5__stdRatio__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_5",
+          "descriptor": "stdRatio",
+          "scale": 8
+        },
+        {
+          "name": "param_5__madRatio__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_5",
+          "descriptor": "madRatio",
+          "scale": 8
+        },
+        {
+          "name": "param_5__rangeRatio__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_5",
+          "descriptor": "rangeRatio",
+          "scale": 8
+        },
+        {
+          "name": "param_5__slopeRatio__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_5",
+          "descriptor": "slopeRatio",
+          "scale": 8
+        },
+        {
+          "name": "param_5__diffMaxRatio__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_5",
+          "descriptor": "diffMaxRatio",
+          "scale": 8
+        },
+        {
+          "name": "param_5__thresholdMargin__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_5",
+          "descriptor": "thresholdMargin",
+          "scale": 8
+        },
+        {
+          "name": "param_5__violationRatio__w8",
+          "featureType": "univariate",
+          "parameterKey": "param_5",
+          "descriptor": "violationRatio",
+          "scale": 8
+        },
+        {
+          "name": "param_5__meanPosition__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_5",
+          "descriptor": "meanPosition",
+          "scale": 24
+        },
+        {
+          "name": "param_5__stdRatio__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_5",
+          "descriptor": "stdRatio",
+          "scale": 24
+        },
+        {
+          "name": "param_5__madRatio__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_5",
+          "descriptor": "madRatio",
+          "scale": 24
+        },
+        {
+          "name": "param_5__rangeRatio__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_5",
+          "descriptor": "rangeRatio",
+          "scale": 24
+        },
+        {
+          "name": "param_5__slopeRatio__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_5",
+          "descriptor": "slopeRatio",
+          "scale": 24
+        },
+        {
+          "name": "param_5__diffMaxRatio__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_5",
+          "descriptor": "diffMaxRatio",
+          "scale": 24
+        },
+        {
+          "name": "param_5__thresholdMargin__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_5",
+          "descriptor": "thresholdMargin",
+          "scale": 24
+        },
+        {
+          "name": "param_5__violationRatio__w24",
+          "featureType": "univariate",
+          "parameterKey": "param_5",
+          "descriptor": "violationRatio",
+          "scale": 24
+        },
+        {
+          "name": "param_5__meanPosition__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_5",
+          "descriptor": "meanPosition",
+          "scale": 64
+        },
+        {
+          "name": "param_5__stdRatio__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_5",
+          "descriptor": "stdRatio",
+          "scale": 64
+        },
+        {
+          "name": "param_5__madRatio__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_5",
+          "descriptor": "madRatio",
+          "scale": 64
+        },
+        {
+          "name": "param_5__rangeRatio__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_5",
+          "descriptor": "rangeRatio",
+          "scale": 64
+        },
+        {
+          "name": "param_5__slopeRatio__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_5",
+          "descriptor": "slopeRatio",
+          "scale": 64
+        },
+        {
+          "name": "param_5__diffMaxRatio__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_5",
+          "descriptor": "diffMaxRatio",
+          "scale": 64
+        },
+        {
+          "name": "param_5__thresholdMargin__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_5",
+          "descriptor": "thresholdMargin",
+          "scale": 64
+        },
+        {
+          "name": "param_5__violationRatio__w64",
+          "featureType": "univariate",
+          "parameterKey": "param_5",
+          "descriptor": "violationRatio",
+          "scale": 64
+        }
+      ],
+      "imputationMedians": {
+        "param_5__meanPosition__w8": 0.00093125,
+        "param_5__stdRatio__w8": 0.002536271476,
+        "param_5__madRatio__w8": 0.0022268652,
+        "param_5__rangeRatio__w8": 0.00753,
+        "param_5__slopeRatio__w8": 9.495238095e-05,
+        "param_5__diffMaxRatio__w8": 0.002736,
+        "param_5__thresholdMargin__w8": 0.49326075,
+        "param_5__violationRatio__w8": 0.0,
+        "param_5__meanPosition__w24": 0.0006964166667,
+        "param_5__stdRatio__w24": 0.005770807249,
+        "param_5__madRatio__w24": 0.0045248952,
+        "param_5__rangeRatio__w24": 0.018062,
+        "param_5__slopeRatio__w24": -6.608695652e-08,
+        "param_5__diffMaxRatio__w24": 0.003426,
+        "param_5__thresholdMargin__w24": 0.4945175833,
+        "param_5__violationRatio__w24": 0.0,
+        "param_5__meanPosition__w64": 0.00010725,
+        "param_5__stdRatio__w64": 0.00798278313,
+        "param_5__madRatio__w64": 0.0093166584,
+        "param_5__rangeRatio__w64": 0.028308,
+        "param_5__slopeRatio__w64": 2.112545788e-05,
+        "param_5__diffMaxRatio__w64": 0.0038,
+        "param_5__thresholdMargin__w64": 0.4995525,
+        "param_5__violationRatio__w64": 0.0
+      },
+      "logisticEvidence": {
+        "mean": [
+          0.009734412755716005,
+          0.008303484230813358,
+          0.005846086268592057,
+          0.021736245487364622,
+          -7.407483812825435e-05,
+          0.015000914560770157,
+          0.48415122382671477,
+          0.00015042117930204573,
+          0.009197793421402924,
+          0.01205454107163297,
+          0.007869831700361011,
+          0.038049918170878466,
+          5.088676189238807e-05,
+          0.021195643802647417,
+          0.4863885699966306,
+          5.0140393104693136e-05,
+          0.007483310733513843,
+          0.014630565434601686,
+          0.012299323106859205,
+          0.051732541516245484,
+          8.287322927501398e-05,
+          0.023688483754512636,
+          0.4921022278493381,
+          1.8802647412755717e-05
+        ],
+        "scale": [
+          0.04799005305406036,
+          0.02753445878257598,
+          0.02023261622395944,
+          0.06574938094389421,
+          0.004662308152607539,
+          0.06342686326862927,
+          0.04633163366037595,
+          0.004333592145273146,
+          0.04401748648858415,
+          0.027443015823201605,
+          0.015816791560214954,
+          0.07867196675812407,
+          0.0011043977792090213,
+          0.07724923434358268,
+          0.04285869216204617,
+          0.0014445307152066106,
+          0.035982941259373395,
+          0.026056995451672966,
+          0.01560614517806413,
+          0.08427457796995974,
+          0.0005300699254360337,
+          0.080901720545886,
+          0.035894250183752405,
+          0.0005416990181591432
+        ],
+        "coef": [
+          0.8571886952524538,
+          1.54401352323818,
+          1.374764973208858,
+          2.0083512849249088,
+          -0.551424923926284,
+          1.856254706544906,
+          -1.0061399587022006,
+          0.06075833690424238,
+          0.41293155756125005,
+          -0.1143407650957244,
+          2.0592511762766286,
+          0.019796425769820342,
+          0.06782817427019373,
+          0.023804063113564405,
+          -0.5871939652717377,
+          0.060758336904242385,
+          0.4941706233666127,
+          -0.24188100898494086,
+          2.1484502561740952,
+          0.050232839555461276,
+          0.3789193115619625,
+          0.3077854585767749,
+          -0.4990155364966437,
+          0.06075833690424238
+        ],
+        "intercept": -1.788672068477376,
+        "threshold": 0.21499999999999997,
+        "validationGmeanOptimumThreshold": 0.21499999999999997,
+        "validationNormalQuantile": 0.99,
+        "validationNormalQuantileProbability": 0.04829241195462814,
+        "validationGmeanAtThreshold": 1.0,
+        "validationSpecificityAtThreshold": 1.0,
+        "validationRecallAtThreshold": 1.0,
+        "riskLogitSlope": 2.5
+      },
+      "test": {
+        "knnGmean": 1.0,
+        "knnSpecificity": 1.0,
+        "knnRecall": 1.0,
+        "logisticGmean": 1.0,
+        "logisticSpecificity": 1.0,
+        "logisticRecall": 1.0
+      }
+    }
+  }
+}

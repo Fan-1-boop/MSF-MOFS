@@ -1,0 +1,34 @@
+{
+  "status": "LOCKED_BEFORE_BREADTH5_SPARSE_CONTROL_RESULTS",
+  "purpose": "isolate mixed-scale sparsity coverage from Fisher feature identity on the five untouched breadth datasets",
+  "datasets": [
+    "ALLAML",
+    "colon",
+    "GLI-85",
+    "Prostate-GE",
+    "SMK-CAN-187"
+  ],
+  "seeds": [
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101
+  ],
+  "carrier": "NSGA-II",
+  "population": 12,
+  "generations": 6,
+  "sparse_control": "same deterministic Bernoulli(0.20) base population and same three frozen subset sizes as MSF; permute Fisher score vector across feature identities with RNG seed+9001 before top-k seeding; standard NSGA-II thereafter",
+  "comparisons": [
+    "Sparse-control vs Random",
+    "MSF vs Sparse-control",
+    "MSF vs Random"
+  ],
+  "primary_endpoint": "held-out Pareto-set HV",
+  "no_method_tuning": true
+}

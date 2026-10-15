@@ -1,0 +1,92 @@
+{
+  "paper_status": "camera-ready current paper controls scientific protocol; archived evidence is not automatically certified",
+  "core_datasets": [
+    "madelon",
+    "hill_valley",
+    "musk1",
+    "arcene"
+  ],
+  "breadth_datasets": [
+    "ALLAML",
+    "colon",
+    "GLI-85",
+    "Prostate-GE",
+    "SMK-CAN-187"
+  ],
+  "carriers": [
+    "NSGA-II",
+    "SPEA2"
+  ],
+  "initializers": [
+    "Random",
+    "MSF"
+  ],
+  "confirmation_seeds": [
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101
+  ],
+  "population": 12,
+  "generations": 6,
+  "outer_test_fraction": 0.3,
+  "ir_levels": [
+    1,
+    3,
+    5
+  ],
+  "cv_folds": 3,
+  "knn_neighbors": 5,
+  "hv_reference": [
+    1.0,
+    1.0
+  ],
+  "msf_chromosome_count": 3,
+  "msf_raw_scales": [
+    "10",
+    "0.05*D",
+    "0.10*D",
+    "0.20*D"
+  ],
+  "population50_seeds": [
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81
+  ],
+  "satellite_subsystems": [
+    "power",
+    "thermal",
+    "attitude",
+    "data"
+  ],
+  "satellite_seeds": [
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201
+  ],
+  "notes": [
+    "Six-dataset development seeds 82-91 are not confirmation seeds.",
+    "SPEA2 implementation is a validated reconstruction, not byte-identical original.",
+    "Satellite feature extraction timing claim not independently reproducible with supplied artifacts."
+  ]
+}

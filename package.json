@@ -1,0 +1,11 @@
+{
+  "name": "msf-mofs-satellite-v6-reproduction",
+  "private": true,
+  "version": "1.0.0",
+  "description": "卫星 V6 原版 Node.js 特征提取与部署复现",
+  "scripts": {
+    "test": "node scripts/satellite/verify_frozen_features.js",
+    "smoke": "node src/satellite/msf-training/integration-smoke-test-v6.js",
+    "benchmark": "node scripts/satellite/benchmark_frozen_features.js"
+  }
+}

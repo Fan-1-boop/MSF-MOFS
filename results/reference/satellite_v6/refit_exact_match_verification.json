@@ -1,0 +1,51 @@
+{
+  "comparisonBasis": "V6 regenerated development CSV + original V6 saved selected seeds, independently refitted using historical source, 2026-10-13",
+  "frozenModelSHA256": "e4fbb3ae2edc6ed9a8f609c8f3132b33ba742c4d680559a4f03b7eded85b6439",
+  "refittedModelSHA256": "7d01e65eefaf1eff9ad53790118149f2bc70ed4f4da322f4a8b4da7cee505f01",
+  "subsystems": {
+    "power": {
+      "selected_count": 18,
+      "featureNamesAndOrderIdentical": true,
+      "logisticCoefMaxAbsError": 0.0,
+      "interceptAbsError": 0.0,
+      "thresholdAbsError": 0.0
+    },
+    "thermal": {
+      "selected_count": 11,
+      "featureNamesAndOrderIdentical": true,
+      "logisticCoefMaxAbsError": 0.0,
+      "interceptAbsError": 0.0,
+      "thresholdAbsError": 0.0
+    },
+    "attitude": {
+      "selected_count": 15,
+      "featureNamesAndOrderIdentical": true,
+      "logisticCoefMaxAbsError": 0.0,
+      "interceptAbsError": 0.0,
+      "thresholdAbsError": 0.0
+    },
+    "data": {
+      "selected_count": 10,
+      "featureNamesAndOrderIdentical": true,
+      "logisticCoefMaxAbsError": 0.0,
+      "interceptAbsError": 0.0,
+      "thresholdAbsError": 0.0
+    },
+    "communication": {
+      "selected_count": 69,
+      "featureNamesAndOrderIdentical": true,
+      "logisticCoefMaxAbsError": 0.0,
+      "interceptAbsError": 0.0,
+      "thresholdAbsError": 0.0
+    },
+    "propulsion": {
+      "selected_count": 24,
+      "featureNamesAndOrderIdentical": true,
+      "logisticCoefMaxAbsError": 0.0,
+      "interceptAbsError": 0.0,
+      "thresholdAbsError": 0.0
+    }
+  },
+  "allExact": true,
+  "note": "historical frozen model preserved unchanged; rebuilt model original output kept only in _local; hash differs due generated timestamp"
+}

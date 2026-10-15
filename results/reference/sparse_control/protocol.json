@@ -1,0 +1,30 @@
+{
+  "datasets": [
+    "ALLAML",
+    "colon",
+    "GLI-85",
+    "Prostate-GE",
+    "SMK-CAN-187"
+  ],
+  "seeds": [
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101
+  ],
+  "carrier": "NSGA-II",
+  "population": 12,
+  "generations": 6,
+  "base_population": "Bernoulli(0.20), seed=seed",
+  "guidance": "three chromosomes at fixed MSF sizes",
+  "identity": "np.random.default_rng(seed+9001).permutation(fisher_scores(X_train,y_train))",
+  "outer_split": "train_test_split(test_size=.30,stratify=y,random_state=seed)",
+  "evaluation": "held-out Pareto-set HV; training-only CV scaling and 5NN",
+  "source": "runners/public/run_breadth5_sparse_control_nsga2.py (search logic unchanged)"
+}
